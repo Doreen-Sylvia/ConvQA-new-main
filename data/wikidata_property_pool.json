@@ -1,0 +1,11 @@
+[
+  {"pid": "P50", "label": "author", "aliases": "writer, written by", "description": "author of a written work"},
+  {"pid": "P57", "label": "director", "aliases": "film director", "description": "director of a film"},
+  {"pid": "P136", "label": "genre", "aliases": "type, category", "description": "genre of a creative work"},
+  {"pid": "P577", "label": "publication date", "aliases": "release date", "description": "date of publication or release"},
+  {"pid": "P123", "label": "publisher", "aliases": "published by", "description": "publisher of a work"},
+  {"pid": "P27", "label": "country of citizenship", "aliases": "nationality", "description": "country of which the person is a citizen"},
+  {"pid": "P17", "label": "country", "aliases": "country of origin", "description": "sovereign state"},
+  {"pid": "P166", "label": "award received", "aliases": "awards", "description": "award or distinction received by a person or work"}
+]
+

@@ -48,10 +48,14 @@ class WikidataRetriever:
         head_candidates: Sequence[str],
         relation_candidate: str,
         question_text: str,
+        property_ids: Optional[Sequence[str]] = None,
         top_k: int = 3,
     ) -> Tuple[WikidataRetrieveResult, Dict[str, Any]]:
         rel = _norm(relation_candidate)
-        props = map_relation_to_properties(rel)
+        if property_ids is not None:
+            props = [_norm(x) for x in property_ids if _norm(x)]
+        else:
+            props = map_relation_to_properties(rel)
 
         links = self.entity_linker.link(head_candidates=head_candidates, question_text=question_text)
         head_qids = [l.qid for l in links[: self.max_head_qids]]

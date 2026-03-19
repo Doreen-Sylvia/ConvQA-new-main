@@ -153,6 +153,83 @@ class MemoryKG:
         key = (self._norm(conv_id), self._norm(topic), self._norm(head))
         return list(self.adj_by_conv_topic_head.get(key, []))
 
+    def outgoing_relations(
+        self,
+        *,
+        conv_id: str,
+        topic: Optional[str],
+        head: str,
+        fallback_to_conv: bool = True,
+        fallback_to_global: bool = False,
+    ) -> Set[str]:
+        """Return outgoing relation names seen for a head in MemoryKG.
+
+        Primary scope: (conv_id, topic) when topic is provided.
+
+        Fallbacks:
+          - if topic scope yields empty and fallback_to_conv: scan all triples in conv
+          - if still empty and fallback_to_global: scan all triples in the whole store
+
+        Notes:
+          - Relations are returned as normalized strings.
+          - This is intended for candidate relation pooling (R_local).
+        """
+
+        conv_n = self._norm(conv_id)
+        topic_n = self._norm(topic) if topic is not None else ""
+        head_n = self._norm(head)
+        out: Set[str] = set()
+
+        # 1) topic scope
+        if conv_n and topic_n and head_n:
+            for rel, _tail, _turn in self.neighbors(conv_n, topic_n, head_n):
+                if rel:
+                    out.add(self._norm(rel))
+
+        # 2) conv scope fallback
+        if (not out) and fallback_to_conv and conv_n and head_n:
+            for t in self.get_triples_by_conv(conv_n):
+                if t.head == head_n and t.relation:
+                    out.add(self._norm(t.relation))
+
+        # 3) global fallback
+        if (not out) and fallback_to_global and head_n:
+            for t in self.triples:
+                if t.head == head_n and t.relation:
+                    out.add(self._norm(t.relation))
+
+        return out
+
+    def local_relation_pool(
+        self,
+        *,
+        conv_id: str,
+        topic: Optional[str],
+        head_candidates: Iterable[str],
+        per_head_fallback_to_conv: bool = True,
+        per_head_fallback_to_global: bool = False,
+        max_relations: Optional[int] = None,
+    ) -> List[str]:
+        """Union outgoing relations for a list of head candidates.
+
+        Returns a deterministic list (sorted), which makes tests / caching stable.
+        """
+
+        rels: Set[str] = set()
+        for h in head_candidates:
+            rels |= self.outgoing_relations(
+                conv_id=conv_id,
+                topic=topic,
+                head=h,
+                fallback_to_conv=per_head_fallback_to_conv,
+                fallback_to_global=per_head_fallback_to_global,
+            )
+
+        out = sorted(rels)
+        if max_relations is not None:
+            out = out[: max(0, int(max_relations))]
+        return out
+
     def iter_entities(self) -> Iterable[str]:
         """
         返回 entity_vocab（若未开启 build_entity_vocab，则为空）。

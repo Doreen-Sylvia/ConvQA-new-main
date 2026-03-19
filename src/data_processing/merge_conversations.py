@@ -2,7 +2,7 @@ import json
 import random
 import argparse
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Optional
 
 
 class DialogueMerger:
@@ -28,7 +28,7 @@ class DialogueMerger:
         """获取所有可用的实体"""
         return list(self.dialogues_by_entity.keys())
 
-    def merge_two_topics(self, entity1: str, entity2: str) -> Dict:
+    def merge_two_topics(self, entity1: str, entity2: str) -> Optional[Dict]:
         """合并两个主题的对话，只生成一个合并结果"""
         # 获取两个主题的对话
         dialogues1 = self.dialogues_by_entity.get(entity1, [])
@@ -49,7 +49,7 @@ class DialogueMerger:
 
         return merged_conv
 
-    def _create_merged_conversation(self, dialogue1: Dict, dialogue2: Dict, entity1: str, entity2: str) -> Dict:
+    def _create_merged_conversation(self, dialogue1: Dict, dialogue2: Dict, entity1: str, entity2: str) -> Optional[Dict]:
         """创建合并的对话，使用固定的交替模式"""
         try:
             # 提取两个对话的问题
@@ -99,9 +99,21 @@ class DialogueMerger:
                 return None
 
             # 构建合并的对话
+            # 注意：conv_id 必须全局唯一，否则后续构建 MemoryKG 时会出现“不同对话写到同一个 conv_id”
+            # 导致按 (conv_id, topic) 索引的历史被覆盖/混淆。
+            # 这里在 topic pair 的基础上追加两个源对话的 id（若存在）作为稳定后缀。
+            d1_id = str(dialogue1.get("conv_id") or dialogue1.get("dialogue_id") or dialogue1.get("id") or "")
+            d2_id = str(dialogue2.get("conv_id") or dialogue2.get("dialogue_id") or dialogue2.get("id") or "")
+            # fallback: 用 questions 数量作为轻量区分（仍然尽量保持确定性）
+            if not d1_id:
+                d1_id = f"q{len(questions1)}"
+            if not d2_id:
+                d2_id = f"q{len(questions2)}"
+            suffix = f"{d1_id}_{d2_id}".replace(" ", "_")
+
             merged_dialogue = {
                 "domain": "books",
-                "conv_id": f"mixed_{topics[0].replace(' ', '_')}_{topics[1].replace(' ', '_')}",
+                "conv_id": f"mixed_{topics[0].replace(' ', '_')}_{topics[1].replace(' ', '_')}__{suffix}",
                 "topics": topics,
                 "questions": merged_questions,
                 "seed_entities": [
@@ -116,7 +128,7 @@ class DialogueMerger:
             print(f"创建合并对话时出错: {e}")
             return None
 
-    def _adapt_question(self, original_question: Dict, topic: str, turn: int, is_transition: bool = False) -> Dict:
+    def _adapt_question(self, original_question: Dict, topic: str, turn: int, is_transition: bool = False) -> Optional[Dict]:
         """调整问题以适应合并对话"""
         try:
             # 使用完整问题（如果存在），否则使用原始问题
