@@ -1,0 +1,595 @@
+Stephen King	related_to	BOOL::Yes
+Great Expectations	genre	black comedy
+Stephen King	related_to	Best Novel
+Great Expectations	related_to	London;Kent
+Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Pride and Prejudice	related_to	Jane Austen
+Stephen King	publication_year	21 September 1947
+Pride and Prejudice	related_to	27 January 1813
+Stephen King	related_to	IT
+Pride and Prejudice	related_to	Elizabeth Bennet
+Stephen King	first_book	The Dark Tower: The Gunslinger
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Stephen King	related_to	The Running Man
+Pride and Prejudice	related_to	Mansfield Park
+Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
+Stephen King	related_to	21 September 1947
+The Beach	related_to	Alex Garland
+Stephen King	related_to	IT
+The Beach	publication_year	1 September 1935
+Stephen King	first_book	The Dark Tower: The Gunslinger
+The Beach	related_to	London
+Stephen King	related_to	The Running Man
+The Beach	related_to	BOOL::No
+Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
+The Beach	related_to	cartoonist
+Stephen King	publication_year	21 September 1947
+The Dwarves	first_book	YEAR::2003
+Stephen King	related_to	IT
+The Dwarves	related_to	The War of the Dwarves
+Stephen King	first_book	The Dark Tower: The Gunslinger
+The Dwarves	author	Markus Heitz
+Stephen King	related_to	The Running Man
+The Dwarves	related_to	Homburg
+Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
+The Dwarves	publication_year	10 October 1971
+Stephen King	related_to	21 September 1947
+The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
+Stephen King	related_to	IT
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Stephen King	first_book	The Dark Tower: The Gunslinger
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+Stephen King	related_to	The Running Man
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+Fire and Fury	book_title	Inside the Trump White House (English)
+Inferno	related_to	Dan Brown
+Fire and Fury	related_to	Michael Wolff
+Inferno	related_to	14 May 2013
+Fire and Fury	related_to	YEAR::2018
+Inferno	related_to	Origin
+Fire and Fury	related_to	Donald Trump
+Inferno	author	22 June 1964
+Fire and Fury	author	27 August 1953
+Inferno	related_to	Exeter
+Fire and Fury	book_title	Inside the Trump White House (English)
+Twilight	related_to	Stephenie Meyer
+Fire and Fury	related_to	Michael Wolff
+Twilight	publication_year	05 October 2005
+Fire and Fury	related_to	YEAR::2018
+Twilight	related_to	Isabella "Bella" Swan
+Fire and Fury	related_to	Donald Trump
+Twilight	related_to	Edward Cullen
+Fire and Fury	author	27 August 1953
+Twilight	related_to	vampire
+Fire and Fury	book_title	Inside the Trump White House (English)
+Jaws	author	Peter Benchley
+Fire and Fury	related_to	Michael Wolff
+Jaws	publication_year	YEAR::1974
+Fire and Fury	publication_year	YEAR::2018
+Jaws	related_to	Doubleday; Bantam Books
+Fire and Fury	related_to	Donald Trump
+Jaws	genre	Thriller
+Fire and Fury	author	27 August 1953
+Jaws	related_to	BOOL::Yes
+Fire and Fury	book_title	Inside the Trump White House (English)
+The Hobbit	publication_year	21 September 1937
+Fire and Fury	related_to	Michael Wolff
+The Hobbit	author	BOOL::Yes
+Fire and Fury	related_to	YEAR::2018
+The Hobbit	related_to	Edith Tolkien
+Fire and Fury	related_to	Donald Trump
+The Hobbit	related_to	John Francis Reuel Tolkien
+Fire and Fury	author	27 August 1953
+The Hobbit	related_to	BOOL::Yes
+Fire and Fury	book_title	Inside the Trump White House (English)
+The Shining	related_to	Stephen King
+Fire and Fury	related_to	Michael Wolff
+The Shining	related_to	BOOL::Yes
+Fire and Fury	publication_year	YEAR::2018
+The Shining	related_to	BOOL::Yes
+Fire and Fury	related_to	Donald Trump
+The Shining	related_to	BOOL::Yes
+Fire and Fury	author	27 August 1953
+The Shining	related_to	BOOL::Yes
+Fire and Fury	book_title	Inside the Trump White House (English)
+Great Expectations	author	Charles Dickens
+Fire and Fury	author	Michael Wolff
+Great Expectations	related_to	BOOL::No
+Fire and Fury	publication_year	YEAR::2018
+Great Expectations	related_to	Chapman & Hall
+Fire and Fury	related_to	Donald Trump
+Great Expectations	genre	black comedy
+Fire and Fury	author	27 August 1953
+Great Expectations	related_to	London;Kent
+Fire and Fury	book_title	Inside the Trump White House (English)
+Pride and Prejudice	author	Jane Austen
+Fire and Fury	related_to	Michael Wolff
+Pride and Prejudice	related_to	27 January 1813
+Fire and Fury	publication_year	YEAR::2018
+Pride and Prejudice	related_to	Elizabeth Bennet
+Fire and Fury	related_to	Donald Trump
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Fire and Fury	author	27 August 1953
+Pride and Prejudice	related_to	Mansfield Park
+Fire and Fury	book_title	Inside the Trump White House (English)
+The Beach	author	Alex Garland
+Fire and Fury	author	Michael Wolff
+The Beach	publication_year	1 September 1935
+Fire and Fury	related_to	YEAR::2018
+The Beach	related_to	London
+Fire and Fury	related_to	Donald Trump
+The Beach	related_to	BOOL::No
+Fire and Fury	author	27 August 1953
+The Beach	related_to	cartoonist
+Fire and Fury	book_title	Inside the Trump White House (English)
+The Dwarves	first_book	YEAR::2003
+Fire and Fury	related_to	Michael Wolff
+The Dwarves	book_title	The War of the Dwarves
+Fire and Fury	related_to	YEAR::2018
+The Dwarves	author	Markus Heitz
+Fire and Fury	related_to	Donald Trump
+The Dwarves	author	Homburg
+Fire and Fury	author	27 August 1953
+The Dwarves	publication_year	10 October 1971
+Fire and Fury	book_title	Inside the Trump White House (English)
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+Fire and Fury	related_to	Michael Wolff
+The Hitchhiker's Guide to the Galaxy	author	BOOL::No
+Fire and Fury	publication_year	YEAR::2018
+The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
+Fire and Fury	related_to	Donald Trump
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Fire and Fury	author	27 August 1953
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+Inferno	author	Dan Brown
+Twilight	author	Stephenie Meyer
+Inferno	publication_year	14 May 2013
+Twilight	related_to	05 October 2005
+Inferno	related_to	Origin
+Twilight	related_to	Isabella "Bella" Swan
+Inferno	author	22 June 1964
+Twilight	related_to	Edward Cullen
+Inferno	related_to	Exeter
+Twilight	related_to	vampire
+Inferno	author	Dan Brown
+Jaws	author	Peter Benchley
+Inferno	publication_year	14 May 2013
+Jaws	publication_year	YEAR::1974
+Inferno	related_to	Origin
+Jaws	related_to	Doubleday; Bantam Books
+Inferno	author	22 June 1964
+Jaws	genre	Thriller
+Inferno	related_to	Exeter
+Jaws	related_to	BOOL::Yes
+Inferno	related_to	Dan Brown
+The Hobbit	publication_year	21 September 1937
+Inferno	related_to	14 May 2013
+The Hobbit	author	BOOL::Yes
+Inferno	related_to	Origin
+The Hobbit	related_to	Edith Tolkien
+Inferno	author	22 June 1964
+The Hobbit	related_to	John Francis Reuel Tolkien
+Inferno	related_to	Exeter
+The Hobbit	related_to	BOOL::Yes
+Inferno	author	Dan Brown
+The Shining	related_to	Stephen King
+Inferno	publication_year	14 May 2013
+The Shining	related_to	BOOL::Yes
+Inferno	related_to	Origin
+The Shining	related_to	BOOL::Yes
+Inferno	publication_year	22 June 1964
+The Shining	related_to	BOOL::Yes
+Inferno	related_to	Exeter
+The Shining	related_to	BOOL::Yes
+Great Expectations	author	Charles Dickens
+Inferno	author	Dan Brown
+Great Expectations	related_to	BOOL::No
+Inferno	publication_year	14 May 2013
+Great Expectations	related_to	Chapman & Hall
+Inferno	related_to	Origin
+Great Expectations	genre	black comedy
+Inferno	publication_year	22 June 1964
+Great Expectations	related_to	London;Kent
+Inferno	related_to	Exeter
+Inferno	author	Dan Brown
+Pride and Prejudice	related_to	Jane Austen
+Inferno	related_to	14 May 2013
+Pride and Prejudice	related_to	27 January 1813
+Inferno	related_to	Origin
+Pride and Prejudice	related_to	Elizabeth Bennet
+Inferno	publication_year	22 June 1964
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Inferno	related_to	Exeter
+Pride and Prejudice	related_to	Mansfield Park
+Inferno	related_to	Dan Brown
+The Beach	author	Alex Garland
+Inferno	publication_year	14 May 2013
+The Beach	related_to	1 September 1935
+Inferno	related_to	Origin
+The Beach	related_to	London
+Inferno	publication_year	22 June 1964
+The Beach	related_to	BOOL::No
+Inferno	related_to	Exeter
+The Beach	related_to	cartoonist
+Inferno	author	Dan Brown
+The Dwarves	first_book	YEAR::2003
+Inferno	related_to	14 May 2013
+The Dwarves	related_to	The War of the Dwarves
+Inferno	related_to	Origin
+The Dwarves	author	Markus Heitz
+Inferno	publication_year	22 June 1964
+The Dwarves	related_to	Homburg
+Inferno	related_to	Exeter
+The Dwarves	publication_year	10 October 1971
+Inferno	related_to	Dan Brown
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+Inferno	publication_year	14 May 2013
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Inferno	related_to	Origin
+The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
+Inferno	publication_year	22 June 1964
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Inferno	related_to	Exeter
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+Jaws	author	Peter Benchley
+Twilight	author	Stephenie Meyer
+Jaws	publication_year	YEAR::1974
+Twilight	related_to	05 October 2005
+Jaws	related_to	Doubleday; Bantam Books
+Twilight	related_to	Isabella "Bella" Swan
+Jaws	genre	Thriller
+Twilight	related_to	Edward Cullen
+Jaws	related_to	BOOL::Yes
+Twilight	related_to	vampire
+The Hobbit	publication_year	21 September 1937
+Twilight	author	Stephenie Meyer
+The Hobbit	author	BOOL::Yes
+Twilight	publication_year	05 October 2005
+The Hobbit	related_to	Edith Tolkien
+Twilight	related_to	Isabella "Bella" Swan
+The Hobbit	related_to	John Francis Reuel Tolkien
+Twilight	related_to	Edward Cullen
+The Hobbit	related_to	BOOL::Yes
+Twilight	related_to	vampire
+The Shining	related_to	Stephen King
+Twilight	author	Stephenie Meyer
+The Shining	related_to	BOOL::Yes
+Twilight	publication_year	05 October 2005
+The Shining	related_to	BOOL::Yes
+Twilight	related_to	Isabella "Bella" Swan
+The Shining	related_to	BOOL::Yes
+Twilight	related_to	Edward Cullen
+The Shining	related_to	BOOL::Yes
+Twilight	related_to	vampire
+Great Expectations	author	Charles Dickens
+Twilight	author	Stephenie Meyer
+Great Expectations	related_to	BOOL::No
+Twilight	publication_year	05 October 2005
+Great Expectations	publisher	Chapman & Hall
+Twilight	related_to	Isabella "Bella" Swan
+Great Expectations	genre	black comedy
+Twilight	related_to	Edward Cullen
+Great Expectations	related_to	London;Kent
+Twilight	related_to	vampire
+Pride and Prejudice	related_to	Jane Austen
+Twilight	related_to	Stephenie Meyer
+Pride and Prejudice	publication_year	27 January 1813
+Twilight	publication_year	05 October 2005
+Pride and Prejudice	related_to	Elizabeth Bennet
+Twilight	related_to	Isabella "Bella" Swan
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Twilight	related_to	Edward Cullen
+Pride and Prejudice	related_to	Mansfield Park
+Twilight	related_to	vampire
+The Beach	author	Alex Garland
+Twilight	author	Stephenie Meyer
+The Beach	publication_year	1 September 1935
+Twilight	publication_year	05 October 2005
+The Beach	related_to	London
+Twilight	related_to	Isabella "Bella" Swan
+The Beach	related_to	BOOL::No
+Twilight	related_to	Edward Cullen
+The Beach	related_to	cartoonist
+Twilight	related_to	vampire
+The Dwarves	first_book	YEAR::2003
+Twilight	author	Stephenie Meyer
+The Dwarves	related_to	The War of the Dwarves
+Twilight	related_to	05 October 2005
+The Dwarves	author	Markus Heitz
+Twilight	related_to	Isabella "Bella" Swan
+The Dwarves	author	Homburg
+Twilight	related_to	Edward Cullen
+The Dwarves	publication_year	10 October 1971
+Twilight	related_to	vampire
+The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
+Twilight	related_to	Stephenie Meyer
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Twilight	related_to	05 October 2005
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+Twilight	related_to	Isabella "Bella" Swan
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Twilight	related_to	Edward Cullen
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+Twilight	related_to	vampire
+Jaws	author	Peter Benchley
+The Hobbit	publication_year	21 September 1937
+Jaws	publication_year	YEAR::1974
+The Hobbit	author	BOOL::Yes
+Jaws	related_to	Doubleday; Bantam Books
+The Hobbit	related_to	Edith Tolkien
+Jaws	genre	Thriller
+The Hobbit	related_to	John Francis Reuel Tolkien
+Jaws	related_to	BOOL::Yes
+The Hobbit	related_to	BOOL::Yes
+Jaws	author	Peter Benchley
+The Shining	related_to	Stephen King
+Jaws	publication_year	YEAR::1974
+The Shining	related_to	BOOL::Yes
+Jaws	related_to	Doubleday; Bantam Books
+The Shining	related_to	BOOL::Yes
+Jaws	genre	Thriller
+The Shining	related_to	BOOL::Yes
+Jaws	related_to	BOOL::Yes
+The Shining	related_to	BOOL::Yes
+Great Expectations	author	Charles Dickens
+Jaws	author	Peter Benchley
+Great Expectations	related_to	BOOL::No
+Jaws	publication_year	YEAR::1974
+Great Expectations	related_to	Chapman & Hall
+Jaws	related_to	Doubleday; Bantam Books
+Great Expectations	genre	black comedy
+Jaws	genre	Thriller
+Great Expectations	related_to	London;Kent
+Jaws	related_to	BOOL::Yes
+Jaws	author	Peter Benchley
+Pride and Prejudice	related_to	Jane Austen
+Jaws	publication_year	YEAR::1974
+Pride and Prejudice	related_to	27 January 1813
+Jaws	related_to	Doubleday; Bantam Books
+Pride and Prejudice	related_to	Elizabeth Bennet
+Jaws	genre	Thriller
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Jaws	related_to	BOOL::Yes
+Pride and Prejudice	related_to	Mansfield Park
+Jaws	author	Peter Benchley
+The Beach	author	Alex Garland
+Jaws	publication_year	YEAR::1974
+The Beach	publication_year	1 September 1935
+Jaws	related_to	Doubleday; Bantam Books
+The Beach	related_to	London
+Jaws	genre	Thriller
+The Beach	related_to	BOOL::No
+Jaws	related_to	BOOL::Yes
+The Beach	related_to	cartoonist
+Jaws	author	Peter Benchley
+The Dwarves	first_book	YEAR::2003
+Jaws	publication_year	YEAR::1974
+The Dwarves	book_title	The War of the Dwarves
+Jaws	related_to	Doubleday; Bantam Books
+The Dwarves	author	Markus Heitz
+Jaws	genre	Thriller
+The Dwarves	related_to	Homburg
+Jaws	related_to	BOOL::Yes
+The Dwarves	publication_year	10 October 1971
+Jaws	author	Peter Benchley
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+Jaws	publication_year	YEAR::1974
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Jaws	related_to	Doubleday; Bantam Books
+The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
+Jaws	genre	Thriller
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Jaws	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+The Hobbit	publication_year	21 September 1937
+The Shining	author	Stephen King
+The Hobbit	author	BOOL::Yes
+The Shining	related_to	BOOL::Yes
+The Hobbit	related_to	Edith Tolkien
+The Shining	related_to	BOOL::Yes
+The Hobbit	related_to	John Francis Reuel Tolkien
+The Shining	related_to	BOOL::Yes
+The Hobbit	related_to	BOOL::Yes
+The Shining	related_to	BOOL::Yes
+Great Expectations	author	Charles Dickens
+The Hobbit	publication_year	21 September 1937
+Great Expectations	related_to	BOOL::No
+The Hobbit	author	BOOL::Yes
+Great Expectations	related_to	Chapman & Hall
+The Hobbit	related_to	Edith Tolkien
+Great Expectations	genre	black comedy
+The Hobbit	related_to	John Francis Reuel Tolkien
+Great Expectations	related_to	London;Kent
+The Hobbit	related_to	BOOL::Yes
+Pride and Prejudice	related_to	Jane Austen
+The Hobbit	publication_year	21 September 1937
+Pride and Prejudice	related_to	27 January 1813
+The Hobbit	author	BOOL::Yes
+Pride and Prejudice	related_to	Elizabeth Bennet
+The Hobbit	related_to	Edith Tolkien
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+The Hobbit	related_to	John Francis Reuel Tolkien
+Pride and Prejudice	related_to	Mansfield Park
+The Hobbit	related_to	BOOL::Yes
+The Beach	related_to	Alex Garland
+The Hobbit	publication_year	21 September 1937
+The Beach	related_to	1 September 1935
+The Hobbit	author	BOOL::Yes
+The Beach	related_to	London
+The Hobbit	related_to	Edith Tolkien
+The Beach	related_to	BOOL::No
+The Hobbit	related_to	John Francis Reuel Tolkien
+The Beach	related_to	cartoonist
+The Hobbit	related_to	BOOL::Yes
+The Dwarves	first_book	YEAR::2003
+The Hobbit	publication_year	21 September 1937
+The Dwarves	related_to	The War of the Dwarves
+The Hobbit	author	BOOL::Yes
+The Dwarves	author	Markus Heitz
+The Hobbit	related_to	Edith Tolkien
+The Dwarves	author	Homburg
+The Hobbit	related_to	John Francis Reuel Tolkien
+The Dwarves	publication_year	10 October 1971
+The Hobbit	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+The Hobbit	publication_year	21 September 1937
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+The Hobbit	author	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+The Hobbit	related_to	Edith Tolkien
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+The Hobbit	related_to	John Francis Reuel Tolkien
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+The Hobbit	related_to	BOOL::Yes
+Great Expectations	author	Charles Dickens
+The Shining	related_to	Stephen King
+Great Expectations	related_to	BOOL::No
+The Shining	related_to	BOOL::Yes
+Great Expectations	publisher	Chapman & Hall
+The Shining	related_to	BOOL::Yes
+Great Expectations	genre	black comedy
+The Shining	related_to	BOOL::Yes
+Great Expectations	related_to	London;Kent
+The Shining	related_to	BOOL::Yes
+Pride and Prejudice	author	Jane Austen
+The Shining	author	Stephen King
+Pride and Prejudice	publication_year	27 January 1813
+The Shining	related_to	BOOL::Yes
+Pride and Prejudice	related_to	Elizabeth Bennet
+The Shining	related_to	BOOL::Yes
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+The Shining	related_to	BOOL::Yes
+Pride and Prejudice	related_to	Mansfield Park
+The Shining	related_to	BOOL::Yes
+The Beach	author	Alex Garland
+The Shining	author	Stephen King
+The Beach	publication_year	1 September 1935
+The Shining	related_to	BOOL::Yes
+The Beach	related_to	London
+The Shining	related_to	BOOL::Yes
+The Beach	related_to	BOOL::No
+The Shining	related_to	BOOL::Yes
+The Beach	related_to	cartoonist
+The Shining	related_to	BOOL::Yes
+The Dwarves	first_book	YEAR::2003
+The Shining	related_to	Stephen King
+The Dwarves	related_to	The War of the Dwarves
+The Shining	related_to	BOOL::Yes
+The Dwarves	author	Markus Heitz
+The Shining	related_to	BOOL::Yes
+The Dwarves	author	Homburg
+The Shining	related_to	BOOL::Yes
+The Dwarves	publication_year	10 October 1971
+The Shining	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
+The Shining	related_to	Stephen King
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+The Shining	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+The Shining	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+The Shining	related_to	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+The Shining	related_to	BOOL::Yes
+Great Expectations	related_to	Charles Dickens
+Pride and Prejudice	author	Jane Austen
+Great Expectations	related_to	BOOL::No
+Pride and Prejudice	related_to	27 January 1813
+Great Expectations	related_to	Chapman & Hall
+Pride and Prejudice	related_to	Elizabeth Bennet
+Great Expectations	genre	black comedy
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+Great Expectations	related_to	London;Kent
+Pride and Prejudice	related_to	Mansfield Park
+Great Expectations	related_to	Charles Dickens
+The Beach	author	Alex Garland
+Great Expectations	related_to	BOOL::No
+The Beach	publication_year	1 September 1935
+Great Expectations	related_to	Chapman & Hall
+The Beach	related_to	London
+Great Expectations	genre	black comedy
+The Beach	related_to	BOOL::No
+Great Expectations	related_to	London;Kent
+The Beach	related_to	cartoonist
+Great Expectations	related_to	Charles Dickens
+The Dwarves	first_book	YEAR::2003
+Great Expectations	related_to	BOOL::No
+The Dwarves	book_title	The War of the Dwarves
+Great Expectations	publisher	Chapman & Hall
+The Dwarves	author	Markus Heitz
+Great Expectations	genre	black comedy
+The Dwarves	author	Homburg
+Great Expectations	related_to	London;Kent
+The Dwarves	publication_year	10 October 1971
+Great Expectations	author	Charles Dickens
+The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
+Great Expectations	related_to	BOOL::No
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Great Expectations	publisher	Chapman & Hall
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+Great Expectations	genre	black comedy
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Great Expectations	related_to	London;Kent
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+Pride and Prejudice	author	Jane Austen
+The Beach	related_to	Alex Garland
+Pride and Prejudice	publication_year	27 January 1813
+The Beach	related_to	1 September 1935
+Pride and Prejudice	related_to	Elizabeth Bennet
+The Beach	related_to	London
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+The Beach	related_to	BOOL::No
+Pride and Prejudice	related_to	Mansfield Park
+The Beach	related_to	cartoonist
+Pride and Prejudice	related_to	Jane Austen
+The Dwarves	first_book	YEAR::2003
+Pride and Prejudice	publication_year	27 January 1813
+The Dwarves	related_to	The War of the Dwarves
+Pride and Prejudice	related_to	Elizabeth Bennet
+The Dwarves	author	Markus Heitz
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+The Dwarves	author	Homburg
+Pride and Prejudice	related_to	Mansfield Park
+The Dwarves	publication_year	10 October 1971
+Pride and Prejudice	author	Jane Austen
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+Pride and Prejudice	publication_year	27 January 1813
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
+Pride and Prejudice	related_to	Elizabeth Bennet
+The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
+Pride and Prejudice	related_to	Fitzwilliam Darcy
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+Pride and Prejudice	related_to	Mansfield Park
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+The Beach	related_to	Alex Garland
+The Dwarves	first_book	YEAR::2003
+The Beach	publication_year	1 September 1935
+The Dwarves	book_title	The War of the Dwarves
+The Beach	related_to	London
+The Dwarves	author	Markus Heitz
+The Beach	related_to	BOOL::No
+The Dwarves	author	Homburg
+The Beach	related_to	cartoonist
+The Dwarves	publication_year	10 October 1971
+The Beach	related_to	Alex Garland
+The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
+The Beach	publication_year	1 September 1935
+The Hitchhiker's Guide to the Galaxy	author	BOOL::No
+The Beach	related_to	London
+The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
+The Beach	related_to	BOOL::No
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+The Beach	related_to	cartoonist
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
+The Dwarves	first_book	YEAR::2003
+The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
+The Dwarves	related_to	The War of the Dwarves
+The Hitchhiker's Guide to the Galaxy	author	BOOL::No
+The Dwarves	author	Markus Heitz
+The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
+The Dwarves	author	Homburg
+The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
+The Dwarves	publication_year	10 October 1971
+The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
