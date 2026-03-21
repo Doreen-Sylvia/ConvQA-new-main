@@ -90,6 +90,56 @@ def _extract_gold_fields(rec: Dict[str, Any]) -> Tuple[str, str, str, str]:
     return str(gold_answer), str(gold_topic), str(gold_relation), str(gold_tail)
 
 
+def _extract_qid(x: Any) -> str:
+    if x is None:
+        return ""
+    s = str(x).strip()
+    if not s:
+        return ""
+    m = re.search(r"(?:^|/)(Q\d+)(?:$|[?#/])", s, flags=re.IGNORECASE)
+    if m:
+        return m.group(1).upper()
+    if re.fullmatch(r"Q\d+", s, flags=re.IGNORECASE):
+        return s.upper()
+    return ""
+
+
+def _extract_gold_answer_entity(rec: Dict[str, Any]) -> str:
+    for k in ("gold_answer_entity", "gold_answer_qid", "gold_entity", "answer_entity"):
+        q = _extract_qid(rec.get(k))
+        if q:
+            return q
+    gold_answer, _, _, gold_tail = _extract_gold_fields(rec)
+    q = _extract_qid(gold_tail)
+    if q:
+        return q
+    return _extract_qid(gold_answer)
+
+
+def _extract_ranked_entities(rec: Dict[str, Any]) -> List[str]:
+    ranked = rec.get("pred_ranked_entities")
+    if ranked is None:
+        return []
+    if isinstance(ranked, list):
+        return [str(x) for x in ranked if str(x).strip()]
+    return [str(ranked)]
+
+
+def _to_qid_or_self(x: str) -> str:
+    q = _extract_qid(x)
+    return q if q else normalize_answer(x)
+
+
+def _rank_of_gold(ranked: List[str], gold: str) -> Optional[int]:
+    if not ranked or not gold:
+        return None
+    gold_key = _to_qid_or_self(gold)
+    for i, item in enumerate(ranked):
+        if _to_qid_or_self(str(item)) == gold_key:
+            return i + 1
+    return None
+
+
 def _extract_pred_topic(rec: Dict[str, Any]) -> str:
     t = _safe_get(rec, ["router", "assigned_topic"], "")
     if t:
@@ -264,6 +314,7 @@ class FailureCase:
     evidence: List[Dict[str, Any]]
     label: str
     oracle_answer_in_topic: Optional[bool]
+    gold_rank: Optional[int]
 
 
 def _assign_label(
@@ -278,6 +329,7 @@ def _assign_label(
     question_text: str,
     gold_answer: str,
     gold_tail: str,
+    gold_rank: Optional[int],
 ) -> str:
     """
     失败分类优先级（A~E）：
@@ -291,6 +343,9 @@ def _assign_label(
         return "OK"
 
     if len(evidence) == 0:
+        if gold_rank is not None:
+            # ranked list exists but evidence is empty => likely routing/controller decision
+            return "A_NO_EVIDENCE_BUT_RANKED"
         return "A_NO_EVIDENCE"
 
     # B: routing 错（gold_topic 存在且不一致），且 evidence 弱/指向别的 topic
@@ -304,6 +359,8 @@ def _assign_label(
 
     # E: evidence 已经有 gold tail，但最后输出错
     if _evidence_contains_gold_tail(evidence, gold_tail or gold_answer):
+        if gold_rank is not None and gold_rank <= 10:
+            return "E_HAS_GOLD_LOW_RANK_BUT_PICKED_WRONG"
         return "E_EVIDENCE_HAS_GOLD_BUT_PICKED_WRONG"
 
     # C: relation mismatch（evidence relation 与 relation_candidate 不一致，或 evidence 只有 related_to）
@@ -341,6 +398,7 @@ def diagnose(
     label_counter: Counter[str] = Counter()
     cases_by_label: Dict[str, List[FailureCase]] = defaultdict(list)
     relation_counter_in_fail: Counter[str] = Counter()
+    gold_rank_counter: Counter[str] = Counter()
 
     for idx, rec in enumerate(_read_jsonl(preds_jsonl)):
         total += 1
@@ -354,6 +412,24 @@ def diagnose(
         conv_id, turn_id = _extract_conv_turn_id(rec, idx)
 
         evidence = _evidence_list(rec)
+
+        gold_ent = _extract_gold_answer_entity(rec)
+        ranked = _extract_ranked_entities(rec)
+        gold_rank = _rank_of_gold(ranked, gold_ent)
+        if gold_rank is None:
+            gold_rank_counter["__MISSING__"] += 1
+        else:
+            # bucketize
+            if gold_rank <= 1:
+                gold_rank_counter["<=1"] += 1
+            elif gold_rank <= 3:
+                gold_rank_counter["<=3"] += 1
+            elif gold_rank <= 5:
+                gold_rank_counter["<=5"] += 1
+            elif gold_rank <= 10:
+                gold_rank_counter["<=10"] += 1
+            else:
+                gold_rank_counter[">10"] += 1
 
         em = False
         if gold_answer:
@@ -377,6 +453,7 @@ def diagnose(
             question_text=question,
             gold_answer=gold_answer,
             gold_tail=gold_tail,
+            gold_rank=gold_rank,
         )
 
         oracle_flag: Optional[bool] = None
@@ -402,6 +479,7 @@ def diagnose(
                 evidence=evidence,
                 label=label,
                 oracle_answer_in_topic=oracle_flag,
+                gold_rank=gold_rank,
             )
             if len(lst) < max_examples_per_label:
                 lst.append(fc)
@@ -424,6 +502,7 @@ def diagnose(
             "head_used": c.head_used,
             "evidence": c.evidence,
             "oracle_answer_in_topic": c.oracle_answer_in_topic,
+            "gold_rank": c.gold_rank,
         }
 
     stats = {
@@ -432,6 +511,7 @@ def diagnose(
         "total_fail": total_fail,
         "labels": {},
         "top_relation_candidate_in_fail": relation_counter_in_fail.most_common(30),
+        "gold_rank_distribution": dict(gold_rank_counter),
         "examples": {},
     }
 
