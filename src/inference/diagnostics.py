@@ -11,6 +11,8 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
+from datetime import datetime
+from dateutil import parser as date_parser
 
 
 _PREFIX_RE = re.compile(r"^(YEAR|COUNT|BOOL)::", flags=re.IGNORECASE)
@@ -26,6 +28,52 @@ def normalize_answer(s: Any) -> str:
     while t.endswith(".") or t.endswith("。"):
         t = t[:-1].rstrip()
     return t
+
+
+def _match_date(pred: Any, gold: Any) -> bool:
+    """归一化日期对比。如果能解析出相同日期（或同一年），则返回 True。"""
+    s_pred = str(pred).strip()
+    s_gold = str(gold).strip()
+    if not s_pred or not s_gold:
+        return False
+
+    # 1. 快速检查：至少看起来像日期（含数字，或者月份名称，或者分隔符）
+    # 避免把 "1" 和 "1" 解析成当前日期而由 match date 处理（虽然 normalize_answer 已经处理了）
+    # 但如果 "10" 和 "10" 呢？
+    # 规则：必须包含 4位年份，或者月份名
+    has_year = re.search(r"\d{4}", s_pred) and re.search(r"\d{4}", s_gold)
+    has_month = False
+    months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+    if any(m in s_pred.lower() for m in months) or any(m in s_gold.lower() for m in months):
+        has_month = True
+    
+    if not (has_year or has_month):
+        return False
+
+    try:
+        # 使用一个非常早的默认日期，避免补全到“今年”造成误判
+        default_dt = datetime(1000, 1, 1)
+        d1 = date_parser.parse(s_pred, default=default_dt, fuzzy=True)
+        d2 = date_parser.parse(s_gold, default=default_dt, fuzzy=True)
+
+        if d1.year == 1000 or d2.year == 1000:
+             # 解析失败（使用了默认值）
+             return False
+
+        #精确匹配
+        if d1.date() == d2.date():
+            return True
+        
+        # 年份级匹配：如果有一方只提供了年份（或只解析出年份），且年份相同
+        # 简单判断：输入��符串是否只有年份？
+        if d1.year == d2.year:
+            if re.fullmatch(r"\d{4}", s_pred) or re.fullmatch(r"\d{4}", s_gold):
+                return True
+
+    except Exception:
+        pass
+
+    return False
 
 
 def _read_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
@@ -434,6 +482,8 @@ def diagnose(
         em = False
         if gold_answer:
             em = normalize_answer(pred_answer) == normalize_answer(gold_answer)
+            if not em:
+                em = _match_date(pred_answer, gold_answer)
 
         if only_failures and em:
             continue

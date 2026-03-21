@@ -440,10 +440,7 @@ def run_inference(
     print_stdout: bool,
     allow_current_turn_evidence: bool,
     enable_progress: bool = True,
-    disable_wikidata: bool = False,
-    use_local_wikidata_el: bool = False,
     local_wikidata_el_dict: str = "",
-    use_local_wikidata_kg: bool = False,
     local_wikidata_kg_dir: str = "",
     local_wikidata_kg_split: str = "train",
     write_topic_subgraph: bool = False,
@@ -461,9 +458,7 @@ def run_inference(
     verbalizer = Verbalizer()
     controller_mod = Controller()
     wikidata_retriever = WikidataRetriever(
-        use_local_el=bool(use_local_wikidata_el),
         local_el_dict_path=str(local_wikidata_el_dict) if _norm(local_wikidata_el_dict) else None,
-        use_local_wikidata_kg=bool(use_local_wikidata_kg),
         local_wikidata_kg_dir=str(local_wikidata_kg_dir) if _norm(local_wikidata_kg_dir) else None,
         local_wikidata_kg_split=str(local_wikidata_kg_split or "train"),
     )
@@ -629,32 +624,23 @@ def run_inference(
                     pred_answer_value = ""
                     ranked_pack = {"pred_ranked_entities": [], "pred_ranked_entity_scores": []}
                     vr = verbalizer.verbalize_generate(q_t)
-                else:  # USE_WIKIDATA (not implemented in this repo)
-                    if disable_wikidata:
+                else:  # USE_WIKIDATA
+                    try:
+                        wd_res, wd_query_dbg = wikidata_retriever.retrieve(
+                            head_candidates=gr.head_candidates,
+                            relation_candidate=gr.relation_candidate,
+                            question_text=q_t,
+                            top_k=top_k,
+                        )
+                        evidence = list(wd_res.evidence)
+                        wikidata_query = wd_query_dbg
+                    except Exception as e:
                         evidence = []
                         wikidata_query = {
-                            "disabled": True,
-                            "reason": "disable_wikidata flag set",
+                            "error": str(e),
+                            "relation_candidate": gr.relation_candidate,
+                            "head_candidates": list(gr.head_candidates)[:10],
                         }
-                    else:
-                        try:
-                            wd_res, wd_query_dbg = wikidata_retriever.retrieve(
-                                head_candidates=gr.head_candidates,
-                                relation_candidate=gr.relation_candidate,
-                                question_text=q_t,
-                                top_k=top_k,
-                            )
-                            evidence = list(wd_res.evidence)
-                            wikidata_query = wd_query_dbg
-                        except Exception as e:
-                            # network or parsing failure: keep graceful fallback
-                            evidence = []
-                            wikidata_query = {
-                                "error": str(e),
-                                "relation_candidate": gr.relation_candidate,
-                                "head_candidates": list(gr.head_candidates)[:10],
-                            }
-                        # still fall through to ranking with empty evidence
 
                     rrk = evidence_ranker.rank(candidates=evidence, relation=gr.relation_candidate, top_m=1)
                     final_evidence = rrk.evidence
@@ -830,30 +816,12 @@ def main() -> None:
         help="若指定：禁用进度输出（tqdm/定期 progress 行）。默认开启。",
     )
     ap.add_argument(
-        "--disable_wikidata",
-        action="store_true",
-        help="若指定：完全禁用 Wikidata 检索（controller 即使给 USE_WIKIDATA 也会跳过网络调用）。",
-    )
-    ap.add_argument(
-        "--use_local_wikidata_el",
-        action="store_true",
-        help="若指定：使用本地 mention->QID 字典做实体链接（减少/避免在线 EL）。",
-    )
-    ap.add_argument(
         "--local_wikidata_el_dict",
         type=str,
         default="",
-        help="本地实体链接字典路径（格式：mention\\tQID，每行一条）。与 --use_local_wikidata_el 搭配使用。",
+        help="本地实体链接字典路径（格式：mention\\tQID，每行一条）。Always used now.",
     )
 
-    ap.add_argument(
-        "--use_local_wikidata_kg",
-        action="store_true",
-        help=(
-            "若指定：使用 data/data/wikidata 下的本地三元组(entities.dict/relations.dict/train.txt)做离线检索；"
-            "完全不进行 Wikidata 在线 API 请求。"
-        ),
-    )
     ap.add_argument(
         "--local_wikidata_kg_dir",
         type=str,
@@ -909,10 +877,7 @@ def main() -> None:
         print_stdout=not bool(args.no_print),
         allow_current_turn_evidence=bool(args.allow_current_turn_evidence),
         enable_progress=not bool(args.no_progress),
-        disable_wikidata=bool(args.disable_wikidata),
-        use_local_wikidata_el=bool(args.use_local_wikidata_el),
         local_wikidata_el_dict=str(args.local_wikidata_el_dict),
-        use_local_wikidata_kg=bool(args.use_local_wikidata_kg),
         local_wikidata_kg_dir=str(args.local_wikidata_kg_dir),
         local_wikidata_kg_split=str(args.local_wikidata_kg_split),
         write_topic_subgraph=bool(args.write_topic_subgraph),
@@ -922,3 +887,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
