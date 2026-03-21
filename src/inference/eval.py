@@ -96,6 +96,68 @@ def _extract_gold_fields(rec: Dict[str, Any]) -> Tuple[str, str, str, str]:
     return str(gold_answer), str(gold_topic), str(gold_relation), str(gold_tail)
 
 
+def _extract_qid(x: Any) -> str:
+    if x is None:
+        return ""
+    s = str(x).strip()
+    if not s:
+        return ""
+    m = re.search(r"(?:^|/)(Q\d+)(?:$|[?#/])", s, flags=re.IGNORECASE)
+    if m:
+        return m.group(1).upper()
+    if re.fullmatch(r"Q\d+", s, flags=re.IGNORECASE):
+        return s.upper()
+    return ""
+
+
+def _extract_gold_answer_entity(rec: Dict[str, Any]) -> str:
+    """Best-effort gold entity id.
+
+    Priority:
+      1) gold_answer_entity / gold_answer_qid if present in JSONL
+      2) gold_tail / gold_answer_text if it contains a QID or Wikidata URL
+    """
+    for k in ("gold_answer_qid", "gold_answer_entity", "gold_entity", "answer_entity"):
+        q = _extract_qid(rec.get(k))
+        if q:
+            return q
+    gold_answer, _, _, gold_tail = _extract_gold_fields(rec)
+    q = _extract_qid(gold_tail)
+    if q:
+        return q
+    return _extract_qid(gold_answer)
+
+
+def _extract_ranked_entities(rec: Dict[str, Any]) -> List[str]:
+    ranked = rec.get("pred_ranked_entities")
+    if ranked is None:
+        return []
+    if isinstance(ranked, list):
+        return [str(x) for x in ranked if str(x).strip()]
+    return [str(ranked)]
+
+
+def _to_qid_or_self(x: str) -> str:
+    q = _extract_qid(x)
+    return q if q else normalize_answer(x)
+
+
+def _rank_of_gold(ranked: List[str], gold: str) -> Optional[int]:
+    if not ranked or not gold:
+        return None
+    gold_key = _to_qid_or_self(gold)
+    # match either by QID (preferred) or by normalized surface form
+    for i, item in enumerate(ranked):
+        if _to_qid_or_self(str(item)) == gold_key:
+            return i + 1
+    return None
+
+
+def _has_non_empty_ranked(rec: Dict[str, Any]) -> bool:
+    ranked = rec.get("pred_ranked_entities")
+    return isinstance(ranked, list) and any(str(x).strip() for x in ranked)
+
+
 def _extract_pred_answer_value(rec: Dict[str, Any]) -> str:
     # 优先用 pred_answer_value（main_infer 已写入）
     v = rec.get("pred_answer_value")
@@ -168,6 +230,10 @@ def evaluate_jsonl(preds_jsonl: Path) -> Dict[str, Any]:
     n_with_gold_topic = 0
     n_with_gold_relation = 0
 
+    # ranking metrics (optional; only if gold entity and ranked list are present)
+    rank_ranks: List[int] = []
+    hits_at = {1: 0, 3: 0, 5: 0, 10: 0}
+
     for rec in _read_jsonl(preds_jsonl):
         # controller (optional)
         c_dec = _safe_get(rec, ["controller", "decision"], "")
@@ -224,6 +290,17 @@ def evaluate_jsonl(preds_jsonl: Path) -> Dict[str, Any]:
             rel_ok=rel_ok,
         )
 
+        # ranking metrics: consume pred_ranked_entities + gold answer entity (QID)
+        gold_ent = _extract_gold_answer_entity(rec)
+        ranked = _extract_ranked_entities(rec)
+        if gold_ent and ranked:
+            r = _rank_of_gold(ranked, gold_ent)
+            if r is not None:
+                rank_ranks.append(int(r))
+                for k in list(hits_at.keys()):
+                    if r <= k:
+                        hits_at[k] += 1
+
     metrics = {
         "preds_jsonl": str(preds_jsonl),
         "overall": overall.to_metrics(),
@@ -235,6 +312,15 @@ def evaluate_jsonl(preds_jsonl: Path) -> Dict[str, Any]:
             "n_with_gold_answer": n_with_gold_answer,
             "n_with_gold_topic": n_with_gold_topic,
             "n_with_gold_relation": n_with_gold_relation,
+        },
+        "ranking": {
+            "n_ranked": len(rank_ranks),
+            "hits@1": (hits_at[1] / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
+            "hits@3": (hits_at[3] / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
+            "hits@5": (hits_at[5] / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
+            "hits@10": (hits_at[10] / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
+            "mrr": (sum(1.0 / r for r in rank_ranks) / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
+            "mean_rank": (sum(rank_ranks) / max(len(rank_ranks), 1)) if rank_ranks else 0.0,
         },
     }
     return metrics
@@ -249,6 +335,20 @@ def _print_metrics(metrics: Dict[str, Any], *, top_relations: int = 50) -> None:
     print(f"Routing Accuracy: {overall.get('routing_accuracy'):.4f}")
     print(f"Evidence Contains Gold Rate: {overall.get('evidence_contains_gold_rate'):.4f}")
     print(f"Relation Accuracy: {overall.get('relation_accuracy'):.4f}")
+
+    ranking = metrics.get("ranking", {})
+    if isinstance(ranking, dict) and ranking.get("n_ranked", 0):
+        print("\n=== Ranking (from pred_ranked_entities) ===")
+        print(f"n_ranked: {ranking.get('n_ranked')}")
+        print(f"Hits@1: {ranking.get('hits@1'):.4f}")
+        print(f"Hits@3: {ranking.get('hits@3'):.4f}")
+        print(f"Hits@5: {ranking.get('hits@5'):.4f}")
+        print(f"Hits@10: {ranking.get('hits@10'):.4f}")
+        print(f"Mean rank: {ranking.get('mean_rank'):.4f}")
+        print(f"MRR: {ranking.get('mrr'):.6f}")
+    else:
+        print("\n=== Ranking (from pred_ranked_entities) ===")
+        print("n_ranked: 0 (no gold entity id or no ranked list in JSONL)")
 
     print("\n=== By relation_candidate (show limited) ===")
     br: Dict[str, Any] = metrics.get("by_relation_candidate", {})
