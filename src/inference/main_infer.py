@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 from dataclasses import asdict, is_dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -27,6 +28,73 @@ from src.inference.verbalizer import Verbalizer
 from src.inference.controller import Controller
 from src.inference.wikidata_retriever import WikidataRetriever
 from src.inference.evidence_ranker import EvidenceRanker
+
+
+def _maybe_tqdm(it: Any, *, desc: str = "", total: Optional[int] = None, enable: bool = True) -> Any:
+    """Best-effort tqdm wrapper.
+
+    - If tqdm is installed and enable=True, return tqdm(it,...)
+    - Otherwise, return the iterator unchanged.
+    """
+    if not enable:
+        return it
+    try:
+        from tqdm import tqdm  # type: ignore
+
+        return tqdm(it, desc=desc, total=total)
+    except Exception:
+        return it
+
+
+def _fmt_seconds(s: float) -> str:
+    s = max(0.0, float(s))
+    if s < 60:
+        return f"{s:.1f}s"
+    m, sec = divmod(int(s), 60)
+    if m < 60:
+        return f"{m}m{sec:02d}s"
+    h, m = divmod(m, 60)
+    return f"{h}h{m:02d}m{sec:02d}s"
+
+
+class _Progress:
+    def __init__(self, *, enable: bool = True) -> None:
+        self.enable = bool(enable)
+        self.t0 = time.time()
+        self.last_print = 0.0
+        self.turn_done = 0
+
+    def maybe_print(
+        self,
+        *,
+        conv_i: int,
+        conv_total: int,
+        turn_i: int,
+        turn_total: int,
+        conv_id: str,
+        decision: str,
+        every_s: float = 2.0,
+    ) -> None:
+        if not self.enable:
+            return
+        now = time.time()
+        if (now - self.last_print) < float(every_s):
+            return
+        self.last_print = now
+        elapsed = now - self.t0
+        done = max(self.turn_done, 1)
+        rate = elapsed / done
+        # ETA computed if total turns known (>0)
+        eta = ""
+        if turn_total > 0 and conv_total > 0:
+            # use within-conv eta as minimal reliable
+            remain = max(turn_total - (turn_i + 1), 0)
+            eta = f" ETA~{_fmt_seconds(remain * rate)}"
+        print(
+            f"[progress] conv {conv_i+1}/{conv_total} ({conv_id}) turn {turn_i+1}/{turn_total} "
+            f"done={self.turn_done} elapsed={_fmt_seconds(elapsed)}{eta} decision={decision}",
+            flush=True,
+        )
 
 
 def _read_json(path: Path) -> Any:
@@ -113,13 +181,121 @@ def _turn_id(turn: Dict[str, Any], fallback_idx0: int) -> int:
 
 def _as_serializable_evidence(ev: EvidenceTriple) -> Dict[str, Any]:
     if is_dataclass(ev):
-        return asdict(ev)
+        d = asdict(ev)
+    else:
+        d = {
+            "head": getattr(ev, "head", ""),
+            "relation": getattr(ev, "relation", ""),
+            "tail": getattr(ev, "tail", ""),
+            "turn_id": getattr(ev, "turn_id", None),
+            "scope": getattr(ev, "scope", ""),
+        }
+
+    # Best-effort: if tail looks like a Wikidata entity URL, also expose tail_qid.
+    tail = _norm(d.get("tail"))
+    m = re.search(r"(?:^|/)(Q\d+)(?:$|[?#/])", tail)
+    if m:
+        d.setdefault("tail_qid", m.group(1))
+    return d
+
+
+def _extract_qid(x: Any) -> str:
+    """Extract Wikidata QID from url / raw string. Return "" if none."""
+    s = _norm(x)
+    if not s:
+        return ""
+    m = re.search(r"(?:^|/)(Q\d+)(?:$|[?#/])", s)
+    if m:
+        return m.group(1)
+    # raw Q123
+    if re.fullmatch(r"Q\d+", s, flags=re.IGNORECASE):
+        return s.upper()
+    return ""
+
+
+def _extract_turn_answer_qid(turn: Dict[str, Any]) -> str:
+    """Best-effort gold answer entity id (QID) from turn fields."""
+    # preferred explicit field
+    q = _extract_qid(turn.get("answer_qid"))
+    if q:
+        return q
+    # sometimes answer is a Wikidata URL
+    q = _extract_qid(turn.get("answer"))
+    if q:
+        return q
+    return ""
+
+
+def _build_ranked_entities(
+    *,
+    evidence_candidates: List[EvidenceTriple],
+    relation: str,
+    top_n: int,
+) -> Dict[str, Any]:
+    """Return {pred_ranked_entities, pred_ranked_entity_scores}.
+
+    We reuse EvidenceRanker internal ordering by calling rank(top_m=len(items)),
+    then take the tails in order, deduplicate, and keep top_n.
+    """
+    out_entities: List[str] = []
+    out_scores: List[float] = []
+    if not evidence_candidates:
+        return {"pred_ranked_entities": [], "pred_ranked_entity_scores": []}
+
+    try:
+        rrk_all = EvidenceRanker().rank(candidates=evidence_candidates, relation=relation, top_m=len(evidence_candidates))
+        ranked_evs: List[EvidenceTriple] = list(rrk_all.evidence)
+        dbg_scores = rrk_all.rank_debug.get("scores", []) if isinstance(rrk_all.rank_debug, dict) else []
+    except Exception:
+        ranked_evs = list(evidence_candidates)
+        dbg_scores = []
+
+    score_by_key: Dict[tuple, float] = {}
+    # Convert tuple score -> a float proxy (smaller tuple = better => higher float)
+    for row in dbg_scores:
+        if not isinstance(row, dict):
+            continue
+        try:
+            tup = tuple(int(x) for x in (row.get("score") or []))
+        except Exception:
+            continue
+        k = (
+            _norm(row.get("head")),
+            _norm(row.get("relation")),
+            _norm(row.get("tail")),
+            row.get("turn_id"),
+            _norm(row.get("scope")),
+        )
+        # more negative is worse; we invert the sum to get a monotonic proxy
+        score_by_key[k] = -float(sum(tup))
+
+    seen: set[str] = set()
+    for ev in ranked_evs:
+        # Prefer QID if available, otherwise use tail string.
+        tail_raw = _norm(getattr(ev, "tail", ""))
+        tail_qid = _extract_qid(tail_raw)
+        tail = tail_qid or tail_raw
+        if not tail:
+            continue
+        if tail in seen:
+            continue
+        seen.add(tail)
+        out_entities.append(tail)
+        k = (tail,)
+        ev_key = (
+            _norm(getattr(ev, "head", "")),
+            _norm(getattr(ev, "relation", "")),
+            tail_raw,
+            getattr(ev, "turn_id", None),
+            _norm(getattr(ev, "scope", "")),
+        )
+        out_scores.append(score_by_key.get(ev_key, float("nan")))
+        if len(out_entities) >= max(0, int(top_n)):
+            break
+
     return {
-        "head": getattr(ev, "head", ""),
-        "relation": getattr(ev, "relation", ""),
-        "tail": getattr(ev, "tail", ""),
-        "turn_id": getattr(ev, "turn_id", None),
-        "scope": getattr(ev, "scope", ""),
+        "pred_ranked_entities": out_entities,
+        "pred_ranked_entity_scores": out_scores,
     }
 
 
@@ -263,6 +439,13 @@ def run_inference(
     recent_n_turns: int,
     print_stdout: bool,
     allow_current_turn_evidence: bool,
+    enable_progress: bool = True,
+    disable_wikidata: bool = False,
+    use_local_wikidata_el: bool = False,
+    local_wikidata_el_dict: str = "",
+    use_local_wikidata_kg: bool = False,
+    local_wikidata_kg_dir: str = "",
+    local_wikidata_kg_split: str = "train",
     write_topic_subgraph: bool = False,
     topic_subgraph_max_triples: int = 300,
 ) -> Dict[str, Any]:
@@ -277,7 +460,13 @@ def run_inference(
     executor = KGExecutor(kg)
     verbalizer = Verbalizer()
     controller_mod = Controller()
-    wikidata_retriever = WikidataRetriever()
+    wikidata_retriever = WikidataRetriever(
+        use_local_el=bool(use_local_wikidata_el),
+        local_el_dict_path=str(local_wikidata_el_dict) if _norm(local_wikidata_el_dict) else None,
+        use_local_wikidata_kg=bool(use_local_wikidata_kg),
+        local_wikidata_kg_dir=str(local_wikidata_kg_dir) if _norm(local_wikidata_kg_dir) else None,
+        local_wikidata_kg_split=str(local_wikidata_kg_split or "train"),
+    )
     evidence_ranker = EvidenceRanker()
 
     results: Dict[str, Any] = {
@@ -293,7 +482,14 @@ def run_inference(
     writer = writer_cm.__enter__() if writer_cm is not None else None
 
     try:
-        for i, conv in enumerate(dialogues):
+        prog = _Progress(enable=enable_progress)
+        conv_iter = _maybe_tqdm(
+            list(enumerate(dialogues)),
+            desc="Conversations",
+            total=len(dialogues),
+            enable=enable_progress,
+        )
+        for i, conv in conv_iter:
             conv_id = _get_conv_id(conv, i)
             turns_all = _get_turns(conv)
 
@@ -311,7 +507,13 @@ def run_inference(
 
             history_turns: List[Dict[str, Any]] = []
 
-            for idx, turn in enumerate(turns_all):
+            turn_iter = _maybe_tqdm(
+                list(enumerate(turns_all)),
+                desc=f"Turns[{conv_id}]",
+                total=len(turns_all),
+                enable=enable_progress,
+            )
+            for idx, turn in turn_iter:
                 current_turn_id = _turn_id(turn, idx)  # 0-based
                 q_t = _get_question_text(turn)
 
@@ -319,6 +521,18 @@ def run_inference(
                 gold_answer_text = _norm(turn.get("answer_text"))
                 gold_topic = _norm(turn.get("topic"))
                 gold_relation = _predict_relation_from_question(_get_original_question_text(turn))
+                gold_answer_qid = _extract_turn_answer_qid(turn)
+
+                # optional entity ids (best-effort): propagate QID if present in seed_entities
+                gold_seed_entity_qid = ""
+                cand_seed_entities = conv.get("seed_entities") or conv.get("seed_entity") or []
+                if isinstance(cand_seed_entities, list) and cand_seed_entities:
+                    # try first seed entity
+                    se0 = cand_seed_entities[0]
+                    if isinstance(se0, dict):
+                        gold_seed_entity_qid = _extract_qid(se0.get("entity") or se0.get("qid"))
+                    else:
+                        gold_seed_entity_qid = _extract_qid(se0)
 
                 rr = router.route(q_t, segments)
                 assigned_seg: Optional[Dict[str, Any]] = None
@@ -365,6 +579,16 @@ def run_inference(
                     allow_current_turn_evidence=allow_current_turn_evidence,
                 )
 
+                prog.turn_done += 1
+                prog.maybe_print(
+                    conv_i=i,
+                    conv_total=len(dialogues),
+                    turn_i=idx,
+                    turn_total=len(turns_all),
+                    conv_id=conv_id,
+                    decision=str(getattr(ctrl, "decision", "")),
+                )
+
                 evidence: List[EvidenceTriple] = []
                 wikidata_query = ctrl.wikidata_query
                 final_evidence: List[EvidenceTriple] = []
@@ -385,47 +609,67 @@ def run_inference(
                     final_evidence = rrk.evidence
                     pred_answer_value = rrk.pred_answer_value
                     rank_debug = rrk.rank_debug
+                    ranked_pack = _build_ranked_entities(
+                        evidence_candidates=evidence,
+                        relation=gr.relation_candidate,
+                        top_n=(int(top_k) if int(top_k) > 10 else 10),
+                    )
                     vr = verbalizer.verbalize(q_t, final_evidence)
                 elif ctrl.decision == "ASK_CLARIFY":
                     # keep it deterministic for eval: no evidence
                     evidence = []
                     final_evidence = []
                     pred_answer_value = ""
+                    ranked_pack = {"pred_ranked_entities": [], "pred_ranked_entity_scores": []}
                     vr = verbalizer.verbalize_clarify(q_t)
                 elif ctrl.decision == "GENERATE":
                     # fallback generation template (you can swap to an LLM later)
                     evidence = []
                     final_evidence = []
                     pred_answer_value = ""
+                    ranked_pack = {"pred_ranked_entities": [], "pred_ranked_entity_scores": []}
                     vr = verbalizer.verbalize_generate(q_t)
                 else:  # USE_WIKIDATA (not implemented in this repo)
-                    try:
-                        wd_res, wd_query_dbg = wikidata_retriever.retrieve(
-                            head_candidates=gr.head_candidates,
-                            relation_candidate=gr.relation_candidate,
-                            question_text=q_t,
-                            top_k=top_k,
-                        )
-                        evidence = list(wd_res.evidence)
-                        wikidata_query = wd_query_dbg
-                    except Exception as e:
-                        # network or parsing failure: keep graceful fallback
+                    if disable_wikidata:
                         evidence = []
                         wikidata_query = {
-                            "error": str(e),
-                            "relation_candidate": gr.relation_candidate,
-                            "head_candidates": list(gr.head_candidates)[:10],
+                            "disabled": True,
+                            "reason": "disable_wikidata flag set",
                         }
-                    # still fall through to ranking with empty evidence
+                    else:
+                        try:
+                            wd_res, wd_query_dbg = wikidata_retriever.retrieve(
+                                head_candidates=gr.head_candidates,
+                                relation_candidate=gr.relation_candidate,
+                                question_text=q_t,
+                                top_k=top_k,
+                            )
+                            evidence = list(wd_res.evidence)
+                            wikidata_query = wd_query_dbg
+                        except Exception as e:
+                            # network or parsing failure: keep graceful fallback
+                            evidence = []
+                            wikidata_query = {
+                                "error": str(e),
+                                "relation_candidate": gr.relation_candidate,
+                                "head_candidates": list(gr.head_candidates)[:10],
+                            }
+                        # still fall through to ranking with empty evidence
 
                     rrk = evidence_ranker.rank(candidates=evidence, relation=gr.relation_candidate, top_m=1)
                     final_evidence = rrk.evidence
                     pred_answer_value = rrk.pred_answer_value
                     rank_debug = rrk.rank_debug
+                    ranked_pack = _build_ranked_entities(
+                        evidence_candidates=evidence,
+                        relation=gr.relation_candidate,
+                        top_n=max(10, int(top_k)),
+                    )
                     # attach rank debug into wikidata_query for easier diagnostics
                     if isinstance(wikidata_query, dict) and "rank_debug" not in wikidata_query:
-                        wikidata_query = dict(wikidata_query)
-                        wikidata_query["rank_debug"] = rrk.rank_debug
+                        wd_q: Dict[str, Any] = dict(wikidata_query)
+                        wd_q["rank_debug"] = rrk.rank_debug
+                        wikidata_query = wd_q
 
                     vr = verbalizer.verbalize(q_t, final_evidence)
 
@@ -462,6 +706,8 @@ def run_inference(
                     "candidate_evidence": [_as_serializable_evidence(ev) for ev in evidence],
                     "answer_text": vr.answer_text,
                     "pred_answer_value": pred_answer_value,
+                    "pred_ranked_entities": ranked_pack.get("pred_ranked_entities", []),
+                    "pred_ranked_entity_scores": ranked_pack.get("pred_ranked_entity_scores", []),
                     "evidence_lines": vr.evidence_lines,
                 }
                 conv_out["turns"].append(turn_out)
@@ -495,6 +741,8 @@ def run_inference(
                         # pred
                         "pred_answer_text": vr.answer_text,
                         "pred_answer_value": pred_answer_value,
+                        "pred_ranked_entities": ranked_pack.get("pred_ranked_entities", []),
+                        "pred_ranked_entity_scores": ranked_pack.get("pred_ranked_entity_scores", []),
                         "pred_evidence": [_as_serializable_evidence(ev) for ev in final_evidence],
                         "pred_candidate_evidence": [_as_serializable_evidence(ev) for ev in evidence],
                         "rank_debug": rank_debug,
@@ -508,8 +756,10 @@ def run_inference(
                         "gating": turn_out["gating"],
                         # gold (for eval only)
                         "gold_answer_text": gold_answer_text,
+                        "gold_answer_qid": gold_answer_qid,
                         "gold_topic": gold_topic,
                         "gold_relation": gold_relation,
+                        "gold_seed_entity_qid": gold_seed_entity_qid,
                         # optional: for diagnostics --enable_oracle
                         "topic_subgraph": topic_subgraph,
                         # meta
@@ -575,6 +825,48 @@ def main() -> None:
     ap.add_argument("--recent_n_turns", type=int, default=3)
     ap.add_argument("--no_print", action="store_true")
     ap.add_argument(
+        "--no_progress",
+        action="store_true",
+        help="若指定：禁用进度输出（tqdm/定期 progress 行）。默认开启。",
+    )
+    ap.add_argument(
+        "--disable_wikidata",
+        action="store_true",
+        help="若指定：完全禁用 Wikidata 检索（controller 即使给 USE_WIKIDATA 也会跳过网络调用）。",
+    )
+    ap.add_argument(
+        "--use_local_wikidata_el",
+        action="store_true",
+        help="若指定：使用本地 mention->QID 字典做实体链接（减少/避免在线 EL）。",
+    )
+    ap.add_argument(
+        "--local_wikidata_el_dict",
+        type=str,
+        default="",
+        help="本地实体链接字典路径（格式：mention\\tQID，每行一条）。与 --use_local_wikidata_el 搭配使用。",
+    )
+
+    ap.add_argument(
+        "--use_local_wikidata_kg",
+        action="store_true",
+        help=(
+            "若指定：使用 data/data/wikidata 下的本地三元组(entities.dict/relations.dict/train.txt)做离线检索；"
+            "完全不进行 Wikidata 在线 API 请求。"
+        ),
+    )
+    ap.add_argument(
+        "--local_wikidata_kg_dir",
+        type=str,
+        default="",
+        help="本地 Wikidata KG 目录（默认 <repo_root>/data/data/wikidata）。",
+    )
+    ap.add_argument(
+        "--local_wikidata_kg_split",
+        type=str,
+        default="train",
+        help="使用本地 KG 的哪个 split 文件：train/valid/test/train_pre（默认 train）。",
+    )
+    ap.add_argument(
         "--allow_current_turn_evidence",
         action="store_true",
         help="若指定：允许使用 turn_id == 当前 turn 的证据（离线评测更容易）。不指定则严格只用 < 当前 turn。",
@@ -616,6 +908,13 @@ def main() -> None:
         recent_n_turns=int(args.recent_n_turns),
         print_stdout=not bool(args.no_print),
         allow_current_turn_evidence=bool(args.allow_current_turn_evidence),
+        enable_progress=not bool(args.no_progress),
+        disable_wikidata=bool(args.disable_wikidata),
+        use_local_wikidata_el=bool(args.use_local_wikidata_el),
+        local_wikidata_el_dict=str(args.local_wikidata_el_dict),
+        use_local_wikidata_kg=bool(args.use_local_wikidata_kg),
+        local_wikidata_kg_dir=str(args.local_wikidata_kg_dir),
+        local_wikidata_kg_split=str(args.local_wikidata_kg_split),
         write_topic_subgraph=bool(args.write_topic_subgraph),
         topic_subgraph_max_triples=int(args.topic_subgraph_max_triples),
     )
