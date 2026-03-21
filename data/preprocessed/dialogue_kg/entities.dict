@@ -1,193 +1,195 @@
-05 October 2005	0
-1 September 1935	1
-10 October 1971	2
-11 July 1899	3
-14 May 2013	4
-17 November 1983	5
-1Q84	6
-21 September 1937	7
-21 September 1947	8
-22 June 1964	9
-26 August 2003	10
-27 August 1953	11
-27 January 1813	12
-9 May 1920	13
-Adventures of Huckleberry Finn	14
-Agatha Christie	15
-Alex Garland	16
-Alfred A. Knopf	17
-Artemis Fowl	18
-BOOL::No	19
-BOOL::Yes	20
-Berkshire	21
-Best Novel	22
-Bill Denbrough	23
-Bloemfontein	24
-Bulgakov	25
-COUNT::12	26
-COUNT::3	27
-COUNT::6	28
-COUNT::7	29
-Captain Trips	30
-Chapman & Hall	31
-Charles Dickens	32
-Charlie the Choo-Choo: From the World of The Dark Tower	33
-Charlotte's Web	34
-Chatto & Windus	35
-Christopher Paolini	36
-Cirilla Fiona Elen Riannon	37
-Crown Publishing Group	38
-Dan Brown	39
-Derry	40
-Digital Fortress	41
-Donald Trump	42
-Doubleday	43
-Doubleday; Bantam Books	44
-Doug Cockle	45
-Douglas Adams	46
-Dr. John Watson	47
-E. B. White	48
-Eddie Kapsbrack	49
-Edith Tolkien	50
-Edward Cullen	51
-Elizabeth Bennet	52
-Ender's Game	53
-England	54
-English	55
-Eoin Colfer	56
-Eragon	57
-Ernest Cline	58
-Exeter	59
-F. Scott Fitzgerald	60
-Fiction	61
-Fire and Fury	62
-Fitzwilliam Darcy	63
-Foundation	64
-Foundation and Empire	65
-Frances Scott Fitzgerald	66
-Glinda the Good Witch	67
-Great Expectations	68
-Haper	69
-Harper Lee	70
-Harry Potter	71
-Harry Potter and the Chamber of Secrets	72
-Harry Potter and the Deathly Hallows	73
-Harry Potter and the Goblet of Fire	74
-Harry Potter and the Philosopher's Stone	75
-Harry Potter and the Philosophers Stone	76
-Harry Potter and the Prisoner of Azkaban	77
-Harry Potter and the Sorcerer's Stone	78
-Haruki Murakami	79
-He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	80
-Henry Bowers	81
-Hermione Granger	82
-Homburg	83
-Huckleberry Finn	84
-IT	85
-Inferno	86
-Inside the Trump White House (English)	87
-Isaac Asimov	88
-Isabella "Bella" Swan	89
-J. K. Rowling	90
-J.K. Rowling	91
-Jane Austen	92
-Japan	93
-Jaws	94
-Joanne Kathleen	95
-John Francis Reuel Tolkien	96
-Kafka on the shore	97
-Ken Kesey	98
-L. Frank Baum	99
-London	100
-London;Kent	101
-Mansfield Park	102
-Mark Twain	103
-Markus Heitz	104
-Michael Wolff	105
-Mikhail Bulgakov	106
-Mikhail Lermontov	107
-Miss Marple	108
-Mississippi River	109
-Mr. Mercedes	110
-National Security Agency	111
-Newbery Medal	112
-Newbury	113
-One Flew Over the Cuckoo's Nest	114
-Oregon	115
-Origin	116
-Orson Scott Card	117
-Peter Benchley	118
-Portland	119
-Pride and Prejudice	120
-Ready Player One	121
-Ready Player One was made into a movie.	122
-Ready Player One won the Promethus Award.	123
-Richard Adams	124
-Robert Mulligan	125
-Seville	126
-Sherlock Holmes	127
-Sir Arthur Conan Doyle	128
-Southern Gothic;Bildungsroman	129
-Stephen King	130
-Stephenie Meyer	131
-The Beach	132
-The Body in the Library	133
-The Dark Tower: The Gunslinger	134
-The Dwarves	135
-The Fellowship Of The Ring	136
-The Great Gatsby	137
-The Hitchhiker's Guide to the Galaxy	138
-The Hobbit	139
-The Hound of the Baskervilles	140
-The Lord Of The Rings	141
-The Memoirs of Sherlock Holmes	142
-The Return of Sherlock Holmes	143
-The Running Man	144
-The Shining	145
-The Stand	146
-The Suicide Prince	147
-The War of the Dwarves	148
-The Witcher	149
-The Wizard of Oz	150
-The Wonderful Wizard of Oz	151
-Thriller	152
-To Kill a Mockingbird	153
-Tom Sawyer	154
-Twilight	155
-United Kingdom	156
-United States of America	157
-Watership Down	158
-YEAR::1884	159
-YEAR::1891	160
-YEAR::1900	161
-YEAR::1920	162
-YEAR::1951	163
-YEAR::1952	164
-YEAR::1961	165
-YEAR::1962	166
-YEAR::1972	167
-YEAR::1974	168
-YEAR::1978	169
-YEAR::1985	170
-YEAR::1986	171
-YEAR::1997	172
-YEAR::1998	173
-YEAR::2003	174
-YEAR::2006	175
-YEAR::2007	176
-YEAR::2015	177
-YEAR::2018	178
-Zelda Fitzgerald	179
-adventure novel	180
-black comedy	181
-cartoonist	182
-children's literature	183
-children's novel;fairy tale	184
-pig	185
-post-apocalyptic;horror	186
-rabbit	187
-science fiction	188
-science fiction novel	189
-spider	190
-vampire	191
-young adult literature;speculative fiction novel	192
+<PAD>	0
+<UNK>	1
+05 October 2005	2
+1 September 1935	3
+10 October 1971	4
+11 July 1899	5
+14 May 2013	6
+17 November 1983	7
+1Q84	8
+21 September 1937	9
+21 September 1947	10
+22 June 1964	11
+26 August 2003	12
+27 August 1953	13
+27 January 1813	14
+9 May 1920	15
+Adventures of Huckleberry Finn	16
+Agatha Christie	17
+Alex Garland	18
+Alfred A. Knopf	19
+Artemis Fowl	20
+BOOL::No	21
+BOOL::Yes	22
+Berkshire	23
+Best Novel	24
+Bill Denbrough	25
+Bloemfontein	26
+Bulgakov	27
+COUNT::12	28
+COUNT::3	29
+COUNT::6	30
+COUNT::7	31
+Captain Trips	32
+Chapman & Hall	33
+Charles Dickens	34
+Charlie the Choo-Choo: From the World of The Dark Tower	35
+Charlotte's Web	36
+Chatto & Windus	37
+Christopher Paolini	38
+Cirilla Fiona Elen Riannon	39
+Crown Publishing Group	40
+Dan Brown	41
+Derry	42
+Digital Fortress	43
+Donald Trump	44
+Doubleday	45
+Doubleday; Bantam Books	46
+Doug Cockle	47
+Douglas Adams	48
+Dr. John Watson	49
+E. B. White	50
+Eddie Kapsbrack	51
+Edith Tolkien	52
+Edward Cullen	53
+Elizabeth Bennet	54
+Ender's Game	55
+England	56
+English	57
+Eoin Colfer	58
+Eragon	59
+Ernest Cline	60
+Exeter	61
+F. Scott Fitzgerald	62
+Fiction	63
+Fire and Fury	64
+Fitzwilliam Darcy	65
+Foundation	66
+Foundation and Empire	67
+Frances Scott Fitzgerald	68
+Glinda the Good Witch	69
+Great Expectations	70
+Haper	71
+Harper Lee	72
+Harry Potter	73
+Harry Potter and the Chamber of Secrets	74
+Harry Potter and the Deathly Hallows	75
+Harry Potter and the Goblet of Fire	76
+Harry Potter and the Philosopher's Stone	77
+Harry Potter and the Philosophers Stone	78
+Harry Potter and the Prisoner of Azkaban	79
+Harry Potter and the Sorcerer's Stone	80
+Haruki Murakami	81
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	82
+Henry Bowers	83
+Hermione Granger	84
+Homburg	85
+Huckleberry Finn	86
+IT	87
+Inferno	88
+Inside the Trump White House (English)	89
+Isaac Asimov	90
+Isabella "Bella" Swan	91
+J. K. Rowling	92
+J.K. Rowling	93
+Jane Austen	94
+Japan	95
+Jaws	96
+Joanne Kathleen	97
+John Francis Reuel Tolkien	98
+Kafka on the shore	99
+Ken Kesey	100
+L. Frank Baum	101
+London	102
+London;Kent	103
+Mansfield Park	104
+Mark Twain	105
+Markus Heitz	106
+Michael Wolff	107
+Mikhail Bulgakov	108
+Mikhail Lermontov	109
+Miss Marple	110
+Mississippi River	111
+Mr. Mercedes	112
+National Security Agency	113
+Newbery Medal	114
+Newbury	115
+One Flew Over the Cuckoo's Nest	116
+Oregon	117
+Origin	118
+Orson Scott Card	119
+Peter Benchley	120
+Portland	121
+Pride and Prejudice	122
+Ready Player One	123
+Ready Player One was made into a movie.	124
+Ready Player One won the Promethus Award.	125
+Richard Adams	126
+Robert Mulligan	127
+Seville	128
+Sherlock Holmes	129
+Sir Arthur Conan Doyle	130
+Southern Gothic;Bildungsroman	131
+Stephen King	132
+Stephenie Meyer	133
+The Beach	134
+The Body in the Library	135
+The Dark Tower: The Gunslinger	136
+The Dwarves	137
+The Fellowship Of The Ring	138
+The Great Gatsby	139
+The Hitchhiker's Guide to the Galaxy	140
+The Hobbit	141
+The Hound of the Baskervilles	142
+The Lord Of The Rings	143
+The Memoirs of Sherlock Holmes	144
+The Return of Sherlock Holmes	145
+The Running Man	146
+The Shining	147
+The Stand	148
+The Suicide Prince	149
+The War of the Dwarves	150
+The Witcher	151
+The Wizard of Oz	152
+The Wonderful Wizard of Oz	153
+Thriller	154
+To Kill a Mockingbird	155
+Tom Sawyer	156
+Twilight	157
+United Kingdom	158
+United States of America	159
+Watership Down	160
+YEAR::1884	161
+YEAR::1891	162
+YEAR::1900	163
+YEAR::1920	164
+YEAR::1951	165
+YEAR::1952	166
+YEAR::1961	167
+YEAR::1962	168
+YEAR::1972	169
+YEAR::1974	170
+YEAR::1978	171
+YEAR::1985	172
+YEAR::1986	173
+YEAR::1997	174
+YEAR::1998	175
+YEAR::2003	176
+YEAR::2006	177
+YEAR::2007	178
+YEAR::2015	179
+YEAR::2018	180
+Zelda Fitzgerald	181
+adventure novel	182
+black comedy	183
+cartoonist	184
+children's literature	185
+children's novel;fairy tale	186
+pig	187
+post-apocalyptic;horror	188
+rabbit	189
+science fiction	190
+science fiction novel	191
+spider	192
+vampire	193
+young adult literature;speculative fiction novel	194

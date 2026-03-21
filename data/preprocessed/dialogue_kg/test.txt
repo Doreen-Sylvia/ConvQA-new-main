@@ -1,595 +1,1190 @@
-Stephen King	<UNK>	BOOL::Yes
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
 Great Expectations	P136	black comedy
-Stephen King	<UNK>	Best Novel
-Great Expectations	<UNK>	London;Kent
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Pride and Prejudice	<UNK>	Jane Austen
-Stephen King	P577	21 September 1947
-Pride and Prejudice	<UNK>	27 January 1813
-Stephen King	<UNK>	IT
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Stephen King	<UNK>	The Running Man
-Pride and Prejudice	<UNK>	Mansfield Park
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-Stephen King	<UNK>	21 September 1947
-The Beach	<UNK>	Alex Garland
-Stephen King	<UNK>	IT
-The Beach	P577	1 September 1935
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-The Beach	<UNK>	London
-Stephen King	<UNK>	The Running Man
-The Beach	<UNK>	BOOL::No
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-The Beach	<UNK>	cartoonist
-Stephen King	P577	21 September 1947
-The Dwarves	P50_reverse	YEAR::2003
-Stephen King	<UNK>	IT
-The Dwarves	<UNK>	The War of the Dwarves
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
+black comedy	P136_reverse	Great Expectations
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Stephen King	P569	21 September 1947
+21 September 1947	P569_reverse	Stephen King
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+Stephen King	P50	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P50_reverse	Stephen King
+Stephen King	P31	21 September 1947
+21 September 1947	P31_reverse	Stephen King
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
+The Beach	P31	London
+London	P31_reverse	The Beach
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Stephen King	P50	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P50_reverse	Stephen King
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Stephen King	P569	21 September 1947
+21 September 1947	P569_reverse	Stephen King
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
 The Dwarves	P50	Markus Heitz
-Stephen King	<UNK>	The Running Man
-The Dwarves	<UNK>	Homburg
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
+Markus Heitz	P50_reverse	The Dwarves
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+The Dwarves	P19	Homburg
+Homburg	P19_reverse	The Dwarves
+Stephen King	P31	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P31_reverse	Stephen King
 The Dwarves	P577	10 October 1971
-Stephen King	<UNK>	21 September 1947
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-Stephen King	<UNK>	IT
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-Stephen King	<UNK>	The Running Man
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+10 October 1971	P577_reverse	The Dwarves
+Stephen King	P31	21 September 1947
+21 September 1947	P31_reverse	Stephen King
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Stephen King	P50	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P50_reverse	Stephen King
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
 Fire and Fury	P1476	Inside the Trump White House (English)
-Inferno	<UNK>	Dan Brown
-Fire and Fury	<UNK>	Michael Wolff
-Inferno	<UNK>	14 May 2013
-Fire and Fury	<UNK>	YEAR::2018
-Inferno	<UNK>	Origin
-Fire and Fury	<UNK>	Donald Trump
-Inferno	P50	22 June 1964
-Fire and Fury	P50	27 August 1953
-Inferno	<UNK>	Exeter
-Fire and Fury	P1476	Inside the Trump White House (English)
-Twilight	<UNK>	Stephenie Meyer
-Fire and Fury	<UNK>	Michael Wolff
-Twilight	P577	05 October 2005
-Fire and Fury	<UNK>	YEAR::2018
-Twilight	<UNK>	Isabella "Bella" Swan
-Fire and Fury	<UNK>	Donald Trump
-Twilight	<UNK>	Edward Cullen
-Fire and Fury	P50	27 August 1953
-Twilight	<UNK>	vampire
-Fire and Fury	P1476	Inside the Trump White House (English)
-Jaws	P50	Peter Benchley
-Fire and Fury	<UNK>	Michael Wolff
-Jaws	P577	YEAR::1974
-Fire and Fury	P577	YEAR::2018
-Jaws	<UNK>	Doubleday; Bantam Books
-Fire and Fury	<UNK>	Donald Trump
-Jaws	P136	Thriller
-Fire and Fury	P50	27 August 1953
-Jaws	<UNK>	BOOL::Yes
-Fire and Fury	P1476	Inside the Trump White House (English)
-The Hobbit	P577	21 September 1937
-Fire and Fury	<UNK>	Michael Wolff
-The Hobbit	P50	BOOL::Yes
-Fire and Fury	<UNK>	YEAR::2018
-The Hobbit	<UNK>	Edith Tolkien
-Fire and Fury	<UNK>	Donald Trump
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Fire and Fury	P50	27 August 1953
-The Hobbit	<UNK>	BOOL::Yes
-Fire and Fury	P1476	Inside the Trump White House (English)
-The Shining	<UNK>	Stephen King
-Fire and Fury	<UNK>	Michael Wolff
-The Shining	<UNK>	BOOL::Yes
-Fire and Fury	P577	YEAR::2018
-The Shining	<UNK>	BOOL::Yes
-Fire and Fury	<UNK>	Donald Trump
-The Shining	<UNK>	BOOL::Yes
-Fire and Fury	P50	27 August 1953
-The Shining	<UNK>	BOOL::Yes
-Fire and Fury	P1476	Inside the Trump White House (English)
-Great Expectations	P50	Charles Dickens
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
 Fire and Fury	P50	Michael Wolff
-Great Expectations	<UNK>	BOOL::No
-Fire and Fury	P577	YEAR::2018
-Great Expectations	<UNK>	Chapman & Hall
-Fire and Fury	<UNK>	Donald Trump
-Great Expectations	P136	black comedy
+Michael Wolff	P50_reverse	Fire and Fury
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Inferno	P50	22 June 1964
+22 June 1964	P50_reverse	Inferno
 Fire and Fury	P50	27 August 1953
-Great Expectations	<UNK>	London;Kent
+27 August 1953	P50_reverse	Fire and Fury
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
 Fire and Fury	P1476	Inside the Trump White House (English)
-Pride and Prejudice	P50	Jane Austen
-Fire and Fury	<UNK>	Michael Wolff
-Pride and Prejudice	<UNK>	27 January 1813
-Fire and Fury	P577	YEAR::2018
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Fire and Fury	<UNK>	Donald Trump
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Fire and Fury	P50	27 August 1953
-Pride and Prejudice	<UNK>	Mansfield Park
-Fire and Fury	P1476	Inside the Trump White House (English)
-The Beach	P50	Alex Garland
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
 Fire and Fury	P50	Michael Wolff
-The Beach	P577	1 September 1935
-Fire and Fury	<UNK>	YEAR::2018
-The Beach	<UNK>	London
-Fire and Fury	<UNK>	Donald Trump
-The Beach	<UNK>	BOOL::No
+Michael Wolff	P50_reverse	Fire and Fury
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Twilight	P674	Edward Cullen
+Edward Cullen	P674_reverse	Twilight
 Fire and Fury	P50	27 August 1953
-The Beach	<UNK>	cartoonist
+27 August 1953	P50_reverse	Fire and Fury
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
 Fire and Fury	P1476	Inside the Trump White House (English)
-The Dwarves	P50_reverse	YEAR::2003
-Fire and Fury	<UNK>	Michael Wolff
-The Dwarves	P1476	The War of the Dwarves
-Fire and Fury	<UNK>	YEAR::2018
-The Dwarves	P50	Markus Heitz
-Fire and Fury	<UNK>	Donald Trump
-The Dwarves	P50	Homburg
-Fire and Fury	P50	27 August 1953
-The Dwarves	P577	10 October 1971
-Fire and Fury	P1476	Inside the Trump White House (English)
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Fire and Fury	<UNK>	Michael Wolff
-The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
 Fire and Fury	P577	YEAR::2018
-The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-Fire and Fury	<UNK>	Donald Trump
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+YEAR::2018	P577_reverse	Fire and Fury
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
 Fire and Fury	P50	27 August 1953
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Inferno	P50	Dan Brown
-Twilight	P50	Stephenie Meyer
-Inferno	P577	14 May 2013
-Twilight	<UNK>	05 October 2005
-Inferno	<UNK>	Origin
-Twilight	<UNK>	Isabella "Bella" Swan
-Inferno	P50	22 June 1964
-Twilight	<UNK>	Edward Cullen
-Inferno	<UNK>	Exeter
-Twilight	<UNK>	vampire
-Inferno	P50	Dan Brown
-Jaws	P50	Peter Benchley
-Inferno	P577	14 May 2013
-Jaws	P577	YEAR::1974
-Inferno	<UNK>	Origin
-Jaws	<UNK>	Doubleday; Bantam Books
-Inferno	P50	22 June 1964
-Jaws	P136	Thriller
-Inferno	<UNK>	Exeter
-Jaws	<UNK>	BOOL::Yes
-Inferno	<UNK>	Dan Brown
+27 August 1953	P50_reverse	Fire and Fury
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 The Hobbit	P577	21 September 1937
-Inferno	<UNK>	14 May 2013
+21 September 1937	P577_reverse	The Hobbit
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
 The Hobbit	P50	BOOL::Yes
-Inferno	<UNK>	Origin
-The Hobbit	<UNK>	Edith Tolkien
-Inferno	P50	22 June 1964
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Inferno	<UNK>	Exeter
-The Hobbit	<UNK>	BOOL::Yes
-Inferno	P50	Dan Brown
-The Shining	<UNK>	Stephen King
-Inferno	P577	14 May 2013
-The Shining	<UNK>	BOOL::Yes
-Inferno	<UNK>	Origin
-The Shining	<UNK>	BOOL::Yes
-Inferno	P577	22 June 1964
-The Shining	<UNK>	BOOL::Yes
-Inferno	<UNK>	Exeter
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	P50	Charles Dickens
-Inferno	P50	Dan Brown
-Great Expectations	<UNK>	BOOL::No
-Inferno	P577	14 May 2013
-Great Expectations	<UNK>	Chapman & Hall
-Inferno	<UNK>	Origin
-Great Expectations	P136	black comedy
-Inferno	P577	22 June 1964
-Great Expectations	<UNK>	London;Kent
-Inferno	<UNK>	Exeter
-Inferno	P50	Dan Brown
-Pride and Prejudice	<UNK>	Jane Austen
-Inferno	<UNK>	14 May 2013
-Pride and Prejudice	<UNK>	27 January 1813
-Inferno	<UNK>	Origin
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Inferno	P577	22 June 1964
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Inferno	<UNK>	Exeter
-Pride and Prejudice	<UNK>	Mansfield Park
-Inferno	<UNK>	Dan Brown
-The Beach	P50	Alex Garland
-Inferno	P577	14 May 2013
-The Beach	<UNK>	1 September 1935
-Inferno	<UNK>	Origin
-The Beach	<UNK>	London
-Inferno	P577	22 June 1964
-The Beach	<UNK>	BOOL::No
-Inferno	<UNK>	Exeter
-The Beach	<UNK>	cartoonist
-Inferno	P50	Dan Brown
-The Dwarves	P50_reverse	YEAR::2003
-Inferno	<UNK>	14 May 2013
-The Dwarves	<UNK>	The War of the Dwarves
-Inferno	<UNK>	Origin
-The Dwarves	P50	Markus Heitz
-Inferno	P577	22 June 1964
-The Dwarves	<UNK>	Homburg
-Inferno	<UNK>	Exeter
-The Dwarves	P577	10 October 1971
-Inferno	<UNK>	Dan Brown
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Inferno	P577	14 May 2013
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Inferno	<UNK>	Origin
-The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-Inferno	P577	22 June 1964
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Inferno	<UNK>	Exeter
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Jaws	P50	Peter Benchley
-Twilight	P50	Stephenie Meyer
-Jaws	P577	YEAR::1974
-Twilight	<UNK>	05 October 2005
-Jaws	<UNK>	Doubleday; Bantam Books
-Twilight	<UNK>	Isabella "Bella" Swan
-Jaws	P136	Thriller
-Twilight	<UNK>	Edward Cullen
-Jaws	<UNK>	BOOL::Yes
-Twilight	<UNK>	vampire
-The Hobbit	P577	21 September 1937
-Twilight	P50	Stephenie Meyer
-The Hobbit	P50	BOOL::Yes
-Twilight	P577	05 October 2005
-The Hobbit	<UNK>	Edith Tolkien
-Twilight	<UNK>	Isabella "Bella" Swan
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Twilight	<UNK>	Edward Cullen
-The Hobbit	<UNK>	BOOL::Yes
-Twilight	<UNK>	vampire
-The Shining	<UNK>	Stephen King
-Twilight	P50	Stephenie Meyer
-The Shining	<UNK>	BOOL::Yes
-Twilight	P577	05 October 2005
-The Shining	<UNK>	BOOL::Yes
-Twilight	<UNK>	Isabella "Bella" Swan
-The Shining	<UNK>	BOOL::Yes
-Twilight	<UNK>	Edward Cullen
-The Shining	<UNK>	BOOL::Yes
-Twilight	<UNK>	vampire
-Great Expectations	P50	Charles Dickens
-Twilight	P50	Stephenie Meyer
-Great Expectations	<UNK>	BOOL::No
-Twilight	P577	05 October 2005
-Great Expectations	P123	Chapman & Hall
-Twilight	<UNK>	Isabella "Bella" Swan
-Great Expectations	P136	black comedy
-Twilight	<UNK>	Edward Cullen
-Great Expectations	<UNK>	London;Kent
-Twilight	<UNK>	vampire
-Pride and Prejudice	<UNK>	Jane Austen
-Twilight	<UNK>	Stephenie Meyer
-Pride and Prejudice	P577	27 January 1813
-Twilight	P577	05 October 2005
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Twilight	<UNK>	Isabella "Bella" Swan
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Twilight	<UNK>	Edward Cullen
-Pride and Prejudice	<UNK>	Mansfield Park
-Twilight	<UNK>	vampire
-The Beach	P50	Alex Garland
-Twilight	P50	Stephenie Meyer
-The Beach	P577	1 September 1935
-Twilight	P577	05 October 2005
-The Beach	<UNK>	London
-Twilight	<UNK>	Isabella "Bella" Swan
-The Beach	<UNK>	BOOL::No
-Twilight	<UNK>	Edward Cullen
-The Beach	<UNK>	cartoonist
-Twilight	<UNK>	vampire
-The Dwarves	P50_reverse	YEAR::2003
-Twilight	P50	Stephenie Meyer
-The Dwarves	<UNK>	The War of the Dwarves
-Twilight	<UNK>	05 October 2005
-The Dwarves	P50	Markus Heitz
-Twilight	<UNK>	Isabella "Bella" Swan
-The Dwarves	P50	Homburg
-Twilight	<UNK>	Edward Cullen
-The Dwarves	P577	10 October 1971
-Twilight	<UNK>	vampire
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-Twilight	<UNK>	Stephenie Meyer
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Twilight	<UNK>	05 October 2005
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-Twilight	<UNK>	Isabella "Bella" Swan
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Twilight	<UNK>	Edward Cullen
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Twilight	<UNK>	vampire
-Jaws	P50	Peter Benchley
-The Hobbit	P577	21 September 1937
-Jaws	P577	YEAR::1974
-The Hobbit	P50	BOOL::Yes
-Jaws	<UNK>	Doubleday; Bantam Books
-The Hobbit	<UNK>	Edith Tolkien
-Jaws	P136	Thriller
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Jaws	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	BOOL::Yes
-Jaws	P50	Peter Benchley
-The Shining	<UNK>	Stephen King
-Jaws	P577	YEAR::1974
-The Shining	<UNK>	BOOL::Yes
-Jaws	<UNK>	Doubleday; Bantam Books
-The Shining	<UNK>	BOOL::Yes
-Jaws	P136	Thriller
-The Shining	<UNK>	BOOL::Yes
-Jaws	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	P50	Charles Dickens
-Jaws	P50	Peter Benchley
-Great Expectations	<UNK>	BOOL::No
-Jaws	P577	YEAR::1974
-Great Expectations	<UNK>	Chapman & Hall
-Jaws	<UNK>	Doubleday; Bantam Books
-Great Expectations	P136	black comedy
-Jaws	P136	Thriller
-Great Expectations	<UNK>	London;Kent
-Jaws	<UNK>	BOOL::Yes
-Jaws	P50	Peter Benchley
-Pride and Prejudice	<UNK>	Jane Austen
-Jaws	P577	YEAR::1974
-Pride and Prejudice	<UNK>	27 January 1813
-Jaws	<UNK>	Doubleday; Bantam Books
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Jaws	P136	Thriller
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Jaws	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Mansfield Park
-Jaws	P50	Peter Benchley
-The Beach	P50	Alex Garland
-Jaws	P577	YEAR::1974
-The Beach	P577	1 September 1935
-Jaws	<UNK>	Doubleday; Bantam Books
-The Beach	<UNK>	London
-Jaws	P136	Thriller
-The Beach	<UNK>	BOOL::No
-Jaws	<UNK>	BOOL::Yes
-The Beach	<UNK>	cartoonist
-Jaws	P50	Peter Benchley
-The Dwarves	P50_reverse	YEAR::2003
-Jaws	P577	YEAR::1974
-The Dwarves	P1476	The War of the Dwarves
-Jaws	<UNK>	Doubleday; Bantam Books
-The Dwarves	P50	Markus Heitz
-Jaws	P136	Thriller
-The Dwarves	<UNK>	Homburg
-Jaws	<UNK>	BOOL::Yes
-The Dwarves	P577	10 October 1971
-Jaws	P50	Peter Benchley
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Jaws	P577	YEAR::1974
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Jaws	<UNK>	Doubleday; Bantam Books
-The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-Jaws	P136	Thriller
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Jaws	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Hobbit	P577	21 September 1937
+BOOL::Yes	P50_reverse	The Hobbit
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+The Hobbit	P569	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P569_reverse	The Hobbit
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 The Shining	P50	Stephen King
-The Hobbit	P50	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	Edith Tolkien
-The Shining	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-The Shining	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
+Stephen King	P50_reverse	The Shining
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 Great Expectations	P50	Charles Dickens
-The Hobbit	P577	21 September 1937
-Great Expectations	<UNK>	BOOL::No
-The Hobbit	P50	BOOL::Yes
-Great Expectations	<UNK>	Chapman & Hall
-The Hobbit	<UNK>	Edith Tolkien
+Charles Dickens	P50_reverse	Great Expectations
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
 Great Expectations	P136	black comedy
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Great Expectations	<UNK>	London;Kent
-The Hobbit	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Jane Austen
-The Hobbit	P577	21 September 1937
-Pride and Prejudice	<UNK>	27 January 1813
-The Hobbit	P50	BOOL::Yes
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Hobbit	<UNK>	Edith Tolkien
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Pride and Prejudice	<UNK>	Mansfield Park
-The Hobbit	<UNK>	BOOL::Yes
-The Beach	<UNK>	Alex Garland
-The Hobbit	P577	21 September 1937
-The Beach	<UNK>	1 September 1935
-The Hobbit	P50	BOOL::Yes
-The Beach	<UNK>	London
-The Hobbit	<UNK>	Edith Tolkien
-The Beach	<UNK>	BOOL::No
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-The Beach	<UNK>	cartoonist
-The Hobbit	<UNK>	BOOL::Yes
-The Dwarves	P50_reverse	YEAR::2003
-The Hobbit	P577	21 September 1937
-The Dwarves	<UNK>	The War of the Dwarves
-The Hobbit	P50	BOOL::Yes
-The Dwarves	P50	Markus Heitz
-The Hobbit	<UNK>	Edith Tolkien
-The Dwarves	P50	Homburg
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-The Dwarves	P577	10 October 1971
-The Hobbit	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-The Hobbit	P577	21 September 1937
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-The Hobbit	P50	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-The Hobbit	<UNK>	Edith Tolkien
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	BOOL::Yes
-Great Expectations	P50	Charles Dickens
-The Shining	<UNK>	Stephen King
-Great Expectations	<UNK>	BOOL::No
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	P123	Chapman & Hall
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	P136	black comedy
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	<UNK>	London;Kent
-The Shining	<UNK>	BOOL::Yes
+black comedy	P136_reverse	Great Expectations
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 Pride and Prejudice	P50	Jane Austen
-The Shining	P50	Stephen King
-Pride and Prejudice	P577	27 January 1813
-The Shining	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Shining	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Shining	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Mansfield Park
-The Shining	<UNK>	BOOL::Yes
+Jane Austen	P50_reverse	Pride and Prejudice
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 The Beach	P50	Alex Garland
-The Shining	P50	Stephen King
-The Beach	P577	1 September 1935
-The Shining	<UNK>	BOOL::Yes
-The Beach	<UNK>	London
-The Shining	<UNK>	BOOL::Yes
-The Beach	<UNK>	BOOL::No
-The Shining	<UNK>	BOOL::Yes
-The Beach	<UNK>	cartoonist
-The Shining	<UNK>	BOOL::Yes
-The Dwarves	P50_reverse	YEAR::2003
-The Shining	<UNK>	Stephen King
-The Dwarves	<UNK>	The War of the Dwarves
-The Shining	<UNK>	BOOL::Yes
-The Dwarves	P50	Markus Heitz
-The Shining	<UNK>	BOOL::Yes
-The Dwarves	P50	Homburg
-The Shining	<UNK>	BOOL::Yes
-The Dwarves	P577	10 October 1971
-The Shining	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-The Shining	<UNK>	Stephen King
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-The Shining	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-The Shining	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-The Shining	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	<UNK>	Charles Dickens
-Pride and Prejudice	P50	Jane Austen
-Great Expectations	<UNK>	BOOL::No
-Pride and Prejudice	<UNK>	27 January 1813
-Great Expectations	<UNK>	Chapman & Hall
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Great Expectations	P136	black comedy
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Great Expectations	<UNK>	London;Kent
-Pride and Prejudice	<UNK>	Mansfield Park
-Great Expectations	<UNK>	Charles Dickens
-The Beach	P50	Alex Garland
-Great Expectations	<UNK>	BOOL::No
-The Beach	P577	1 September 1935
-Great Expectations	<UNK>	Chapman & Hall
-The Beach	<UNK>	London
-Great Expectations	P136	black comedy
-The Beach	<UNK>	BOOL::No
-Great Expectations	<UNK>	London;Kent
-The Beach	<UNK>	cartoonist
-Great Expectations	<UNK>	Charles Dickens
-The Dwarves	P50_reverse	YEAR::2003
-Great Expectations	<UNK>	BOOL::No
+Alex Garland	P50_reverse	The Beach
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
+The Beach	P31	London
+London	P31_reverse	The Beach
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
 The Dwarves	P1476	The War of the Dwarves
-Great Expectations	P123	Chapman & Hall
+The War of the Dwarves	P1476_reverse	The Dwarves
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
 The Dwarves	P50	Markus Heitz
-Great Expectations	P136	black comedy
+Markus Heitz	P50_reverse	The Dwarves
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
 The Dwarves	P50	Homburg
-Great Expectations	<UNK>	London;Kent
-The Dwarves	P577	10 October 1971
-Great Expectations	P50	Charles Dickens
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-Great Expectations	<UNK>	BOOL::No
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Great Expectations	P123	Chapman & Hall
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-Great Expectations	P136	black comedy
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Great Expectations	<UNK>	London;Kent
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Pride and Prejudice	P50	Jane Austen
-The Beach	<UNK>	Alex Garland
-Pride and Prejudice	P577	27 January 1813
-The Beach	<UNK>	1 September 1935
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Beach	<UNK>	London
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Beach	<UNK>	BOOL::No
-Pride and Prejudice	<UNK>	Mansfield Park
-The Beach	<UNK>	cartoonist
-Pride and Prejudice	<UNK>	Jane Austen
-The Dwarves	P50_reverse	YEAR::2003
-Pride and Prejudice	P577	27 January 1813
-The Dwarves	<UNK>	The War of the Dwarves
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Dwarves	P50	Markus Heitz
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Dwarves	P50	Homburg
-Pride and Prejudice	<UNK>	Mansfield Park
-The Dwarves	P577	10 October 1971
-Pride and Prejudice	P50	Jane Austen
+Homburg	P50_reverse	The Dwarves
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+The Dwarves	P569	10 October 1971
+10 October 1971	P569_reverse	The Dwarves
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
 The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Pride and Prejudice	P577	27 January 1813
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Pride and Prejudice	<UNK>	Mansfield Park
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Beach	<UNK>	Alex Garland
-The Dwarves	P50_reverse	YEAR::2003
-The Beach	P577	1 September 1935
-The Dwarves	P1476	The War of the Dwarves
-The Beach	<UNK>	London
-The Dwarves	P50	Markus Heitz
-The Beach	<UNK>	BOOL::No
-The Dwarves	P50	Homburg
-The Beach	<UNK>	cartoonist
-The Dwarves	P577	10 October 1971
-The Beach	<UNK>	Alex Garland
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-The Beach	P577	1 September 1935
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
 The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
-The Beach	<UNK>	London
+BOOL::No	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
 The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-The Beach	<UNK>	BOOL::No
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-The Beach	<UNK>	cartoonist
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Dwarves	P50_reverse	YEAR::2003
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-The Dwarves	<UNK>	The War of the Dwarves
-The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+Twilight	P31	05 October 2005
+05 October 2005	P31_reverse	Twilight
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Inferno	P50	22 June 1964
+22 June 1964	P50_reverse	Inferno
+Twilight	P674	Edward Cullen
+Edward Cullen	P674_reverse	Twilight
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+Inferno	P50	22 June 1964
+22 June 1964	P50_reverse	Inferno
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Inferno	P50	22 June 1964
+22 June 1964	P50_reverse	Inferno
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Shining	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Shining
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Pride and Prejudice	P50	Mansfield Park
+Mansfield Park	P50_reverse	Pride and Prejudice
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+The Beach	P31	1 September 1935
+1 September 1935	P31_reverse	The Beach
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+The Beach	P31	London
+London	P31_reverse	The Beach
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
 The Dwarves	P50	Markus Heitz
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
+Markus Heitz	P50_reverse	The Dwarves
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Dwarves	P19	Homburg
+Homburg	P19_reverse	The Dwarves
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Dwarves	P569	10 October 1971
+10 October 1971	P569_reverse	The Dwarves
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+Twilight	P31	05 October 2005
+05 October 2005	P31_reverse	Twilight
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+The Hobbit	P569	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P569_reverse	The Hobbit
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+Pride and Prejudice	P50	Mansfield Park
+Mansfield Park	P50_reverse	Pride and Prejudice
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+The Beach	P31	London
+London	P31_reverse	The Beach
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Twilight	P31	05 October 2005
+05 October 2005	P31_reverse	Twilight
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
 The Dwarves	P50	Homburg
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+Homburg	P50_reverse	The Dwarves
+Twilight	P674	Edward Cullen
+Edward Cullen	P674_reverse	Twilight
+The Dwarves	P569	10 October 1971
+10 October 1971	P569_reverse	The Dwarves
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Twilight	P31	05 October 2005
+05 October 2005	P31_reverse	Twilight
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+The Beach	P31	London
+London	P31_reverse	The Beach
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
+The Dwarves	P1476	The War of the Dwarves
+The War of the Dwarves	P1476_reverse	The Dwarves
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+The Dwarves	P19	Homburg
+Homburg	P19_reverse	The Dwarves
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
 The Dwarves	P577	10 October 1971
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+10 October 1971	P577_reverse	The Dwarves
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Hobbit	P569	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P569_reverse	The Hobbit
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Shining	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Shining
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+The Beach	P31	1 September 1935
+1 September 1935	P31_reverse	The Beach
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+The Beach	P31	London
+London	P31_reverse	The Beach
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+The Hobbit	P569	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P569_reverse	The Hobbit
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Shining	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Shining
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+The Beach	P31	London
+London	P31_reverse	The Beach
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Shining	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Shining
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
+The Beach	P31	London
+London	P31_reverse	The Beach
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Dwarves	P1476	The War of the Dwarves
+The War of the Dwarves	P1476_reverse	The Dwarves
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
+The Beach	P31	1 September 1935
+1 September 1935	P31_reverse	The Beach
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Beach	P31	London
+London	P31_reverse	The Beach
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+Pride and Prejudice	P50	Mansfield Park
+Mansfield Park	P50_reverse	Pride and Prejudice
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Pride and Prejudice	P31	Fitzwilliam Darcy
+Fitzwilliam Darcy	P31_reverse	Pride and Prejudice
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+The Dwarves	P1476	The War of the Dwarves
+The War of the Dwarves	P1476_reverse	The Dwarves
+The Beach	P31	London
+London	P31_reverse	The Beach
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Dwarves	P569	10 October 1971
+10 October 1971	P569_reverse	The Dwarves
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+BOOL::No	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Beach	P31	London
+London	P31_reverse	The Beach
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+BOOL::No	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy

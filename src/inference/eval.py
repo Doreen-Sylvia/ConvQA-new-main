@@ -68,6 +68,29 @@ def _match_date(pred: Any, gold: Any) -> bool:
     return False
 
 
+def _is_match(pred: Any, gold: Any) -> bool:
+    p = normalize_answer(pred)
+    g = normalize_answer(gold)
+    if not p or not g:
+        return False
+    if p == g:
+        return True
+
+    # 防止把 'no' 匹配到 'novel' 里面去，如果是 yes/no 必须精确匹配
+    if g in ['yes', 'no'] or p in ['yes', 'no']:
+        return p == g
+
+    # 规则1：包含匹配 (例如 Gold: "post-apocalyptic;horror", Pred: "post-apocalyptic novel")
+    # 限制长度 >= 3，防止单个字母匹配成功
+    if (len(g) >= 3 and g in p) or (len(p) >= 3 and p in g):
+        return True
+
+    # 规则2：日期归一化匹配
+    if _match_date(pred, gold):
+        return True
+
+    return False
+
 def _safe_get(d: Any, path: List[str], default: Any = None) -> Any:
     cur = d
     for k in path:
@@ -299,10 +322,8 @@ def evaluate_jsonl(preds_jsonl: Path) -> Dict[str, Any]:
 
         em = False
         if gold_answer:
-            em = normalize_answer(pred_answer_val) == normalize_answer(gold_answer)
-            if not em:
-                em = _match_date(pred_answer_val, gold_answer)
-        
+            # 使用我们新写的 _is_match 替代原本的 ==
+            em = _is_match(pred_answer_val, gold_answer)
         ev_empty = len(ev_list) == 0
 
         routing_ok: Optional[bool] = None

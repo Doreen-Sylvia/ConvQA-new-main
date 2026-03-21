@@ -1,595 +1,1190 @@
-Digital Fortress	<UNK>	Digital Fortress
-The Stand	<UNK>	Stephen King
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
 The Stand	P136	post-apocalyptic;horror
-Digital Fortress	<UNK>	Seville
+post-apocalyptic;horror	P136_reverse	The Stand
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
 The Stand	P577	YEAR::1978
-Digital Fortress	<UNK>	BOOL::Yes
+YEAR::1978	P577_reverse	The Stand
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
 The Stand	P123	Doubleday
-Digital Fortress	<UNK>	National Security Agency
-The Stand	<UNK>	Captain Trips
+Doubleday	P123_reverse	The Stand
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
 The Stand	P50	Stephen King
-The Suicide Prince	<UNK>	BOOL::Yes
+Stephen King	P50_reverse	The Stand
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
 The Stand	P136	post-apocalyptic;horror
-The Suicide Prince	<UNK>	Mr. Mercedes
+post-apocalyptic;horror	P136_reverse	The Stand
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
 The Stand	P577	YEAR::1978
+YEAR::1978	P577_reverse	The Stand
 The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
 The Stand	P123	Doubleday
-The Suicide Prince	P50	Portland
-The Stand	<UNK>	Captain Trips
-The Suicide Prince	P50	BOOL::Yes
+Doubleday	P123_reverse	The Stand
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
 Stephen King	P50	Stephen King
-The Stand	<UNK>	Stephen King
-Stephen King	<UNK>	BOOL::Yes
+Stephen King	P50_reverse	Stephen King
+The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
 The Stand	P136	post-apocalyptic;horror
-Stephen King	<UNK>	BOOL::Yes
+post-apocalyptic;horror	P136_reverse	The Stand
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
 The Stand	P577	YEAR::1978
-Stephen King	<UNK>	Best Novel
-The Stand	<UNK>	Doubleday
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-The Stand	<UNK>	Captain Trips
+YEAR::1978	P577_reverse	The Stand
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
 Fire and Fury	P1476	Inside the Trump White House (English)
-The Stand	<UNK>	Stephen King
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
 The Stand	P136	post-apocalyptic;horror
-Fire and Fury	<UNK>	YEAR::2018
+post-apocalyptic;horror	P136_reverse	The Stand
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
 The Stand	P577	YEAR::1978
-Fire and Fury	<UNK>	Donald Trump
+YEAR::1978	P577_reverse	The Stand
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
 The Stand	P123	Doubleday
+Doubleday	P123_reverse	The Stand
 Fire and Fury	P50	27 August 1953
-The Stand	<UNK>	Captain Trips
-Inferno	<UNK>	Dan Brown
+27 August 1953	P50_reverse	Fire and Fury
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
 The Stand	P50	Stephen King
-Inferno	<UNK>	14 May 2013
+Stephen King	P50_reverse	The Stand
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
 The Stand	P136	post-apocalyptic;horror
-Inferno	<UNK>	Origin
+post-apocalyptic;horror	P136_reverse	The Stand
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
 The Stand	P577	YEAR::1978
-Inferno	P577	22 June 1964
-The Stand	<UNK>	Doubleday
-Inferno	<UNK>	Exeter
-The Stand	<UNK>	Captain Trips
-The Stand	<UNK>	Stephen King
-Twilight	<UNK>	Stephenie Meyer
+YEAR::1978	P577_reverse	The Stand
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
+The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
 The Stand	P136	post-apocalyptic;horror
+post-apocalyptic;horror	P136_reverse	The Stand
 Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
 The Stand	P577	YEAR::1978
-Twilight	<UNK>	Isabella "Bella" Swan
+YEAR::1978	P577_reverse	The Stand
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
 The Stand	P123	Doubleday
-Twilight	<UNK>	Edward Cullen
-The Stand	<UNK>	Captain Trips
-Twilight	<UNK>	vampire
+Doubleday	P123_reverse	The Stand
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
 Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
 The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
 The Stand	P136	post-apocalyptic;horror
-Jaws	<UNK>	Doubleday; Bantam Books
+post-apocalyptic;horror	P136_reverse	The Stand
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
 The Stand	P577	YEAR::1978
+YEAR::1978	P577_reverse	The Stand
 Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
 The Stand	P123	Doubleday
-Jaws	<UNK>	BOOL::Yes
-The Stand	<UNK>	Captain Trips
+Doubleday	P123_reverse	The Stand
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
 The Hobbit	P577	21 September 1937
-The Stand	<UNK>	Stephen King
+21 September 1937	P577_reverse	The Hobbit
+The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
 The Stand	P136	post-apocalyptic;horror
-The Hobbit	<UNK>	Edith Tolkien
+post-apocalyptic;horror	P136_reverse	The Stand
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
 The Stand	P577	YEAR::1978
-The Hobbit	<UNK>	John Francis Reuel Tolkien
+YEAR::1978	P577_reverse	The Stand
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
 The Stand	P123	Doubleday
-The Hobbit	<UNK>	BOOL::Yes
-The Stand	<UNK>	Captain Trips
-The Shining	<UNK>	Stephen King
+Doubleday	P123_reverse	The Stand
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
 The Stand	P50	Stephen King
-The Shining	<UNK>	BOOL::Yes
+Stephen King	P50_reverse	The Stand
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
 The Stand	P136	post-apocalyptic;horror
-The Shining	<UNK>	BOOL::Yes
+post-apocalyptic;horror	P136_reverse	The Stand
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
 The Stand	P577	YEAR::1978
-The Shining	<UNK>	BOOL::Yes
-The Stand	<UNK>	Doubleday
-The Shining	<UNK>	BOOL::Yes
-The Stand	<UNK>	Captain Trips
-Great Expectations	<UNK>	Charles Dickens
+YEAR::1978	P577_reverse	The Stand
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
 The Stand	P50	Stephen King
-Great Expectations	<UNK>	BOOL::No
+Stephen King	P50_reverse	The Stand
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
 The Stand	P136	post-apocalyptic;horror
-Great Expectations	<UNK>	Chapman & Hall
+post-apocalyptic;horror	P136_reverse	The Stand
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations
 The Stand	P577	YEAR::1978
+YEAR::1978	P577_reverse	The Stand
 Great Expectations	P136	black comedy
-The Stand	<UNK>	Doubleday
-Great Expectations	<UNK>	London;Kent
-The Stand	<UNK>	Captain Trips
+black comedy	P136_reverse	Great Expectations
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
 Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
 The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 Pride and Prejudice	P577	27 January 1813
+27 January 1813	P577_reverse	Pride and Prejudice
 The Stand	P136	post-apocalyptic;horror
-Pride and Prejudice	<UNK>	Elizabeth Bennet
+post-apocalyptic;horror	P136_reverse	The Stand
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
 The Stand	P577	YEAR::1978
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
+YEAR::1978	P577_reverse	The Stand
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
 The Stand	P123	Doubleday
-Pride and Prejudice	<UNK>	Mansfield Park
-The Stand	<UNK>	Captain Trips
-The Beach	<UNK>	Alex Garland
+Doubleday	P123_reverse	The Stand
+Pride and Prejudice	P50	Mansfield Park
+Mansfield Park	P50_reverse	Pride and Prejudice
+The Stand	P31	Captain Trips
+Captain Trips	P31_reverse	The Stand
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
 The Stand	P50	Stephen King
-The Beach	P577	1 September 1935
+Stephen King	P50_reverse	The Stand
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
 The Stand	P136	post-apocalyptic;horror
-The Beach	<UNK>	London
+post-apocalyptic;horror	P136_reverse	The Stand
+The Beach	P31	London
+London	P31_reverse	The Beach
 The Stand	P577	YEAR::1978
-The Beach	<UNK>	BOOL::No
-The Stand	<UNK>	Doubleday
-The Beach	<UNK>	cartoonist
-The Stand	<UNK>	Captain Trips
-The Dwarves	P50_reverse	YEAR::2003
+YEAR::1978	P577_reverse	The Stand
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
 The Stand	P50	Stephen King
-The Dwarves	<UNK>	The War of the Dwarves
+Stephen King	P50_reverse	The Stand
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
 The Stand	P136	post-apocalyptic;horror
+post-apocalyptic;horror	P136_reverse	The Stand
 The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
 The Stand	P577	YEAR::1978
+YEAR::1978	P577_reverse	The Stand
 The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
 The Stand	P123	Doubleday
+Doubleday	P123_reverse	The Stand
 The Dwarves	P577	10 October 1971
-The Stand	<UNK>	Captain Trips
+10 October 1971	P577_reverse	The Dwarves
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
 The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
 The Stand	P50	Stephen King
+Stephen King	P50_reverse	The Stand
 The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+BOOL::No	P50_reverse	The Hitchhiker's Guide to the Galaxy
 The Stand	P136	post-apocalyptic;horror
+post-apocalyptic;horror	P136_reverse	The Stand
 The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
 The Stand	P577	YEAR::1978
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-The Stand	<UNK>	Doubleday
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Stand	<UNK>	Captain Trips
-Digital Fortress	<UNK>	Digital Fortress
-Ender's Game	P577	YEAR::1985
-Digital Fortress	P50_reverse	YEAR::1998
+YEAR::1978	P577_reverse	The Stand
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Stand	P31	Doubleday
+Doubleday	P31_reverse	The Stand
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Stand	P674	Captain Trips
+Captain Trips	P674_reverse	The Stand
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
 Ender's Game	P50	Orson Scott Card
-Digital Fortress	<UNK>	Seville
+Orson Scott Card	P50_reverse	Ender's Game
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
 Ender's Game	P136	science fiction
-Digital Fortress	<UNK>	BOOL::Yes
-Ender's Game	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	National Security Agency
-Ender's Game	P50_reverse	COUNT::6
+science fiction	P136_reverse	Ender's Game
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
 Ender's Game	P577	YEAR::1985
-The Suicide Prince	<UNK>	BOOL::Yes
+YEAR::1985	P577_reverse	Ender's Game
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
 Ender's Game	P50	Orson Scott Card
-The Suicide Prince	P50_reverse	Mr. Mercedes
+Orson Scott Card	P50_reverse	Ender's Game
+The Suicide Prince	P50_reverse_first	Mr. Mercedes
+Mr. Mercedes	P50_reverse_first_reverse	The Suicide Prince
 Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
 The Suicide Prince	P577	YEAR::2015
-Ender's Game	<UNK>	BOOL::Yes
+YEAR::2015	P577_reverse	The Suicide Prince
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
 The Suicide Prince	P50	Portland
-Ender's Game	P50_reverse	COUNT::6
-The Suicide Prince	P50	BOOL::Yes
-Ender's Game	P577	YEAR::1985
-Stephen King	<UNK>	Stephen King
-Ender's Game	P50	Orson Scott Card
-Stephen King	<UNK>	BOOL::Yes
-Ender's Game	P136	science fiction
-Stephen King	<UNK>	BOOL::Yes
-Ender's Game	<UNK>	BOOL::Yes
-Stephen King	<UNK>	Best Novel
-Ender's Game	P50_reverse	COUNT::6
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Ender's Game	P577	YEAR::1985
-Fire and Fury	P1476	Inside the Trump White House (English)
-Ender's Game	P50	Orson Scott Card
-Fire and Fury	P50	Michael Wolff
-Ender's Game	P136	science fiction
-Fire and Fury	P577	YEAR::2018
-Ender's Game	<UNK>	BOOL::Yes
-Fire and Fury	<UNK>	Donald Trump
-Ender's Game	P50_reverse	COUNT::6
-Fire and Fury	P50	27 August 1953
-Ender's Game	P577	YEAR::1985
-Inferno	P50	Dan Brown
-Ender's Game	<UNK>	Orson Scott Card
-Inferno	<UNK>	14 May 2013
-Ender's Game	P136	science fiction
-Inferno	<UNK>	Origin
-Ender's Game	<UNK>	BOOL::Yes
-Inferno	P577	22 June 1964
-Ender's Game	P50_reverse	COUNT::6
-Inferno	<UNK>	Exeter
-Ender's Game	P577	YEAR::1985
-Twilight	P50	Stephenie Meyer
-Ender's Game	<UNK>	Orson Scott Card
-Twilight	P577	05 October 2005
-Ender's Game	P136	science fiction
-Twilight	<UNK>	Isabella "Bella" Swan
-Ender's Game	<UNK>	BOOL::Yes
-Twilight	<UNK>	Edward Cullen
-Ender's Game	P50_reverse	COUNT::6
-Twilight	<UNK>	vampire
-Ender's Game	P577	YEAR::1985
-Jaws	P50	Peter Benchley
-Ender's Game	<UNK>	Orson Scott Card
-Jaws	P577	YEAR::1974
-Ender's Game	P136	science fiction
-Jaws	<UNK>	Doubleday; Bantam Books
-Ender's Game	<UNK>	BOOL::Yes
-Jaws	P136	Thriller
-Ender's Game	P50_reverse	COUNT::6
-Jaws	<UNK>	BOOL::Yes
-Ender's Game	P577	YEAR::1985
-The Hobbit	P577	21 September 1937
-Ender's Game	P50	Orson Scott Card
-The Hobbit	P50	BOOL::Yes
-Ender's Game	P136	science fiction
-The Hobbit	<UNK>	Edith Tolkien
-Ender's Game	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Ender's Game	P50_reverse	COUNT::6
-The Hobbit	<UNK>	BOOL::Yes
-Ender's Game	P577	YEAR::1985
-The Shining	<UNK>	Stephen King
-Ender's Game	P50	Orson Scott Card
-The Shining	<UNK>	BOOL::Yes
-Ender's Game	P136	science fiction
-The Shining	<UNK>	BOOL::Yes
-Ender's Game	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Ender's Game	P50_reverse	COUNT::6
-The Shining	<UNK>	BOOL::Yes
-Ender's Game	P577	YEAR::1985
-Great Expectations	P50	Charles Dickens
-Ender's Game	<UNK>	Orson Scott Card
-Great Expectations	<UNK>	BOOL::No
-Ender's Game	P136	science fiction
-Great Expectations	P123	Chapman & Hall
-Ender's Game	<UNK>	BOOL::Yes
-Great Expectations	P136	black comedy
-Ender's Game	P50_reverse	COUNT::6
-Great Expectations	<UNK>	London;Kent
-Ender's Game	P577	YEAR::1985
-Pride and Prejudice	P50	Jane Austen
-Ender's Game	<UNK>	Orson Scott Card
-Pride and Prejudice	<UNK>	27 January 1813
-Ender's Game	P136	science fiction
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Ender's Game	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Ender's Game	P50_reverse	COUNT::6
-Pride and Prejudice	<UNK>	Mansfield Park
-Ender's Game	P577	YEAR::1985
-The Beach	<UNK>	Alex Garland
-Ender's Game	P50	Orson Scott Card
-The Beach	P577	1 September 1935
-Ender's Game	P136	science fiction
-The Beach	<UNK>	London
-Ender's Game	<UNK>	BOOL::Yes
-The Beach	<UNK>	BOOL::No
-Ender's Game	P50_reverse	COUNT::6
-The Beach	<UNK>	cartoonist
-Ender's Game	P577	YEAR::1985
-The Dwarves	P50_reverse	YEAR::2003
-Ender's Game	<UNK>	Orson Scott Card
-The Dwarves	<UNK>	The War of the Dwarves
-Ender's Game	P136	science fiction
-The Dwarves	P50	Markus Heitz
-Ender's Game	<UNK>	BOOL::Yes
-The Dwarves	<UNK>	Homburg
-Ender's Game	P50_reverse	COUNT::6
-The Dwarves	P577	10 October 1971
-Ender's Game	P577	YEAR::1985
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Ender's Game	P50	Orson Scott Card
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Ender's Game	P136	science fiction
-The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
-Ender's Game	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Ender's Game	P50_reverse	COUNT::6
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Digital Fortress	P50_reverse	Digital Fortress
-The Suicide Prince	<UNK>	BOOL::Yes
-Digital Fortress	P577	YEAR::1998
-The Suicide Prince	<UNK>	Mr. Mercedes
-Digital Fortress	<UNK>	Seville
-The Suicide Prince	P577	YEAR::2015
-Digital Fortress	<UNK>	BOOL::Yes
-The Suicide Prince	P50	Portland
-Digital Fortress	<UNK>	National Security Agency
-The Suicide Prince	P577	BOOL::Yes
-Digital Fortress	P50_reverse	Digital Fortress
+Portland	P50_reverse	The Suicide Prince
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
 Stephen King	P50	Stephen King
-Digital Fortress	P577	YEAR::1998
-Stephen King	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	Seville
-Stephen King	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	BOOL::Yes
-Stephen King	<UNK>	Best Novel
-Digital Fortress	<UNK>	National Security Agency
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Digital Fortress	<UNK>	Digital Fortress
+Stephen King	P50_reverse	Stephen King
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
 Fire and Fury	P1476	Inside the Trump White House (English)
-Digital Fortress	P577	YEAR::1998
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
 Fire and Fury	P50	Michael Wolff
-Digital Fortress	<UNK>	Seville
-Fire and Fury	<UNK>	YEAR::2018
-Digital Fortress	<UNK>	BOOL::Yes
-Fire and Fury	<UNK>	Donald Trump
-Digital Fortress	<UNK>	National Security Agency
+Michael Wolff	P50_reverse	Fire and Fury
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
 Fire and Fury	P50	27 August 1953
-Digital Fortress	P50_reverse	Digital Fortress
-Inferno	<UNK>	Dan Brown
-Digital Fortress	P50_reverse	YEAR::1998
+27 August 1953	P50_reverse	Fire and Fury
+Ender's Game	P577	YEAR::1985
+YEAR::1985	P577_reverse	Ender's Game
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Twilight	P674	vampire
+vampire	P674_reverse	Twilight
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Jaws	P577	YEAR::1974
+YEAR::1974	P577_reverse	Jaws
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Ender's Game	P577	YEAR::1985
+YEAR::1985	P577_reverse	Ender's Game
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+Ender's Game	P50	YEAR::1985
+YEAR::1985	P50_reverse	Ender's Game
+The Beach	P31	Alex Garland
+Alex Garland	P31_reverse	The Beach
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+The Beach	P31	London
+London	P31_reverse	The Beach
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Ender's Game	P577	YEAR::1985
+YEAR::1985	P577_reverse	Ender's Game
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+The Dwarves	P19	Homburg
+Homburg	P19_reverse	The Dwarves
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Dwarves	P569	10 October 1971
+10 October 1971	P569_reverse	The Dwarves
+Ender's Game	P577	YEAR::1985
+YEAR::1985	P577_reverse	Ender's Game
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Ender's Game	P50	Orson Scott Card
+Orson Scott Card	P50_reverse	Ender's Game
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Ender's Game	P136	science fiction
+science fiction	P136_reverse	Ender's Game
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Ender's Game	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Ender's Game
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Ender's Game	num_books	COUNT::6
+COUNT::6	num_books_reverse	Ender's Game
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Suicide Prince	P50	Portland
+Portland	P50_reverse	The Suicide Prince
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Fire and Fury	P31	YEAR::2018
+YEAR::2018	P31_reverse	Fire and Fury
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
 Inferno	P577	14 May 2013
-Digital Fortress	<UNK>	Seville
-Inferno	<UNK>	Origin
-Digital Fortress	<UNK>	BOOL::Yes
+14 May 2013	P577_reverse	Inferno
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
 Inferno	P50	22 June 1964
-Digital Fortress	<UNK>	National Security Agency
-Inferno	<UNK>	Exeter
-Digital Fortress	P50_reverse	Digital Fortress
+22 June 1964	P50_reverse	Inferno
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 Twilight	P50	Stephenie Meyer
-Digital Fortress	P50_reverse	YEAR::1998
-Twilight	<UNK>	05 October 2005
-Digital Fortress	<UNK>	Seville
-Twilight	<UNK>	Isabella "Bella" Swan
-Digital Fortress	<UNK>	BOOL::Yes
-Twilight	<UNK>	Edward Cullen
-Digital Fortress	<UNK>	National Security Agency
-Twilight	<UNK>	vampire
-Digital Fortress	<UNK>	Digital Fortress
+Stephenie Meyer	P50_reverse	Twilight
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
+Twilight	P31	05 October 2005
+05 October 2005	P31_reverse	Twilight
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+Twilight	P674	Edward Cullen
+Edward Cullen	P674_reverse	Twilight
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
 Digital Fortress	P577	YEAR::1998
-Jaws	P577	YEAR::1974
-Digital Fortress	<UNK>	Seville
-Jaws	<UNK>	Doubleday; Bantam Books
-Digital Fortress	<UNK>	BOOL::Yes
+YEAR::1998	P577_reverse	Digital Fortress
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Jaws	P31	Doubleday; Bantam Books
+Doubleday; Bantam Books	P31_reverse	Jaws
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
 Jaws	P136	Thriller
-Digital Fortress	<UNK>	National Security Agency
-Jaws	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	Digital Fortress
+Thriller	P136_reverse	Jaws
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 The Hobbit	P577	21 September 1937
-Digital Fortress	P50_reverse	YEAR::1998
+21 September 1937	P577_reverse	The Hobbit
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
 The Hobbit	P50	BOOL::Yes
-Digital Fortress	<UNK>	Seville
-The Hobbit	<UNK>	Edith Tolkien
-Digital Fortress	<UNK>	BOOL::Yes
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Digital Fortress	<UNK>	National Security Agency
-The Hobbit	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	Digital Fortress
+BOOL::Yes	P50_reverse	The Hobbit
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
 Digital Fortress	P577	YEAR::1998
-The Shining	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	Seville
-The Shining	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	National Security Agency
-The Shining	<UNK>	BOOL::Yes
-Digital Fortress	<UNK>	Digital Fortress
-Great Expectations	<UNK>	Charles Dickens
-Digital Fortress	P577	YEAR::1998
-Great Expectations	<UNK>	BOOL::No
-Digital Fortress	<UNK>	Seville
-Great Expectations	P123	Chapman & Hall
-Digital Fortress	<UNK>	BOOL::Yes
-Great Expectations	P136	black comedy
-Digital Fortress	<UNK>	National Security Agency
-Great Expectations	<UNK>	London;Kent
-Digital Fortress	<UNK>	Digital Fortress
-Pride and Prejudice	P50	Jane Austen
-Digital Fortress	P50_reverse	YEAR::1998
-Pride and Prejudice	<UNK>	27 January 1813
-Digital Fortress	<UNK>	Seville
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-Digital Fortress	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-Digital Fortress	<UNK>	National Security Agency
-Pride and Prejudice	<UNK>	Mansfield Park
-Digital Fortress	P50_reverse	Digital Fortress
-The Beach	P50	Alex Garland
-Digital Fortress	P577	YEAR::1998
-The Beach	P577	1 September 1935
-Digital Fortress	<UNK>	Seville
-The Beach	<UNK>	London
-Digital Fortress	<UNK>	BOOL::Yes
-The Beach	<UNK>	BOOL::No
-Digital Fortress	<UNK>	National Security Agency
-The Beach	<UNK>	cartoonist
-Digital Fortress	P50_reverse	Digital Fortress
-The Dwarves	P50_reverse	YEAR::2003
-Digital Fortress	P577	YEAR::1998
-The Dwarves	<UNK>	The War of the Dwarves
-Digital Fortress	<UNK>	Seville
-The Dwarves	P50	Markus Heitz
-Digital Fortress	<UNK>	BOOL::Yes
-The Dwarves	P50	Homburg
-Digital Fortress	<UNK>	National Security Agency
-The Dwarves	P577	10 October 1971
-Digital Fortress	<UNK>	Digital Fortress
-The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
-Digital Fortress	P50_reverse	YEAR::1998
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-Digital Fortress	<UNK>	Seville
-The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
-Digital Fortress	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
-Digital Fortress	<UNK>	National Security Agency
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-Stephen King	<UNK>	21 September 1947
-The Suicide Prince	<UNK>	BOOL::Yes
-Stephen King	<UNK>	IT
-The Suicide Prince	<UNK>	Mr. Mercedes
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-The Suicide Prince	P577	YEAR::2015
-Stephen King	<UNK>	The Running Man
-The Suicide Prince	P50	Portland
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-The Suicide Prince	P50	BOOL::Yes
-Fire and Fury	P1476	Inside the Trump White House (English)
-The Suicide Prince	<UNK>	BOOL::Yes
-Fire and Fury	P50	Michael Wolff
-The Suicide Prince	<UNK>	Mr. Mercedes
-Fire and Fury	P577	YEAR::2018
-The Suicide Prince	P577	YEAR::2015
-Fire and Fury	<UNK>	Donald Trump
-The Suicide Prince	P50	Portland
-Fire and Fury	P50	27 August 1953
-The Suicide Prince	P50	BOOL::Yes
-Inferno	P50	Dan Brown
-The Suicide Prince	<UNK>	BOOL::Yes
-Inferno	P577	14 May 2013
-The Suicide Prince	P50_reverse	Mr. Mercedes
-Inferno	<UNK>	Origin
-The Suicide Prince	P577	YEAR::2015
-Inferno	P577	22 June 1964
-The Suicide Prince	P50	Portland
-Inferno	<UNK>	Exeter
-The Suicide Prince	P50	BOOL::Yes
-The Suicide Prince	<UNK>	BOOL::Yes
-Twilight	P50	Stephenie Meyer
-The Suicide Prince	P50_reverse	Mr. Mercedes
-Twilight	P577	05 October 2005
-The Suicide Prince	P577	YEAR::2015
-Twilight	<UNK>	Isabella "Bella" Swan
-The Suicide Prince	P50	Portland
-Twilight	<UNK>	Edward Cullen
-The Suicide Prince	P577	BOOL::Yes
-Twilight	<UNK>	vampire
-Jaws	P50	Peter Benchley
-The Suicide Prince	<UNK>	BOOL::Yes
-Jaws	P577	YEAR::1974
-The Suicide Prince	<UNK>	Mr. Mercedes
-Jaws	<UNK>	Doubleday; Bantam Books
-The Suicide Prince	P577	YEAR::2015
-Jaws	P136	Thriller
-The Suicide Prince	P50	Portland
-Jaws	<UNK>	BOOL::Yes
-The Suicide Prince	P50	BOOL::Yes
-The Hobbit	P577	21 September 1937
-The Suicide Prince	<UNK>	BOOL::Yes
-The Hobbit	P50	BOOL::Yes
-The Suicide Prince	P50_reverse	Mr. Mercedes
-The Hobbit	<UNK>	Edith Tolkien
-The Suicide Prince	P577	YEAR::2015
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-The Suicide Prince	P50	Portland
-The Hobbit	<UNK>	BOOL::Yes
-The Suicide Prince	P577	BOOL::Yes
-The Shining	P50	Stephen King
-The Suicide Prince	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-The Suicide Prince	<UNK>	Mr. Mercedes
-The Shining	<UNK>	BOOL::Yes
-The Suicide Prince	P577	YEAR::2015
-The Shining	<UNK>	BOOL::Yes
-The Suicide Prince	P50	Portland
-The Shining	<UNK>	BOOL::Yes
-The Suicide Prince	P50	BOOL::Yes
+YEAR::1998	P577_reverse	Digital Fortress
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 Great Expectations	P50	Charles Dickens
-The Suicide Prince	<UNK>	BOOL::Yes
-Great Expectations	<UNK>	BOOL::No
-The Suicide Prince	<UNK>	Mr. Mercedes
+Charles Dickens	P50_reverse	Great Expectations
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
 Great Expectations	P123	Chapman & Hall
-The Suicide Prince	P577	YEAR::2015
+Chapman & Hall	P123_reverse	Great Expectations
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
 Great Expectations	P136	black comedy
-The Suicide Prince	P50	Portland
-Great Expectations	<UNK>	London;Kent
-The Suicide Prince	P577	BOOL::Yes
+black comedy	P136_reverse	Great Expectations
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 Pride and Prejudice	P50	Jane Austen
-The Suicide Prince	<UNK>	BOOL::Yes
-Pride and Prejudice	<UNK>	27 January 1813
-The Suicide Prince	P50_reverse	Mr. Mercedes
-Pride and Prejudice	<UNK>	Elizabeth Bennet
-The Suicide Prince	P577	YEAR::2015
-Pride and Prejudice	<UNK>	Fitzwilliam Darcy
-The Suicide Prince	P50	Portland
-Pride and Prejudice	<UNK>	Mansfield Park
-The Suicide Prince	P577	BOOL::Yes
+Jane Austen	P50_reverse	Pride and Prejudice
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+Pride and Prejudice	P50	Mansfield Park
+Mansfield Park	P50_reverse	Pride and Prejudice
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
 The Beach	P50	Alex Garland
-The Suicide Prince	<UNK>	BOOL::Yes
-The Beach	<UNK>	1 September 1935
-The Suicide Prince	<UNK>	Mr. Mercedes
-The Beach	<UNK>	London
-The Suicide Prince	P577	YEAR::2015
-The Beach	<UNK>	BOOL::No
-The Suicide Prince	P50	Portland
-The Beach	<UNK>	cartoonist
-The Suicide Prince	P50	BOOL::Yes
-The Dwarves	P50_reverse	YEAR::2003
-The Suicide Prince	<UNK>	BOOL::Yes
-The Dwarves	P1476	The War of the Dwarves
-The Suicide Prince	<UNK>	Mr. Mercedes
+Alex Garland	P50_reverse	The Beach
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+The Beach	P569	1 September 1935
+1 September 1935	P569_reverse	The Beach
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
+The Beach	P31	London
+London	P31_reverse	The Beach
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+Digital Fortress	P577	YEAR::1998
+YEAR::1998	P577_reverse	Digital Fortress
+The Dwarves	P31	The War of the Dwarves
+The War of the Dwarves	P31_reverse	The Dwarves
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
 The Dwarves	P50	Markus Heitz
-The Suicide Prince	P577	YEAR::2015
-The Dwarves	<UNK>	Homburg
-The Suicide Prince	P50	Portland
+Markus Heitz	P50_reverse	The Dwarves
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Dwarves	P50	Homburg
+Homburg	P50_reverse	The Dwarves
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
 The Dwarves	P577	10 October 1971
-The Suicide Prince	P577	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
-The Suicide Prince	<UNK>	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
-The Suicide Prince	<UNK>	Mr. Mercedes
+10 October 1971	P577_reverse	The Dwarves
+Digital Fortress	P50_reverse_first	Digital Fortress
+Digital Fortress	P50_reverse_first_reverse	Digital Fortress
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Digital Fortress	P50_reverse_first	YEAR::1998
+YEAR::1998	P50_reverse_first_reverse	Digital Fortress
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Digital Fortress	P31	Seville
+Seville	P31_reverse	Digital Fortress
 The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Digital Fortress	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Digital Fortress
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+Digital Fortress	P31	National Security Agency
+National Security Agency	P31_reverse	Digital Fortress
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hitchhiker's Guide to the Galaxy
+Stephen King	P31	21 September 1947
+21 September 1947	P31_reverse	Stephen King
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
 The Suicide Prince	P577	YEAR::2015
-The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+YEAR::2015	P577_reverse	The Suicide Prince
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
 The Suicide Prince	P50	Portland
-The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
-The Suicide Prince	P577	BOOL::Yes
+Portland	P50_reverse	The Suicide Prince
+Stephen King	P31	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P31_reverse	Stephen King
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
 Fire and Fury	P1476	Inside the Trump White House (English)
-Stephen King	P50	Stephen King
-Fire and Fury	<UNK>	Michael Wolff
-Stephen King	<UNK>	BOOL::Yes
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
 Fire and Fury	P577	YEAR::2018
-Stephen King	<UNK>	BOOL::Yes
-Fire and Fury	<UNK>	Donald Trump
-Stephen King	<UNK>	Best Novel
+YEAR::2018	P577_reverse	Fire and Fury
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
 Fire and Fury	P50	27 August 1953
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Inferno	<UNK>	Dan Brown
-Stephen King	P577	21 September 1947
-Inferno	<UNK>	14 May 2013
-Stephen King	<UNK>	IT
-Inferno	<UNK>	Origin
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-Inferno	P577	22 June 1964
-Stephen King	<UNK>	The Running Man
-Inferno	<UNK>	Exeter
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-Stephen King	<UNK>	Stephen King
+27 August 1953	P50_reverse	Fire and Fury
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Inferno	P577	14 May 2013
+14 May 2013	P577_reverse	Inferno
+The Suicide Prince	P50_reverse_first	Mr. Mercedes
+Mr. Mercedes	P50_reverse_first_reverse	The Suicide Prince
+Inferno	P156	Origin
+Origin	P156_reverse	Inferno
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+The Suicide Prince	P50	Portland
+Portland	P50_reverse	The Suicide Prince
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
 Twilight	P50	Stephenie Meyer
-Stephen King	<UNK>	BOOL::Yes
+Stephenie Meyer	P50_reverse	Twilight
+The Suicide Prince	P50_reverse_first	Mr. Mercedes
+Mr. Mercedes	P50_reverse_first_reverse	The Suicide Prince
 Twilight	P577	05 October 2005
-Stephen King	<UNK>	BOOL::Yes
-Twilight	<UNK>	Isabella "Bella" Swan
-Stephen King	<UNK>	Best Novel
-Twilight	<UNK>	Edward Cullen
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Twilight	<UNK>	vampire
+05 October 2005	P577_reverse	Twilight
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+Twilight	P674	Edward Cullen
+Edward Cullen	P674_reverse	Twilight
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
 Jaws	P50	Peter Benchley
-Stephen King	P50	Stephen King
+Peter Benchley	P50_reverse	Jaws
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
 Jaws	P577	YEAR::1974
-Stephen King	<UNK>	BOOL::Yes
-Jaws	<UNK>	Doubleday; Bantam Books
-Stephen King	<UNK>	BOOL::Yes
+YEAR::1974	P577_reverse	Jaws
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
 Jaws	P136	Thriller
-Stephen King	<UNK>	Best Novel
-Jaws	<UNK>	BOOL::Yes
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Stephen King	<UNK>	21 September 1947
+Thriller	P136_reverse	Jaws
+The Suicide Prince	P50	Portland
+Portland	P50_reverse	The Suicide Prince
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
 The Hobbit	P577	21 September 1937
-Stephen King	<UNK>	IT
+21 September 1937	P577_reverse	The Hobbit
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
 The Hobbit	P50	BOOL::Yes
-Stephen King	P50_reverse	The Dark Tower: The Gunslinger
-The Hobbit	<UNK>	Edith Tolkien
-Stephen King	<UNK>	The Running Man
-The Hobbit	<UNK>	John Francis Reuel Tolkien
-Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
-The Hobbit	<UNK>	BOOL::Yes
-Stephen King	<UNK>	Stephen King
-The Shining	<UNK>	Stephen King
-Stephen King	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Stephen King	<UNK>	BOOL::Yes
-The Shining	<UNK>	BOOL::Yes
-Stephen King	<UNK>	Best Novel
-The Shining	<UNK>	BOOL::Yes
-Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-The Shining	<UNK>	BOOL::Yes
-Great Expectations	<UNK>	Charles Dickens
-Stephen King	<UNK>	Stephen King
-Great Expectations	<UNK>	BOOL::No
-Stephen King	<UNK>	BOOL::Yes
-Great Expectations	<UNK>	Chapman & Hall
+BOOL::Yes	P50_reverse	The Hobbit
+The Suicide Prince	P50_reverse_first	Mr. Mercedes
+Mr. Mercedes	P50_reverse_first_reverse	The Suicide Prince
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+The Hobbit	P31	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P31_reverse	The Hobbit
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+Great Expectations	P123	Chapman & Hall
+Chapman & Hall	P123_reverse	Great Expectations
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Great Expectations	P136	black comedy
+black comedy	P136_reverse	Great Expectations
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+Great Expectations	P31	London;Kent
+London;Kent	P31_reverse	Great Expectations
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Pride and Prejudice	P50	Jane Austen
+Jane Austen	P50_reverse	Pride and Prejudice
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+Pride and Prejudice	P31	27 January 1813
+27 January 1813	P31_reverse	Pride and Prejudice
+The Suicide Prince	P50_reverse_first	Mr. Mercedes
+Mr. Mercedes	P50_reverse_first_reverse	The Suicide Prince
+Pride and Prejudice	P674	Elizabeth Bennet
+Elizabeth Bennet	P674_reverse	Pride and Prejudice
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+Pride and Prejudice	P674	Fitzwilliam Darcy
+Fitzwilliam Darcy	P674_reverse	Pride and Prejudice
+The Suicide Prince	P50	Portland
+Portland	P50_reverse	The Suicide Prince
+Pride and Prejudice	P31	Mansfield Park
+Mansfield Park	P31_reverse	Pride and Prejudice
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+The Beach	P50	Alex Garland
+Alex Garland	P50_reverse	The Beach
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+The Beach	P31	1 September 1935
+1 September 1935	P31_reverse	The Beach
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+The Beach	P31	London
+London	P31_reverse	The Beach
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+The Beach	P31	BOOL::No
+BOOL::No	P31_reverse	The Beach
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+The Beach	P31	cartoonist
+cartoonist	P31_reverse	The Beach
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+The Dwarves	P50_reverse_first	YEAR::2003
+YEAR::2003	P50_reverse_first_reverse	The Dwarves
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+The Dwarves	P1476	The War of the Dwarves
+The War of the Dwarves	P1476_reverse	The Dwarves
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+The Dwarves	P50	Markus Heitz
+Markus Heitz	P50_reverse	The Dwarves
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+The Dwarves	P19	Homburg
+Homburg	P19_reverse	The Dwarves
+The Suicide Prince	P19	Portland
+Portland	P19_reverse	The Suicide Prince
+The Dwarves	P577	10 October 1971
+10 October 1971	P577_reverse	The Dwarves
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Douglas Adams	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Suicide Prince	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Suicide Prince
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::No
+BOOL::No	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Suicide Prince	P31	Mr. Mercedes
+Mr. Mercedes	P31_reverse	The Suicide Prince
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Eoin Colfer	P50_reverse	The Hitchhiker's Guide to the Galaxy
+The Suicide Prince	P577	YEAR::2015
+YEAR::2015	P577_reverse	The Suicide Prince
+The Hitchhiker's Guide to the Galaxy	P31	Artemis Fowl
+Artemis Fowl	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Suicide Prince	P50	Portland
+Portland	P50_reverse	The Suicide Prince
+The Hitchhiker's Guide to the Galaxy	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hitchhiker's Guide to the Galaxy
+The Suicide Prince	P569	BOOL::Yes
+BOOL::Yes	P569_reverse	The Suicide Prince
+Fire and Fury	P1476	Inside the Trump White House (English)
+Inside the Trump White House (English)	P1476_reverse	Fire and Fury
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+Fire and Fury	P50	Michael Wolff
+Michael Wolff	P50_reverse	Fire and Fury
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Fire and Fury	P577	YEAR::2018
+YEAR::2018	P577_reverse	Fire and Fury
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+Fire and Fury	P31	Donald Trump
+Donald Trump	P31_reverse	Fire and Fury
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Fire and Fury	P50	27 August 1953
+27 August 1953	P50_reverse	Fire and Fury
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Inferno	P50	Dan Brown
+Dan Brown	P50_reverse	Inferno
+Stephen King	P569	21 September 1947
+21 September 1947	P569_reverse	Stephen King
+Inferno	P31	14 May 2013
+14 May 2013	P31_reverse	Inferno
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+Inferno	P31	Origin
+Origin	P31_reverse	Inferno
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
+Inferno	P569	22 June 1964
+22 June 1964	P569_reverse	Inferno
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+Inferno	P31	Exeter
+Exeter	P31_reverse	Inferno
+Stephen King	P31	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P31_reverse	Stephen King
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+Twilight	P50	Stephenie Meyer
+Stephenie Meyer	P50_reverse	Twilight
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Twilight	P577	05 October 2005
+05 October 2005	P577_reverse	Twilight
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+Twilight	P674	Isabella "Bella" Swan
+Isabella "Bella" Swan	P674_reverse	Twilight
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Twilight	P31	Edward Cullen
+Edward Cullen	P31_reverse	Twilight
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Twilight	P31	vampire
+vampire	P31_reverse	Twilight
+Jaws	P50	Peter Benchley
+Peter Benchley	P50_reverse	Jaws
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+Jaws	P50	YEAR::1974
+YEAR::1974	P50_reverse	Jaws
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Jaws	P123	Doubleday; Bantam Books
+Doubleday; Bantam Books	P123_reverse	Jaws
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+Jaws	P136	Thriller
+Thriller	P136_reverse	Jaws
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+Jaws	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	Jaws
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+Stephen King	P31	21 September 1947
+21 September 1947	P31_reverse	Stephen King
+The Hobbit	P577	21 September 1937
+21 September 1937	P577_reverse	The Hobbit
+Stephen King	P31	IT
+IT	P31_reverse	Stephen King
+The Hobbit	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	The Hobbit
+Stephen King	P50_reverse_first	The Dark Tower: The Gunslinger
+The Dark Tower: The Gunslinger	P50_reverse_first_reverse	Stephen King
+The Hobbit	P26	Edith Tolkien
+Edith Tolkien	P26_reverse	The Hobbit
+Stephen King	P128	The Running Man
+The Running Man	P128_reverse	Stephen King
+The Hobbit	P569	John Francis Reuel Tolkien
+John Francis Reuel Tolkien	P569_reverse	The Hobbit
+Stephen King	P50	Charlie the Choo-Choo: From the World of The Dark Tower
+Charlie the Choo-Choo: From the World of The Dark Tower	P50_reverse	Stephen King
+The Hobbit	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	The Hobbit
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+The Shining	P50	Stephen King
+Stephen King	P50_reverse	The Shining
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+The Shining	P156	BOOL::Yes
+BOOL::Yes	P156_reverse	The Shining
+Stephen King	P50	BOOL::Yes
+BOOL::Yes	P50_reverse	Stephen King
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Stephen King	P31	Best Novel
+Best Novel	P31_reverse	Stephen King
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Stephen King	P31	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.	P31_reverse	Stephen King
+The Shining	P128	BOOL::Yes
+BOOL::Yes	P128_reverse	The Shining
+Great Expectations	P50	Charles Dickens
+Charles Dickens	P50_reverse	Great Expectations
+Stephen King	P50	Stephen King
+Stephen King	P50_reverse	Stephen King
+Great Expectations	P50	BOOL::No
+BOOL::No	P50_reverse	Great Expectations
+Stephen King	P31	BOOL::Yes
+BOOL::Yes	P31_reverse	Stephen King
+Great Expectations	P31	Chapman & Hall
+Chapman & Hall	P31_reverse	Great Expectations

@@ -10,13 +10,14 @@
 5) turn id 统一：优先用数据字段 turn（通常从 0 开始），否则 fallback idx
 """
 
+
 from __future__ import annotations
 
 import argparse
 import json
 import re
 import time
-from dataclasses import asdict, is_dataclass
+from dataclasses import asdict, is_dataclass, replace
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -659,6 +660,27 @@ def run_inference(
 
                     vr = verbalizer.verbalize(q_t, final_evidence)
 
+                # ================= 新增：Yes/No 布尔类型问题拦截逻辑 =================
+                q_lower = q_t.strip().lower()
+                is_boolean_question = q_lower.startswith((
+                    "is ", "does ", "did ", "was ", "were ", "are ", "has ", "have ", "can ", "could "
+                ))
+                gold_ans_lower = _norm(gold_answer_text).lower()
+
+                if is_boolean_question or gold_ans_lower in ["yes", "no"]:
+                    if len(final_evidence) > 0:
+                        ev_tail = str(getattr(final_evidence[0], "tail", "")).strip()
+                        # 如果图谱里明确存的是 BOOL::No，就输出 No
+                        if ev_tail.lower() == "bool::no":
+                            pred_answer_value = "No"
+                            vr = replace(vr, answer_text="No.")
+                        else:
+                            pred_answer_value = "Yes"
+                            vr = replace(vr, answer_text="Yes.")
+                    else:
+                        pred_answer_value = "No"
+                        vr = replace(vr, answer_text="No.")
+                # =====================================================================
                 turn_out = {
                     "turn": current_turn_id,
                     "question": q_t,

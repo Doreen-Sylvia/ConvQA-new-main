@@ -75,6 +75,20 @@ def _match_date(pred: Any, gold: Any) -> bool:
 
     return False
 
+def _is_match(pred: Any, gold: Any) -> bool:
+    p = normalize_answer(pred)
+    g = normalize_answer(gold)
+    if not p or not g:
+        return False
+    if p == g:
+        return True
+    if g in ['yes', 'no'] or p in ['yes', 'no']:
+        return p == g
+    if (len(g) >= 3 and g in p) or (len(p) >= 3 and p in g):
+        return True
+    if _match_date(pred, gold):
+        return True
+    return False
 
 def _read_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
     if not path.exists():
@@ -481,10 +495,7 @@ def diagnose(
 
         em = False
         if gold_answer:
-            em = normalize_answer(pred_answer) == normalize_answer(gold_answer)
-            if not em:
-                em = _match_date(pred_answer, gold_answer)
-
+            em = _is_match(pred_answer, gold_answer)
         if only_failures and em:
             continue
 

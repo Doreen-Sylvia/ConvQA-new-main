@@ -3,8 +3,9 @@ import json
 import os
 import re
 from typing import Dict, List, Set, Tuple, Optional
+from pathlib import Path
 
-# Scientific relation mapping (aligned with generate_relations_dict.py)
+# 扩展科学的关系映射字典
 WIKIDATA_MAPPING = {
     'author': 'P50',
     'screenwriter': 'P58',
@@ -17,64 +18,43 @@ WIKIDATA_MAPPING = {
     'date of death': 'P570',
     'place of death': 'P20',
     'publication date': 'P577',
-    'date of publication': 'P577', 
     'genre': 'P136',
     'country of citizenship': 'P27',
-    'member of sports team': 'P54',
-    'educated at': 'P69',
     'employer': 'P108',
     'occupation': 'P106',
-    'position (on team)': 'P413',
-    'member of': 'P463',
-    'part of': 'P361',
     'series': 'P179',
     'instance of': 'P31',
     'award received': 'P166',
-    'record label': 'P264',
-    'original channel': 'P449',
     'composer': 'P86',
-    'lyrics by': 'P676',
     'producer': 'P162',
-    'distributor': 'P750',
-    'language used': 'P407',
     'main subject': 'P921',
-    'conflict': 'P607',
-    'participant of': 'P1344',
-    'nominated for': 'P1411',
     'father': 'P22',
     'mother': 'P25',
     'spouse': 'P26',
     'child': 'P40',
     'sibling': 'P3373',
-    'student of': 'P1066',
-    'doctoral advisor': 'P184',
     'influenced by': 'P737',
     'location': 'P276',
-    'capital': 'P36',
-    'head of government': 'P6',
-    'member of political party': 'P102',
-    'religion': 'P140',
-    'unmarried partner': 'P451',
-    'field of work': 'P101',
-    'movement': 'P135',
-    'instrument': 'P1303',
-    # Custom mappings for inferred broad relations
-    'first_book': 'P50_reverse', # Approximated as "authored by" (reverse P50)
-    'final_book': 'P50_reverse',
-    'num_books': 'P50_reverse', # Or specific property like number of works (P800 count)
-    'award_year': 'P166',        # award received
-    'publication_year': 'P577', 
-    'book_title': 'P1476',       # title
-    'publisher': 'P123',         # publisher
+
+    # === 新增：细化 related_to 的具体关系 ===
+    'characters': 'P674',  # 主角/角色
+    'followed_by': 'P156',  # 续作
+    'based_on': 'P128',  # 改编自/基于 (movie/film/tv)
+    'narrator': 'P2438',  # 旁白/叙述者
+
+    # === 修复自定义关系映射 ===
+    'first_book': 'P50_reverse_first',  # 区分正反向
+    'final_book': 'P50_reverse_final',
+    'num_books': 'num_books',  # 绝对不能映射成 P50_reverse，保持独立属性
+    'award_year': 'P166',
+    'publication_year': 'P577',
+    'book_title': 'P1476',
+    'publisher': 'P123',
     'nationality': 'P27',
 }
 
 
 class DialogueToKGConverter:
-    """
-    将对话数据转换为知识图谱 triple record（带 metadata），并输出 memory_triples.tsv
-    """
-
     def __init__(self, input_file: str):
         self.input_file = input_file
         self.entities: Set[str] = set()
@@ -82,13 +62,6 @@ class DialogueToKGConverter:
         self.records: List[Dict[str, str]] = []
 
     def normalize_tail(self, answer_text: Optional[str]) -> Optional[str]:
-        """
-        tail 规范化:
-        - 纯数字且长度==4 -> YEAR::2006
-        - 纯数字但不是4位 -> COUNT::7
-        - Yes/No -> BOOL::Yes
-        - 否则原样
-        """
         if answer_text is None:
             return None
         tail = str(answer_text).strip()
@@ -107,20 +80,33 @@ class DialogueToKGConverter:
         return tail
 
     def _infer_relation(self, original_question: str) -> str:
-        """
-        relation 规则扩展（最小覆盖）
-        Mapped to Scientific Taxonomy (Wikidata PIDs)
-        """
         q = (original_question or "").strip().lower()
 
-        # Scientific mapping logic
         inferred_raw = None
-        
-        if "first" in q and "book" in q:
+
+        # 1. 精确拦截细粒度关系，消灭 related_to
+        if "protagonist" in q or "character" in q:
+            inferred_raw = "characters"
+        elif "sequel" in q or "followed by" in q or ("after" in q and "book" in q):
+            inferred_raw = "followed_by"
+        elif "movie" in q or "film" in q or "tv series" in q or "adaptation" in q:
+            inferred_raw = "based_on"
+        elif "narrator" in q or "narrating" in q:
+            inferred_raw = "narrator"
+        elif "wife" in q or "husband" in q or "spouse" in q or "married" in q:
+            inferred_raw = "spouse"
+        elif "born" in q:
+            if "where" in q or "city" in q or "country" in q:
+                inferred_raw = "place of birth"
+            else:
+                inferred_raw = "date of birth"
+
+        # 2. 原本的逻辑（修复了 first book 的匹配缺陷）
+        elif "first" in q and ("book" in q or "novel" in q):
             inferred_raw = "first_book"
-        elif any(k in q for k in ["final", "ended", "concluded", "last book"]):
+        elif any(k in q for k in ["final", "ended", "concluded", "last book", "last novel"]):
             inferred_raw = "final_book"
-        elif any(k in q for k in ["how many", "amount", "number of books", "number of book", "number of"]):
+        elif any(k in q for k in ["how many", "amount", "number of books", "number of", "how much"]):
             inferred_raw = "num_books"
         else:
             when_only = (q == "when") or ("when" in q)
@@ -129,53 +115,35 @@ class DialogueToKGConverter:
                     inferred_raw = "award_year"
                 else:
                     inferred_raw = "publication_year"
-
-            # Check for nationality and country before author, as "author's nationality" contains "author"
             elif "nationality" in q or "country" in q:
                 inferred_raw = "nationality"
-            elif "author" in q:
+            elif "author" in q or "wrote" in q or "written" in q:
                 inferred_raw = "author"
             elif "year" in q:
                 inferred_raw = "publication_year"
             elif "title" in q:
                 inferred_raw = "book_title"
-            elif "award" in q:
-                inferred_raw = "award" # will map to P166
-            elif "publisher" in q:
+            elif "award" in q or "prize" in q:
+                inferred_raw = "award"
+            elif "publisher" in q or "published by" in q:
                 inferred_raw = "publisher"
             elif "genre" in q:
                 inferred_raw = "genre"
             else:
-                # Fallback to generic if we really can't guess,
-                # but 'related_to' is discouraged.
-                # Try to map to 'P31' (instance of) or similar if possible,
-                # otherwise maybe return None or keep specific logic.
                 inferred_raw = "related_to"
 
-        # Apply mapping
         if inferred_raw in WIKIDATA_MAPPING:
             return WIKIDATA_MAPPING[inferred_raw]
-        
-        # Additional cleanup for 'award' -> 'award received'
-        if inferred_raw == 'award':
-             return WIKIDATA_MAPPING.get('award received', 'P166')
 
-        # If related_to, try to avoid it or map to something neutral
+        if inferred_raw == 'award':
+            return WIKIDATA_MAPPING.get('award received', 'P166')
+
         if inferred_raw == 'related_to':
-             # Return <UNK> or P31?
-             # For now, let's return 'P31' (instance of) as a safe bet for "is a / has property"
-             # or keep 'related_to' if the dict supports it (which it doesn't really).
-             # The generated dict has <UNK>.
-             return "<UNK>" 
+            return "P31"  # 泛化为 Instance of (P31) 比 <UNK> 更好
 
         return inferred_raw
 
     def extract_triples_from_dialogue(self, dialogue: Dict) -> List[Dict[str, str]]:
-        """
-        从单个对话中提取 triple records（带 metadata）
-        record 字段:
-        conv_id, turn_id, topic, head, relation, tail
-        """
         conv_id = dialogue.get("conv_id")
         records: List[Dict[str, str]] = []
 
@@ -195,28 +163,38 @@ class DialogueToKGConverter:
 
             head = topic
             relation = self._infer_relation(original_question)
+            rev_relation = f"{relation}_reverse"  # 生成反向关系名称
 
-            self.entities.add(topic)
+            self.entities.add(head)
             self.entities.add(tail)
             self.relations.add(relation)
+            self.relations.add(rev_relation)
 
-            records.append(
-                {
-                    "conv_id": "" if conv_id is None else str(conv_id),
-                    "turn_id": "" if turn_id is None else str(turn_id),
-                    "topic": topic,
-                    "head": head,
-                    "relation": relation,
-                    "tail": tail,
-                }
-            )
+            # ======== 核心修复：同时添加正向边和反向边 ========
+            # 1. 正向边 (Topic -> Relation -> Answer)
+            records.append({
+                "conv_id": "" if conv_id is None else str(conv_id),
+                "turn_id": "" if turn_id is None else str(turn_id),
+                "topic": topic,
+                "head": head,
+                "relation": relation,
+                "tail": tail,
+            })
+
+            # 2. 反向边 (Answer -> Relation_reverse -> Topic)
+            # 这彻底解决了把书当成作者名字输出的串台问题！
+            records.append({
+                "conv_id": "" if conv_id is None else str(conv_id),
+                "turn_id": "" if turn_id is None else str(turn_id),
+                "topic": topic,
+                "head": tail,  # 尾做头
+                "relation": rev_relation,  # 关系加 reverse
+                "tail": head,  # 头做尾
+            })
 
         return records
 
     def convert(self) -> Tuple[List[Dict[str, str]], Set[str], Set[str]]:
-        """
-        转换整个数据集，并按 (conv_id, turn_id, head, relation, tail) 维度去重
-        """
         with open(self.input_file, "r", encoding="utf-8") as f:
             data = json.load(f)
 
@@ -237,11 +215,6 @@ class DialogueToKGConverter:
         return self.records, self.entities, self.relations
 
     def save_dataset(self, output_dir: str):
-        """
-        保存:
-        - memory_triples.tsv (给记忆库推理用)
-        - 仍保留 train/valid/test + dict（可用于 embedding 训练）
-        """
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
@@ -264,67 +237,43 @@ class DialogueToKGConverter:
         self._save_triples(os.path.join(output_dir, "test.txt"), test_triples)
 
         self._save_dict(os.path.join(output_dir, "entities.dict"), entities)
-        # We assume relations.dict is already present/managed by scientific pipeline
-        # But if we found new valid relations in this pass (unlikely with fixed mapping), we could append.
-        # For strictness, let's NOT overwrite the relations.dict with just what we found here,
-        # but ensure we use the full scientific dict.
-        
-        # However, for this specific script, if it needs to output the dict of relations used:
-        # It's better to verify against the loaded dict.
-        
-        # Since we are modifying to 'correspond to relations.dict', we should ensure output relations are valid.
-        pass # The previous code saved relations.dict. We might want to disable that or ensure it saves the USED subset or the FULL set.
 
-        # Let's read the Reference relations.dict to ensure consistency
+        # 强制更新 relations.dict，因为我们新增了反向关系
         ref_rel_path = os.path.join(output_dir, "relations.dict")
-        if os.path.exists(ref_rel_path):
-             print(f"Preserving existing scientific relations.dict at {ref_rel_path}")
-        else:
-             self._save_dict(ref_rel_path, relations)
+        self._save_dict(ref_rel_path, relations)
 
-        print(f"数据集已保存到 {output_dir}")
+        print(f"✅ 数据集已成功保存并注入反向边到 {output_dir}")
         print(f"memory_triples.tsv: {len(records)} records")
-        print(f"训练集: {len(train_triples)} 三元组")
-        print(f"验证集: {len(valid_triples)} 三元组")
-        print(f"测试集: {len(test_triples)} 三元组")
-        print(f"实体数: {len(entities)}")
-        print(f"关系数: {len(relations)}")
 
     def _save_memory_triples_tsv(self, filename: str, records: List[Dict[str, str]]):
-        """
-        保存带 metadata 的 triple records 到 TSV:
-        conv_id \t turn_id \t topic \t head \t relation \t tail
-        """
         with open(filename, "w", encoding="utf-8") as f:
             f.write("conv_id\tturn_id\ttopic\thead\trelation\ttail\n")
             for r in records:
-                f.write(
-                    f"{r['conv_id']}\t{r['turn_id']}\t{r['topic']}\t{r['head']}\t{r['relation']}\t{r['tail']}\n"
-                )
+                f.write(f"{r['conv_id']}\t{r['turn_id']}\t{r['topic']}\t{r['head']}\t{r['relation']}\t{r['tail']}\n")
 
     def _save_triples(self, filename: str, triples: List[Tuple[str, str, str]]):
-        """
-        保存三元组到文件
-        """
         with open(filename, "w", encoding="utf-8") as f:
             for head, relation, tail in triples:
                 f.write(f"{head}\t{relation}\t{tail}\n")
 
     def _save_dict(self, filename: str, items: Set[str]):
-        """
-        保存字典到文件
-        """
+        # 加入控制符并排序
+        special_tokens = ['<PAD>', '<UNK>']
+        final_list = special_tokens + sorted(list(items))
         with open(filename, "w", encoding="utf-8") as f:
-            for idx, item in enumerate(sorted(items)):
+            for idx, item in enumerate(final_list):
                 f.write(f"{item}\t{idx}\n")
 
 
 def main():
-    """
-    主函数：执行数据预处理
-    """
-    input_file = "../../data/merged_dialogues/comprehensive_merged_dialogues.json"
-    output_dir = "../../data/preprocessed/dialogue_kg/"
+    # 自动获取项目根目录 (ConvQA-new-main)
+    repo_root = Path(__file__).resolve().parents[2]
+
+    input_file = str(repo_root / "data" / "merged_dialogues" / "comprehensive_merged_dialogues.json")
+    output_dir = str(repo_root / "data" / "preprocessed" / "dialogue_kg")
+
+    print(f"正在读取: {input_file}")
+    print(f"准备输出到: {output_dir}")
 
     converter = DialogueToKGConverter(input_file)
     converter.save_dataset(output_dir)
