@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
+import re
 
 from src.inference.kg_execute import EvidenceTriple
 from src.inference.wikidata_properties import map_relation_to_properties
@@ -74,46 +75,31 @@ class WikidataRetriever:
         timeout_s: float = 10.0,
         el_limit_per_mention: int = 3,
         max_head_qids: int = 3,
-        use_local_el: bool = False,
         local_el_dict_path: Optional[str] = None,
-        use_local_wikidata_kg: bool = False,
         local_wikidata_kg_dir: Optional[str] = None,
         local_wikidata_kg_split: str = "train",
     ) -> None:
-        self._use_local_el = bool(use_local_el)
+        # Force offline mode parameters
+        self._use_local_el = True
         self._local_dict_path = str(local_el_dict_path) if local_el_dict_path else ""
         self._local_mention2qid: Optional[Dict[str, str]] = None
 
-        if self._use_local_el:
-            # lazy-load on first retrieve to keep init fast
-            self.entity_linker = None  # type: ignore
-        else:
-            # Import lazily so offline-only users can delete online modules.
-            from src.inference.wikidata_el import EntityLinker  # local import
+        # lazy-load on first retrieve to keep init fast
+        self.entity_linker = None  # type: ignore
 
-            self.entity_linker = EntityLinker(language=language, limit_per_mention=el_limit_per_mention, timeout_s=timeout_s)
-
-        # KG backend: online (default) vs local preprocessed triples.
-        self._use_local_wikidata_kg = bool(use_local_wikidata_kg)
+        # KG backend: always local
         self._local_wikidata_kg_dir = str(local_wikidata_kg_dir) if local_wikidata_kg_dir else ""
         self._local_wikidata_kg_split = str(local_wikidata_kg_split or "train")
         self._local_kg: Optional[LocalWikidataKG] = None
         self._local_rel_map: Optional[Dict[str, List[str]]] = None
-        # Online KG backend (optional). Only construct if we may use it.
-        if self._use_local_wikidata_kg:
-            self.kg = None  # type: ignore
-        else:
-            from src.inference.wikidata_kg import WikidataKG  # local import
-
-            self.kg = WikidataKG(timeout_s=timeout_s, language=language)
+        
         self.max_head_qids = max(1, int(max_head_qids))
 
         self._language = language
         self._el_limit_per_mention = el_limit_per_mention
 
     def _ensure_local_kg(self) -> None:
-        if not self._use_local_wikidata_kg:
-            return
+        # Always run since we force _use_local_wikidata_kg = True
         if self._local_kg is not None:
             return
         kg_dir = self._local_wikidata_kg_dir
@@ -121,7 +107,8 @@ class WikidataRetriever:
             # default to <repo_root>/data/data/wikidata
             repo_root = Path(__file__).resolve().parents[2]
             kg_dir = str(repo_root / "data" / "data" / "wikidata")
-        self._local_kg = LocalWikidataKG(root_dir=kg_dir, split=self._local_wikidata_kg_split, add_reverse_relations=False)
+        # Enable reverse relations to handle "Who wrote X?" and "What did X write?"
+        self._local_kg = LocalWikidataKG(root_dir=kg_dir, split=self._local_wikidata_kg_split, add_reverse_relations=True)
         # eager load once to front-load IO instead of incurring random latency mid-run
         self._local_kg.load()
 
@@ -138,18 +125,18 @@ class WikidataRetriever:
         """
 
         want: Dict[str, List[str]] = {
-            "author": ["author", "writer"],
-            "genre": ["genre"],
-            "publisher": ["publisher"],
-            "publication_year": ["publication date", "publication year", "published"],
-            "award": ["award", "prize"],
-            "nationality": ["country of citizenship", "nationality", "country"],
+            "author": ["author", "writer", "creator", "written by", "screenwriter", "novelist", "author_reverse", "writer_reverse"],
+            "genre": ["genre", "subclass", "instance of", "type"],
+            "publisher": ["publisher", "published by"],
+            "publication_year": ["publication date", "publication year", "published", "release date", "date", "year", "start time"],
+            "award": ["award", "prize", "winner", "nominated for"],
+            "nationality": ["country of citizenship", "nationality", "country", "citizenship"],
             # less reliable, but keep a few keywords to avoid being completely empty
-            "book_title": ["title"],
-            "first_book": ["first", "debut"],
-            "final_book": ["last", "final"],
-            "num_books": ["number of", "count"],
-            "related_to": ["related"],
+            "book_title": ["title", "name", "original title"],
+            "first_book": ["first", "debut", "start"],
+            "final_book": ["last", "final", "end"],
+            "num_books": ["number of", "count", "quantity", "author_reverse", "writer_reverse", "part of_reverse", "series_reverse"],
+            "related_to": ["related", "connection", "part of", "series", "instance of", "subclass of", "has part", "based on", "preceded by", "followed by", "derivative work", "sequel", "prequel"],
         }
 
         out: Dict[str, List[str]] = {k: [] for k in want}
@@ -170,13 +157,48 @@ class WikidataRetriever:
                     rel_norm = rel_text.strip().casefold()
                     if not rel_norm or rel_norm.endswith("_reverse"):
                         continue
+                    
+                    # BLOCKLIST: avoid picking up IDs, codes, classification properties
+                    # e.g., "ISFDB author ID" should not map to "author"
+                    block_words = {"id", "identifier", "code", "index", "classification", "url", 
+                                   "viaf", "gnd", "oclc", "isbn", "doi", "lccn", "link", "website", 
+                                   "category", "template", "image", "logo", "map", "flag", 
+                                   "signature", "media", "video", "audio", "file", "commons",
+                                   "described by source", "described at url", "subject", "topic"}
+                    # check if rel_norm has ANY block words as separate tokens or endings
+                    is_dirty = False
+                    rel_tokens = set(re.split(r"[\s\(\)\-_]+", rel_norm))
+                    if block_words & rel_tokens:
+                        is_dirty = True
+                    
+                    # Exception: allow 'subject' or 'topic' if we are looking for 'related_to'
+                    # but generally we want to exclude meta-relations.
+                    
+                    # Even safer: if the relation name ENDS with id/identifier
+                    if rel_norm.endswith(" id") or rel_norm.endswith(" identifier") or rel_norm.endswith(" code"):
+                        is_dirty = True
+                        
+                    if is_dirty:
+                         # special case: if we are looking for 'related_to', maybe we allow some breadth,
+                         # but for 'author', 'genre', etc. absolutely block IDs.
+                         pass
 
                     for k, kws in want.items():
                         if len(out[k]) >= 20:
                             continue
+                            
+                        # If looking for author/publisher/genre etc, be strict about blocking IDs
+                        if k != "related_to" and is_dirty:
+                            continue
+                            
                         for w in kws:
                             ww = w.casefold()
                             if ww and ww in rel_norm:
+                                # Double check: if we matched "author" in "ISFDB author ID", skip it!
+                                # Logic: if rel_norm has 'id' or 'identifier' and we matched inside it...
+                                if is_dirty and k != "related_to":
+                                    continue
+                                
                                 out[k].append(rel_text.strip())
                                 break
         except Exception:
@@ -195,8 +217,7 @@ class WikidataRetriever:
         return out
 
     def _ensure_local_el(self) -> None:
-        if not self._use_local_el:
-            return
+        # Always run since we force _use_local_el = True
         if self._local_mention2qid is None:
             mention2qid: Dict[str, str] = {}
             if self._local_dict_path:
@@ -241,7 +262,9 @@ class WikidataRetriever:
         self._ensure_local_el()
         self._ensure_local_kg()
         rel = _norm(relation_candidate)
-        rel_names: List[str] = []  # only used in local KG mode
+        rel_names: List[str] = []
+        
+        # In offline mode, property_ids main use is limited since we rely on string matching in local KG
         if property_ids is not None:
             props = [_norm(x) for x in property_ids if _norm(x)]
         else:
@@ -251,17 +274,17 @@ class WikidataRetriever:
         head_qids = [l.qid for l in links[: self.max_head_qids]]
         head_labels = {l.qid: l.label for l in links[: self.max_head_qids] if _norm(l.label)}
 
-        if self._use_local_wikidata_kg and self._local_kg is not None:
-            # Offline mode: we cannot use QIDs/property IDs. We interpret:
-            # - head_candidates as entity labels
-            # - relation_candidate as relation label
+        # Offline mode: we cannot use QIDs/property IDs. We interpret:
+        # - head_candidates as entity labels
+        # - relation_candidate as relation label
 
-            if rel and self._local_rel_map is not None:
-                rel_names = list(self._local_rel_map.get(rel, []) or [])
-            if not rel_names and rel:
-                rel_names = [rel]
+        if rel and self._local_rel_map is not None:
+            rel_names = list(self._local_rel_map.get(rel, []) or [])
+        if not rel_names and rel:
+            rel_names = [rel]
 
-            evidence = self._local_kg.retrieve_1hop(
+        if self._local_kg is not None:
+             evidence = self._local_kg.retrieve_1hop(
                 head_entities=list(head_candidates),
                 relation_names=rel_names if rel else [],
                 relation_name_for_evidence=rel,
@@ -269,17 +292,16 @@ class WikidataRetriever:
                 scope="local_wikidata",
             )
         else:
-            # Online mode
-            evidence = self.kg.retrieve_1hop(head_qids=head_qids, property_ids=props, relation_name=rel, top_k=top_k)  # type: ignore
+            evidence = []
 
         query_dbg = {
             "head_qids": head_qids,
             "head_labels": head_labels,
             "property_ids": props,
             "relation_candidate": rel or None,
-            "local_relation_names": (rel_names if (self._use_local_wikidata_kg and self._local_kg is not None) else None),
+            "local_relation_names": rel_names,
             "head_candidates": list(head_candidates)[:10],
-            "kg_backend": ("local" if (self._use_local_wikidata_kg and self._local_kg is not None) else "online"),
+            "kg_backend": "local",
         }
 
         return (

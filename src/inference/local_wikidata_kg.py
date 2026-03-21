@@ -178,7 +178,37 @@ class LocalWikidataKG:
                 tails = rel_map.get(r) or []
                 if not tails:
                     continue
-                for t in (tails[:k] if k > 0 else tails):
+                
+                valid_tails = []
+                for t in tails:
+                    if not t:
+                        continue
+                    # 1. Block URLs / metadata
+                    if t.startswith("http") or "wikipedia" in t.lower() or "wikidata" in t.lower():
+                        continue
+                    # 2. Block QIDs / numeric strings / weird IDs
+                    # allow years like "1984" but block long numbers "123456789"
+                    if t.isdigit() and len(t) > 4: 
+                        continue
+                    if t.startswith("Q") and t[1:].isdigit(): 
+                        continue
+                    if t.startswith("P") and t[1:].isdigit():
+                        continue
+                    # Block common ID patterns seen in failures
+                    if "\\" in t or "/" in t: # paths like IT\ICCU\...
+                         # Exception: dates like 1999/01/01? Usually dates are YYYY-MM-DD
+                         if not re.match(r"^\d{4}/\d{2}/\d{2}", t):
+                             continue
+
+                    # 3. Clean dates (YYYY-MM-DDTHH:MM:SSZ -> YYYY-MM-DD)
+                    # Simple check: if ends with T00:00:00Z
+                    if t.endswith("T00:00:00Z"):
+                        t = t.split("T")[0]
+                    
+                    valid_tails.append(t)
+                
+                # Take top k valid tails
+                for t in (valid_tails[:k] if k > 0 else valid_tails):
                     ev.append(
                         EvidenceTriple(
                             head=h,
@@ -192,4 +222,3 @@ class LocalWikidataKG:
 
 
 __all__ = ["LocalWikidataKG", "LocalWikidataKGConfig"]
-

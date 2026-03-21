@@ -1,595 +1,595 @@
-Digital Fortress	related_to	Digital Fortress
-The Stand	related_to	Stephen King
-Digital Fortress	publication_year	YEAR::1998
-The Stand	genre	post-apocalyptic;horror
-Digital Fortress	related_to	Seville
-The Stand	publication_year	YEAR::1978
-Digital Fortress	related_to	BOOL::Yes
-The Stand	publisher	Doubleday
-Digital Fortress	related_to	National Security Agency
-The Stand	related_to	Captain Trips
-The Stand	author	Stephen King
-The Suicide Prince	related_to	BOOL::Yes
-The Stand	genre	post-apocalyptic;horror
-The Suicide Prince	related_to	Mr. Mercedes
-The Stand	publication_year	YEAR::1978
-The Suicide Prince	publication_year	YEAR::2015
-The Stand	publisher	Doubleday
-The Suicide Prince	author	Portland
-The Stand	related_to	Captain Trips
-The Suicide Prince	author	BOOL::Yes
-Stephen King	author	Stephen King
-The Stand	related_to	Stephen King
-Stephen King	related_to	BOOL::Yes
-The Stand	genre	post-apocalyptic;horror
-Stephen King	related_to	BOOL::Yes
-The Stand	publication_year	YEAR::1978
-Stephen King	related_to	Best Novel
-The Stand	related_to	Doubleday
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-The Stand	related_to	Captain Trips
-Fire and Fury	book_title	Inside the Trump White House (English)
-The Stand	related_to	Stephen King
-Fire and Fury	author	Michael Wolff
-The Stand	genre	post-apocalyptic;horror
-Fire and Fury	related_to	YEAR::2018
-The Stand	publication_year	YEAR::1978
-Fire and Fury	related_to	Donald Trump
-The Stand	publisher	Doubleday
-Fire and Fury	author	27 August 1953
-The Stand	related_to	Captain Trips
-Inferno	related_to	Dan Brown
-The Stand	author	Stephen King
-Inferno	related_to	14 May 2013
-The Stand	genre	post-apocalyptic;horror
-Inferno	related_to	Origin
-The Stand	publication_year	YEAR::1978
-Inferno	publication_year	22 June 1964
-The Stand	related_to	Doubleday
-Inferno	related_to	Exeter
-The Stand	related_to	Captain Trips
-The Stand	related_to	Stephen King
-Twilight	related_to	Stephenie Meyer
-The Stand	genre	post-apocalyptic;horror
-Twilight	publication_year	05 October 2005
-The Stand	publication_year	YEAR::1978
-Twilight	related_to	Isabella "Bella" Swan
-The Stand	publisher	Doubleday
-Twilight	related_to	Edward Cullen
-The Stand	related_to	Captain Trips
-Twilight	related_to	vampire
-Jaws	author	Peter Benchley
-The Stand	author	Stephen King
-Jaws	publication_year	YEAR::1974
-The Stand	genre	post-apocalyptic;horror
-Jaws	related_to	Doubleday; Bantam Books
-The Stand	publication_year	YEAR::1978
-Jaws	genre	Thriller
-The Stand	publisher	Doubleday
-Jaws	related_to	BOOL::Yes
-The Stand	related_to	Captain Trips
-The Hobbit	publication_year	21 September 1937
-The Stand	related_to	Stephen King
-The Hobbit	author	BOOL::Yes
-The Stand	genre	post-apocalyptic;horror
-The Hobbit	related_to	Edith Tolkien
-The Stand	publication_year	YEAR::1978
-The Hobbit	related_to	John Francis Reuel Tolkien
-The Stand	publisher	Doubleday
-The Hobbit	related_to	BOOL::Yes
-The Stand	related_to	Captain Trips
-The Shining	related_to	Stephen King
-The Stand	author	Stephen King
-The Shining	related_to	BOOL::Yes
-The Stand	genre	post-apocalyptic;horror
-The Shining	related_to	BOOL::Yes
-The Stand	publication_year	YEAR::1978
-The Shining	related_to	BOOL::Yes
-The Stand	related_to	Doubleday
-The Shining	related_to	BOOL::Yes
-The Stand	related_to	Captain Trips
-Great Expectations	related_to	Charles Dickens
-The Stand	author	Stephen King
-Great Expectations	related_to	BOOL::No
-The Stand	genre	post-apocalyptic;horror
-Great Expectations	related_to	Chapman & Hall
-The Stand	publication_year	YEAR::1978
-Great Expectations	genre	black comedy
-The Stand	related_to	Doubleday
-Great Expectations	related_to	London;Kent
-The Stand	related_to	Captain Trips
-Pride and Prejudice	author	Jane Austen
-The Stand	author	Stephen King
-Pride and Prejudice	publication_year	27 January 1813
-The Stand	genre	post-apocalyptic;horror
-Pride and Prejudice	related_to	Elizabeth Bennet
-The Stand	publication_year	YEAR::1978
-Pride and Prejudice	related_to	Fitzwilliam Darcy
-The Stand	publisher	Doubleday
-Pride and Prejudice	related_to	Mansfield Park
-The Stand	related_to	Captain Trips
-The Beach	related_to	Alex Garland
-The Stand	author	Stephen King
-The Beach	publication_year	1 September 1935
-The Stand	genre	post-apocalyptic;horror
-The Beach	related_to	London
-The Stand	publication_year	YEAR::1978
-The Beach	related_to	BOOL::No
-The Stand	related_to	Doubleday
-The Beach	related_to	cartoonist
-The Stand	related_to	Captain Trips
-The Dwarves	first_book	YEAR::2003
-The Stand	author	Stephen King
-The Dwarves	related_to	The War of the Dwarves
-The Stand	genre	post-apocalyptic;horror
-The Dwarves	author	Markus Heitz
-The Stand	publication_year	YEAR::1978
-The Dwarves	author	Homburg
-The Stand	publisher	Doubleday
-The Dwarves	publication_year	10 October 1971
-The Stand	related_to	Captain Trips
-The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
-The Stand	author	Stephen King
-The Hitchhiker's Guide to the Galaxy	author	BOOL::No
-The Stand	genre	post-apocalyptic;horror
-The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
-The Stand	publication_year	YEAR::1978
-The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
-The Stand	related_to	Doubleday
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
-The Stand	related_to	Captain Trips
-Digital Fortress	related_to	Digital Fortress
-Ender's Game	publication_year	YEAR::1985
-Digital Fortress	first_book	YEAR::1998
-Ender's Game	author	Orson Scott Card
-Digital Fortress	related_to	Seville
-Ender's Game	genre	science fiction
-Digital Fortress	related_to	BOOL::Yes
-Ender's Game	related_to	BOOL::Yes
-Digital Fortress	related_to	National Security Agency
-Ender's Game	num_books	COUNT::6
-Ender's Game	publication_year	YEAR::1985
-The Suicide Prince	related_to	BOOL::Yes
-Ender's Game	author	Orson Scott Card
-The Suicide Prince	first_book	Mr. Mercedes
-Ender's Game	genre	science fiction
-The Suicide Prince	publication_year	YEAR::2015
-Ender's Game	related_to	BOOL::Yes
-The Suicide Prince	author	Portland
-Ender's Game	num_books	COUNT::6
-The Suicide Prince	author	BOOL::Yes
-Ender's Game	publication_year	YEAR::1985
-Stephen King	related_to	Stephen King
-Ender's Game	author	Orson Scott Card
-Stephen King	related_to	BOOL::Yes
-Ender's Game	genre	science fiction
-Stephen King	related_to	BOOL::Yes
-Ender's Game	related_to	BOOL::Yes
-Stephen King	related_to	Best Novel
-Ender's Game	num_books	COUNT::6
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Ender's Game	publication_year	YEAR::1985
-Fire and Fury	book_title	Inside the Trump White House (English)
-Ender's Game	author	Orson Scott Card
-Fire and Fury	author	Michael Wolff
-Ender's Game	genre	science fiction
-Fire and Fury	publication_year	YEAR::2018
-Ender's Game	related_to	BOOL::Yes
-Fire and Fury	related_to	Donald Trump
-Ender's Game	num_books	COUNT::6
-Fire and Fury	author	27 August 1953
-Ender's Game	publication_year	YEAR::1985
-Inferno	author	Dan Brown
-Ender's Game	related_to	Orson Scott Card
-Inferno	related_to	14 May 2013
-Ender's Game	genre	science fiction
-Inferno	related_to	Origin
-Ender's Game	related_to	BOOL::Yes
-Inferno	publication_year	22 June 1964
-Ender's Game	num_books	COUNT::6
-Inferno	related_to	Exeter
-Ender's Game	publication_year	YEAR::1985
-Twilight	author	Stephenie Meyer
-Ender's Game	related_to	Orson Scott Card
-Twilight	publication_year	05 October 2005
-Ender's Game	genre	science fiction
-Twilight	related_to	Isabella "Bella" Swan
-Ender's Game	related_to	BOOL::Yes
-Twilight	related_to	Edward Cullen
-Ender's Game	num_books	COUNT::6
-Twilight	related_to	vampire
-Ender's Game	publication_year	YEAR::1985
-Jaws	author	Peter Benchley
-Ender's Game	related_to	Orson Scott Card
-Jaws	publication_year	YEAR::1974
-Ender's Game	genre	science fiction
-Jaws	related_to	Doubleday; Bantam Books
-Ender's Game	related_to	BOOL::Yes
-Jaws	genre	Thriller
-Ender's Game	num_books	COUNT::6
-Jaws	related_to	BOOL::Yes
-Ender's Game	publication_year	YEAR::1985
-The Hobbit	publication_year	21 September 1937
-Ender's Game	author	Orson Scott Card
-The Hobbit	author	BOOL::Yes
-Ender's Game	genre	science fiction
-The Hobbit	related_to	Edith Tolkien
-Ender's Game	related_to	BOOL::Yes
-The Hobbit	related_to	John Francis Reuel Tolkien
-Ender's Game	num_books	COUNT::6
-The Hobbit	related_to	BOOL::Yes
-Ender's Game	publication_year	YEAR::1985
-The Shining	related_to	Stephen King
-Ender's Game	author	Orson Scott Card
-The Shining	related_to	BOOL::Yes
-Ender's Game	genre	science fiction
-The Shining	related_to	BOOL::Yes
-Ender's Game	related_to	BOOL::Yes
-The Shining	related_to	BOOL::Yes
-Ender's Game	num_books	COUNT::6
-The Shining	related_to	BOOL::Yes
-Ender's Game	publication_year	YEAR::1985
-Great Expectations	author	Charles Dickens
-Ender's Game	related_to	Orson Scott Card
-Great Expectations	related_to	BOOL::No
-Ender's Game	genre	science fiction
-Great Expectations	publisher	Chapman & Hall
-Ender's Game	related_to	BOOL::Yes
-Great Expectations	genre	black comedy
-Ender's Game	num_books	COUNT::6
-Great Expectations	related_to	London;Kent
-Ender's Game	publication_year	YEAR::1985
-Pride and Prejudice	author	Jane Austen
-Ender's Game	related_to	Orson Scott Card
-Pride and Prejudice	related_to	27 January 1813
-Ender's Game	genre	science fiction
-Pride and Prejudice	related_to	Elizabeth Bennet
-Ender's Game	related_to	BOOL::Yes
-Pride and Prejudice	related_to	Fitzwilliam Darcy
-Ender's Game	num_books	COUNT::6
-Pride and Prejudice	related_to	Mansfield Park
-Ender's Game	publication_year	YEAR::1985
-The Beach	related_to	Alex Garland
-Ender's Game	author	Orson Scott Card
-The Beach	publication_year	1 September 1935
-Ender's Game	genre	science fiction
-The Beach	related_to	London
-Ender's Game	related_to	BOOL::Yes
-The Beach	related_to	BOOL::No
-Ender's Game	num_books	COUNT::6
-The Beach	related_to	cartoonist
-Ender's Game	publication_year	YEAR::1985
-The Dwarves	first_book	YEAR::2003
-Ender's Game	related_to	Orson Scott Card
-The Dwarves	related_to	The War of the Dwarves
-Ender's Game	genre	science fiction
-The Dwarves	author	Markus Heitz
-Ender's Game	related_to	BOOL::Yes
-The Dwarves	related_to	Homburg
-Ender's Game	num_books	COUNT::6
-The Dwarves	publication_year	10 October 1971
-Ender's Game	publication_year	YEAR::1985
-The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
-Ender's Game	author	Orson Scott Card
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
-Ender's Game	genre	science fiction
-The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
-Ender's Game	related_to	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
-Ender's Game	num_books	COUNT::6
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
-Digital Fortress	first_book	Digital Fortress
-The Suicide Prince	related_to	BOOL::Yes
-Digital Fortress	publication_year	YEAR::1998
-The Suicide Prince	related_to	Mr. Mercedes
-Digital Fortress	related_to	Seville
-The Suicide Prince	publication_year	YEAR::2015
-Digital Fortress	related_to	BOOL::Yes
-The Suicide Prince	author	Portland
-Digital Fortress	related_to	National Security Agency
-The Suicide Prince	publication_year	BOOL::Yes
-Digital Fortress	first_book	Digital Fortress
-Stephen King	author	Stephen King
-Digital Fortress	publication_year	YEAR::1998
-Stephen King	related_to	BOOL::Yes
-Digital Fortress	related_to	Seville
-Stephen King	related_to	BOOL::Yes
-Digital Fortress	related_to	BOOL::Yes
-Stephen King	related_to	Best Novel
-Digital Fortress	related_to	National Security Agency
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Digital Fortress	related_to	Digital Fortress
-Fire and Fury	book_title	Inside the Trump White House (English)
-Digital Fortress	publication_year	YEAR::1998
-Fire and Fury	author	Michael Wolff
-Digital Fortress	related_to	Seville
-Fire and Fury	related_to	YEAR::2018
-Digital Fortress	related_to	BOOL::Yes
-Fire and Fury	related_to	Donald Trump
-Digital Fortress	related_to	National Security Agency
-Fire and Fury	author	27 August 1953
-Digital Fortress	first_book	Digital Fortress
-Inferno	related_to	Dan Brown
-Digital Fortress	first_book	YEAR::1998
-Inferno	publication_year	14 May 2013
-Digital Fortress	related_to	Seville
-Inferno	related_to	Origin
-Digital Fortress	related_to	BOOL::Yes
-Inferno	author	22 June 1964
-Digital Fortress	related_to	National Security Agency
-Inferno	related_to	Exeter
-Digital Fortress	first_book	Digital Fortress
-Twilight	author	Stephenie Meyer
-Digital Fortress	first_book	YEAR::1998
-Twilight	related_to	05 October 2005
-Digital Fortress	related_to	Seville
-Twilight	related_to	Isabella "Bella" Swan
-Digital Fortress	related_to	BOOL::Yes
-Twilight	related_to	Edward Cullen
-Digital Fortress	related_to	National Security Agency
-Twilight	related_to	vampire
-Digital Fortress	related_to	Digital Fortress
-Jaws	author	Peter Benchley
-Digital Fortress	publication_year	YEAR::1998
-Jaws	publication_year	YEAR::1974
-Digital Fortress	related_to	Seville
-Jaws	related_to	Doubleday; Bantam Books
-Digital Fortress	related_to	BOOL::Yes
-Jaws	genre	Thriller
-Digital Fortress	related_to	National Security Agency
-Jaws	related_to	BOOL::Yes
-Digital Fortress	related_to	Digital Fortress
-The Hobbit	publication_year	21 September 1937
-Digital Fortress	first_book	YEAR::1998
-The Hobbit	author	BOOL::Yes
-Digital Fortress	related_to	Seville
-The Hobbit	related_to	Edith Tolkien
-Digital Fortress	related_to	BOOL::Yes
-The Hobbit	related_to	John Francis Reuel Tolkien
-Digital Fortress	related_to	National Security Agency
-The Hobbit	related_to	BOOL::Yes
-Digital Fortress	related_to	Digital Fortress
-The Shining	author	Stephen King
-Digital Fortress	publication_year	YEAR::1998
-The Shining	related_to	BOOL::Yes
-Digital Fortress	related_to	Seville
-The Shining	related_to	BOOL::Yes
-Digital Fortress	related_to	BOOL::Yes
-The Shining	related_to	BOOL::Yes
-Digital Fortress	related_to	National Security Agency
-The Shining	related_to	BOOL::Yes
-Digital Fortress	related_to	Digital Fortress
-Great Expectations	related_to	Charles Dickens
-Digital Fortress	publication_year	YEAR::1998
-Great Expectations	related_to	BOOL::No
-Digital Fortress	related_to	Seville
-Great Expectations	publisher	Chapman & Hall
-Digital Fortress	related_to	BOOL::Yes
-Great Expectations	genre	black comedy
-Digital Fortress	related_to	National Security Agency
-Great Expectations	related_to	London;Kent
-Digital Fortress	related_to	Digital Fortress
-Pride and Prejudice	author	Jane Austen
-Digital Fortress	first_book	YEAR::1998
-Pride and Prejudice	related_to	27 January 1813
-Digital Fortress	related_to	Seville
-Pride and Prejudice	related_to	Elizabeth Bennet
-Digital Fortress	related_to	BOOL::Yes
-Pride and Prejudice	related_to	Fitzwilliam Darcy
-Digital Fortress	related_to	National Security Agency
-Pride and Prejudice	related_to	Mansfield Park
-Digital Fortress	first_book	Digital Fortress
-The Beach	author	Alex Garland
-Digital Fortress	publication_year	YEAR::1998
-The Beach	publication_year	1 September 1935
-Digital Fortress	related_to	Seville
-The Beach	related_to	London
-Digital Fortress	related_to	BOOL::Yes
-The Beach	related_to	BOOL::No
-Digital Fortress	related_to	National Security Agency
-The Beach	related_to	cartoonist
-Digital Fortress	first_book	Digital Fortress
-The Dwarves	first_book	YEAR::2003
-Digital Fortress	publication_year	YEAR::1998
-The Dwarves	related_to	The War of the Dwarves
-Digital Fortress	related_to	Seville
-The Dwarves	author	Markus Heitz
-Digital Fortress	related_to	BOOL::Yes
-The Dwarves	author	Homburg
-Digital Fortress	related_to	National Security Agency
-The Dwarves	publication_year	10 October 1971
-Digital Fortress	related_to	Digital Fortress
-The Hitchhiker's Guide to the Galaxy	author	Douglas Adams
-Digital Fortress	first_book	YEAR::1998
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
-Digital Fortress	related_to	Seville
-The Hitchhiker's Guide to the Galaxy	related_to	Eoin Colfer
-Digital Fortress	related_to	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
-Digital Fortress	related_to	National Security Agency
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
-Stephen King	related_to	21 September 1947
-The Suicide Prince	related_to	BOOL::Yes
-Stephen King	related_to	IT
-The Suicide Prince	related_to	Mr. Mercedes
-Stephen King	first_book	The Dark Tower: The Gunslinger
-The Suicide Prince	publication_year	YEAR::2015
-Stephen King	related_to	The Running Man
-The Suicide Prince	author	Portland
-Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
-The Suicide Prince	author	BOOL::Yes
-Fire and Fury	book_title	Inside the Trump White House (English)
-The Suicide Prince	related_to	BOOL::Yes
-Fire and Fury	author	Michael Wolff
-The Suicide Prince	related_to	Mr. Mercedes
-Fire and Fury	publication_year	YEAR::2018
-The Suicide Prince	publication_year	YEAR::2015
-Fire and Fury	related_to	Donald Trump
-The Suicide Prince	author	Portland
-Fire and Fury	author	27 August 1953
-The Suicide Prince	author	BOOL::Yes
-Inferno	author	Dan Brown
-The Suicide Prince	related_to	BOOL::Yes
-Inferno	publication_year	14 May 2013
-The Suicide Prince	first_book	Mr. Mercedes
-Inferno	related_to	Origin
-The Suicide Prince	publication_year	YEAR::2015
-Inferno	publication_year	22 June 1964
-The Suicide Prince	author	Portland
-Inferno	related_to	Exeter
-The Suicide Prince	author	BOOL::Yes
-The Suicide Prince	related_to	BOOL::Yes
-Twilight	author	Stephenie Meyer
-The Suicide Prince	first_book	Mr. Mercedes
-Twilight	publication_year	05 October 2005
-The Suicide Prince	publication_year	YEAR::2015
-Twilight	related_to	Isabella "Bella" Swan
-The Suicide Prince	author	Portland
-Twilight	related_to	Edward Cullen
-The Suicide Prince	publication_year	BOOL::Yes
-Twilight	related_to	vampire
-Jaws	author	Peter Benchley
-The Suicide Prince	related_to	BOOL::Yes
-Jaws	publication_year	YEAR::1974
-The Suicide Prince	related_to	Mr. Mercedes
-Jaws	related_to	Doubleday; Bantam Books
-The Suicide Prince	publication_year	YEAR::2015
-Jaws	genre	Thriller
-The Suicide Prince	author	Portland
-Jaws	related_to	BOOL::Yes
-The Suicide Prince	author	BOOL::Yes
-The Hobbit	publication_year	21 September 1937
-The Suicide Prince	related_to	BOOL::Yes
-The Hobbit	author	BOOL::Yes
-The Suicide Prince	first_book	Mr. Mercedes
-The Hobbit	related_to	Edith Tolkien
-The Suicide Prince	publication_year	YEAR::2015
-The Hobbit	related_to	John Francis Reuel Tolkien
-The Suicide Prince	author	Portland
-The Hobbit	related_to	BOOL::Yes
-The Suicide Prince	publication_year	BOOL::Yes
-The Shining	author	Stephen King
-The Suicide Prince	related_to	BOOL::Yes
-The Shining	related_to	BOOL::Yes
-The Suicide Prince	related_to	Mr. Mercedes
-The Shining	related_to	BOOL::Yes
-The Suicide Prince	publication_year	YEAR::2015
-The Shining	related_to	BOOL::Yes
-The Suicide Prince	author	Portland
-The Shining	related_to	BOOL::Yes
-The Suicide Prince	author	BOOL::Yes
-Great Expectations	author	Charles Dickens
-The Suicide Prince	related_to	BOOL::Yes
-Great Expectations	related_to	BOOL::No
-The Suicide Prince	related_to	Mr. Mercedes
-Great Expectations	publisher	Chapman & Hall
-The Suicide Prince	publication_year	YEAR::2015
-Great Expectations	genre	black comedy
-The Suicide Prince	author	Portland
-Great Expectations	related_to	London;Kent
-The Suicide Prince	publication_year	BOOL::Yes
-Pride and Prejudice	author	Jane Austen
-The Suicide Prince	related_to	BOOL::Yes
-Pride and Prejudice	related_to	27 January 1813
-The Suicide Prince	first_book	Mr. Mercedes
-Pride and Prejudice	related_to	Elizabeth Bennet
-The Suicide Prince	publication_year	YEAR::2015
-Pride and Prejudice	related_to	Fitzwilliam Darcy
-The Suicide Prince	author	Portland
-Pride and Prejudice	related_to	Mansfield Park
-The Suicide Prince	publication_year	BOOL::Yes
-The Beach	author	Alex Garland
-The Suicide Prince	related_to	BOOL::Yes
-The Beach	related_to	1 September 1935
-The Suicide Prince	related_to	Mr. Mercedes
-The Beach	related_to	London
-The Suicide Prince	publication_year	YEAR::2015
-The Beach	related_to	BOOL::No
-The Suicide Prince	author	Portland
-The Beach	related_to	cartoonist
-The Suicide Prince	author	BOOL::Yes
-The Dwarves	first_book	YEAR::2003
-The Suicide Prince	related_to	BOOL::Yes
-The Dwarves	book_title	The War of the Dwarves
-The Suicide Prince	related_to	Mr. Mercedes
-The Dwarves	author	Markus Heitz
-The Suicide Prince	publication_year	YEAR::2015
-The Dwarves	related_to	Homburg
-The Suicide Prince	author	Portland
-The Dwarves	publication_year	10 October 1971
-The Suicide Prince	publication_year	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	related_to	Douglas Adams
-The Suicide Prince	related_to	BOOL::Yes
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::No
-The Suicide Prince	related_to	Mr. Mercedes
-The Hitchhiker's Guide to the Galaxy	author	Eoin Colfer
-The Suicide Prince	publication_year	YEAR::2015
-The Hitchhiker's Guide to the Galaxy	related_to	Artemis Fowl
-The Suicide Prince	author	Portland
-The Hitchhiker's Guide to the Galaxy	related_to	BOOL::Yes
-The Suicide Prince	publication_year	BOOL::Yes
-Fire and Fury	book_title	Inside the Trump White House (English)
-Stephen King	author	Stephen King
-Fire and Fury	related_to	Michael Wolff
-Stephen King	related_to	BOOL::Yes
-Fire and Fury	publication_year	YEAR::2018
-Stephen King	related_to	BOOL::Yes
-Fire and Fury	related_to	Donald Trump
-Stephen King	related_to	Best Novel
-Fire and Fury	author	27 August 1953
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Inferno	related_to	Dan Brown
-Stephen King	publication_year	21 September 1947
-Inferno	related_to	14 May 2013
-Stephen King	related_to	IT
-Inferno	related_to	Origin
-Stephen King	first_book	The Dark Tower: The Gunslinger
-Inferno	publication_year	22 June 1964
-Stephen King	related_to	The Running Man
-Inferno	related_to	Exeter
-Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
-Stephen King	related_to	Stephen King
-Twilight	author	Stephenie Meyer
-Stephen King	related_to	BOOL::Yes
-Twilight	publication_year	05 October 2005
-Stephen King	related_to	BOOL::Yes
-Twilight	related_to	Isabella "Bella" Swan
-Stephen King	related_to	Best Novel
-Twilight	related_to	Edward Cullen
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Twilight	related_to	vampire
-Jaws	author	Peter Benchley
-Stephen King	author	Stephen King
-Jaws	publication_year	YEAR::1974
-Stephen King	related_to	BOOL::Yes
-Jaws	related_to	Doubleday; Bantam Books
-Stephen King	related_to	BOOL::Yes
-Jaws	genre	Thriller
-Stephen King	related_to	Best Novel
-Jaws	related_to	BOOL::Yes
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-Stephen King	related_to	21 September 1947
-The Hobbit	publication_year	21 September 1937
-Stephen King	related_to	IT
-The Hobbit	author	BOOL::Yes
-Stephen King	first_book	The Dark Tower: The Gunslinger
-The Hobbit	related_to	Edith Tolkien
-Stephen King	related_to	The Running Man
-The Hobbit	related_to	John Francis Reuel Tolkien
-Stephen King	related_to	Charlie the Choo-Choo: From the World of The Dark Tower
-The Hobbit	related_to	BOOL::Yes
-Stephen King	related_to	Stephen King
-The Shining	related_to	Stephen King
-Stephen King	related_to	BOOL::Yes
-The Shining	related_to	BOOL::Yes
-Stephen King	related_to	BOOL::Yes
-The Shining	related_to	BOOL::Yes
-Stephen King	related_to	Best Novel
-The Shining	related_to	BOOL::Yes
-Stephen King	related_to	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
-The Shining	related_to	BOOL::Yes
-Great Expectations	related_to	Charles Dickens
-Stephen King	related_to	Stephen King
-Great Expectations	related_to	BOOL::No
-Stephen King	related_to	BOOL::Yes
-Great Expectations	related_to	Chapman & Hall
+Digital Fortress	<UNK>	Digital Fortress
+The Stand	<UNK>	Stephen King
+Digital Fortress	P577	YEAR::1998
+The Stand	P136	post-apocalyptic;horror
+Digital Fortress	<UNK>	Seville
+The Stand	P577	YEAR::1978
+Digital Fortress	<UNK>	BOOL::Yes
+The Stand	P123	Doubleday
+Digital Fortress	<UNK>	National Security Agency
+The Stand	<UNK>	Captain Trips
+The Stand	P50	Stephen King
+The Suicide Prince	<UNK>	BOOL::Yes
+The Stand	P136	post-apocalyptic;horror
+The Suicide Prince	<UNK>	Mr. Mercedes
+The Stand	P577	YEAR::1978
+The Suicide Prince	P577	YEAR::2015
+The Stand	P123	Doubleday
+The Suicide Prince	P50	Portland
+The Stand	<UNK>	Captain Trips
+The Suicide Prince	P50	BOOL::Yes
+Stephen King	P50	Stephen King
+The Stand	<UNK>	Stephen King
+Stephen King	<UNK>	BOOL::Yes
+The Stand	P136	post-apocalyptic;horror
+Stephen King	<UNK>	BOOL::Yes
+The Stand	P577	YEAR::1978
+Stephen King	<UNK>	Best Novel
+The Stand	<UNK>	Doubleday
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+The Stand	<UNK>	Captain Trips
+Fire and Fury	P1476	Inside the Trump White House (English)
+The Stand	<UNK>	Stephen King
+Fire and Fury	P50	Michael Wolff
+The Stand	P136	post-apocalyptic;horror
+Fire and Fury	<UNK>	YEAR::2018
+The Stand	P577	YEAR::1978
+Fire and Fury	<UNK>	Donald Trump
+The Stand	P123	Doubleday
+Fire and Fury	P50	27 August 1953
+The Stand	<UNK>	Captain Trips
+Inferno	<UNK>	Dan Brown
+The Stand	P50	Stephen King
+Inferno	<UNK>	14 May 2013
+The Stand	P136	post-apocalyptic;horror
+Inferno	<UNK>	Origin
+The Stand	P577	YEAR::1978
+Inferno	P577	22 June 1964
+The Stand	<UNK>	Doubleday
+Inferno	<UNK>	Exeter
+The Stand	<UNK>	Captain Trips
+The Stand	<UNK>	Stephen King
+Twilight	<UNK>	Stephenie Meyer
+The Stand	P136	post-apocalyptic;horror
+Twilight	P577	05 October 2005
+The Stand	P577	YEAR::1978
+Twilight	<UNK>	Isabella "Bella" Swan
+The Stand	P123	Doubleday
+Twilight	<UNK>	Edward Cullen
+The Stand	<UNK>	Captain Trips
+Twilight	<UNK>	vampire
+Jaws	P50	Peter Benchley
+The Stand	P50	Stephen King
+Jaws	P577	YEAR::1974
+The Stand	P136	post-apocalyptic;horror
+Jaws	<UNK>	Doubleday; Bantam Books
+The Stand	P577	YEAR::1978
+Jaws	P136	Thriller
+The Stand	P123	Doubleday
+Jaws	<UNK>	BOOL::Yes
+The Stand	<UNK>	Captain Trips
+The Hobbit	P577	21 September 1937
+The Stand	<UNK>	Stephen King
+The Hobbit	P50	BOOL::Yes
+The Stand	P136	post-apocalyptic;horror
+The Hobbit	<UNK>	Edith Tolkien
+The Stand	P577	YEAR::1978
+The Hobbit	<UNK>	John Francis Reuel Tolkien
+The Stand	P123	Doubleday
+The Hobbit	<UNK>	BOOL::Yes
+The Stand	<UNK>	Captain Trips
+The Shining	<UNK>	Stephen King
+The Stand	P50	Stephen King
+The Shining	<UNK>	BOOL::Yes
+The Stand	P136	post-apocalyptic;horror
+The Shining	<UNK>	BOOL::Yes
+The Stand	P577	YEAR::1978
+The Shining	<UNK>	BOOL::Yes
+The Stand	<UNK>	Doubleday
+The Shining	<UNK>	BOOL::Yes
+The Stand	<UNK>	Captain Trips
+Great Expectations	<UNK>	Charles Dickens
+The Stand	P50	Stephen King
+Great Expectations	<UNK>	BOOL::No
+The Stand	P136	post-apocalyptic;horror
+Great Expectations	<UNK>	Chapman & Hall
+The Stand	P577	YEAR::1978
+Great Expectations	P136	black comedy
+The Stand	<UNK>	Doubleday
+Great Expectations	<UNK>	London;Kent
+The Stand	<UNK>	Captain Trips
+Pride and Prejudice	P50	Jane Austen
+The Stand	P50	Stephen King
+Pride and Prejudice	P577	27 January 1813
+The Stand	P136	post-apocalyptic;horror
+Pride and Prejudice	<UNK>	Elizabeth Bennet
+The Stand	P577	YEAR::1978
+Pride and Prejudice	<UNK>	Fitzwilliam Darcy
+The Stand	P123	Doubleday
+Pride and Prejudice	<UNK>	Mansfield Park
+The Stand	<UNK>	Captain Trips
+The Beach	<UNK>	Alex Garland
+The Stand	P50	Stephen King
+The Beach	P577	1 September 1935
+The Stand	P136	post-apocalyptic;horror
+The Beach	<UNK>	London
+The Stand	P577	YEAR::1978
+The Beach	<UNK>	BOOL::No
+The Stand	<UNK>	Doubleday
+The Beach	<UNK>	cartoonist
+The Stand	<UNK>	Captain Trips
+The Dwarves	P50_reverse	YEAR::2003
+The Stand	P50	Stephen King
+The Dwarves	<UNK>	The War of the Dwarves
+The Stand	P136	post-apocalyptic;horror
+The Dwarves	P50	Markus Heitz
+The Stand	P577	YEAR::1978
+The Dwarves	P50	Homburg
+The Stand	P123	Doubleday
+The Dwarves	P577	10 October 1971
+The Stand	<UNK>	Captain Trips
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+The Stand	P50	Stephen King
+The Hitchhiker's Guide to the Galaxy	P50	BOOL::No
+The Stand	P136	post-apocalyptic;horror
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+The Stand	P577	YEAR::1978
+The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+The Stand	<UNK>	Doubleday
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+The Stand	<UNK>	Captain Trips
+Digital Fortress	<UNK>	Digital Fortress
+Ender's Game	P577	YEAR::1985
+Digital Fortress	P50_reverse	YEAR::1998
+Ender's Game	P50	Orson Scott Card
+Digital Fortress	<UNK>	Seville
+Ender's Game	P136	science fiction
+Digital Fortress	<UNK>	BOOL::Yes
+Ender's Game	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	National Security Agency
+Ender's Game	P50_reverse	COUNT::6
+Ender's Game	P577	YEAR::1985
+The Suicide Prince	<UNK>	BOOL::Yes
+Ender's Game	P50	Orson Scott Card
+The Suicide Prince	P50_reverse	Mr. Mercedes
+Ender's Game	P136	science fiction
+The Suicide Prince	P577	YEAR::2015
+Ender's Game	<UNK>	BOOL::Yes
+The Suicide Prince	P50	Portland
+Ender's Game	P50_reverse	COUNT::6
+The Suicide Prince	P50	BOOL::Yes
+Ender's Game	P577	YEAR::1985
+Stephen King	<UNK>	Stephen King
+Ender's Game	P50	Orson Scott Card
+Stephen King	<UNK>	BOOL::Yes
+Ender's Game	P136	science fiction
+Stephen King	<UNK>	BOOL::Yes
+Ender's Game	<UNK>	BOOL::Yes
+Stephen King	<UNK>	Best Novel
+Ender's Game	P50_reverse	COUNT::6
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Ender's Game	P577	YEAR::1985
+Fire and Fury	P1476	Inside the Trump White House (English)
+Ender's Game	P50	Orson Scott Card
+Fire and Fury	P50	Michael Wolff
+Ender's Game	P136	science fiction
+Fire and Fury	P577	YEAR::2018
+Ender's Game	<UNK>	BOOL::Yes
+Fire and Fury	<UNK>	Donald Trump
+Ender's Game	P50_reverse	COUNT::6
+Fire and Fury	P50	27 August 1953
+Ender's Game	P577	YEAR::1985
+Inferno	P50	Dan Brown
+Ender's Game	<UNK>	Orson Scott Card
+Inferno	<UNK>	14 May 2013
+Ender's Game	P136	science fiction
+Inferno	<UNK>	Origin
+Ender's Game	<UNK>	BOOL::Yes
+Inferno	P577	22 June 1964
+Ender's Game	P50_reverse	COUNT::6
+Inferno	<UNK>	Exeter
+Ender's Game	P577	YEAR::1985
+Twilight	P50	Stephenie Meyer
+Ender's Game	<UNK>	Orson Scott Card
+Twilight	P577	05 October 2005
+Ender's Game	P136	science fiction
+Twilight	<UNK>	Isabella "Bella" Swan
+Ender's Game	<UNK>	BOOL::Yes
+Twilight	<UNK>	Edward Cullen
+Ender's Game	P50_reverse	COUNT::6
+Twilight	<UNK>	vampire
+Ender's Game	P577	YEAR::1985
+Jaws	P50	Peter Benchley
+Ender's Game	<UNK>	Orson Scott Card
+Jaws	P577	YEAR::1974
+Ender's Game	P136	science fiction
+Jaws	<UNK>	Doubleday; Bantam Books
+Ender's Game	<UNK>	BOOL::Yes
+Jaws	P136	Thriller
+Ender's Game	P50_reverse	COUNT::6
+Jaws	<UNK>	BOOL::Yes
+Ender's Game	P577	YEAR::1985
+The Hobbit	P577	21 September 1937
+Ender's Game	P50	Orson Scott Card
+The Hobbit	P50	BOOL::Yes
+Ender's Game	P136	science fiction
+The Hobbit	<UNK>	Edith Tolkien
+Ender's Game	<UNK>	BOOL::Yes
+The Hobbit	<UNK>	John Francis Reuel Tolkien
+Ender's Game	P50_reverse	COUNT::6
+The Hobbit	<UNK>	BOOL::Yes
+Ender's Game	P577	YEAR::1985
+The Shining	<UNK>	Stephen King
+Ender's Game	P50	Orson Scott Card
+The Shining	<UNK>	BOOL::Yes
+Ender's Game	P136	science fiction
+The Shining	<UNK>	BOOL::Yes
+Ender's Game	<UNK>	BOOL::Yes
+The Shining	<UNK>	BOOL::Yes
+Ender's Game	P50_reverse	COUNT::6
+The Shining	<UNK>	BOOL::Yes
+Ender's Game	P577	YEAR::1985
+Great Expectations	P50	Charles Dickens
+Ender's Game	<UNK>	Orson Scott Card
+Great Expectations	<UNK>	BOOL::No
+Ender's Game	P136	science fiction
+Great Expectations	P123	Chapman & Hall
+Ender's Game	<UNK>	BOOL::Yes
+Great Expectations	P136	black comedy
+Ender's Game	P50_reverse	COUNT::6
+Great Expectations	<UNK>	London;Kent
+Ender's Game	P577	YEAR::1985
+Pride and Prejudice	P50	Jane Austen
+Ender's Game	<UNK>	Orson Scott Card
+Pride and Prejudice	<UNK>	27 January 1813
+Ender's Game	P136	science fiction
+Pride and Prejudice	<UNK>	Elizabeth Bennet
+Ender's Game	<UNK>	BOOL::Yes
+Pride and Prejudice	<UNK>	Fitzwilliam Darcy
+Ender's Game	P50_reverse	COUNT::6
+Pride and Prejudice	<UNK>	Mansfield Park
+Ender's Game	P577	YEAR::1985
+The Beach	<UNK>	Alex Garland
+Ender's Game	P50	Orson Scott Card
+The Beach	P577	1 September 1935
+Ender's Game	P136	science fiction
+The Beach	<UNK>	London
+Ender's Game	<UNK>	BOOL::Yes
+The Beach	<UNK>	BOOL::No
+Ender's Game	P50_reverse	COUNT::6
+The Beach	<UNK>	cartoonist
+Ender's Game	P577	YEAR::1985
+The Dwarves	P50_reverse	YEAR::2003
+Ender's Game	<UNK>	Orson Scott Card
+The Dwarves	<UNK>	The War of the Dwarves
+Ender's Game	P136	science fiction
+The Dwarves	P50	Markus Heitz
+Ender's Game	<UNK>	BOOL::Yes
+The Dwarves	<UNK>	Homburg
+Ender's Game	P50_reverse	COUNT::6
+The Dwarves	P577	10 October 1971
+Ender's Game	P577	YEAR::1985
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Ender's Game	P50	Orson Scott Card
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
+Ender's Game	P136	science fiction
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+Ender's Game	<UNK>	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+Ender's Game	P50_reverse	COUNT::6
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+Digital Fortress	P50_reverse	Digital Fortress
+The Suicide Prince	<UNK>	BOOL::Yes
+Digital Fortress	P577	YEAR::1998
+The Suicide Prince	<UNK>	Mr. Mercedes
+Digital Fortress	<UNK>	Seville
+The Suicide Prince	P577	YEAR::2015
+Digital Fortress	<UNK>	BOOL::Yes
+The Suicide Prince	P50	Portland
+Digital Fortress	<UNK>	National Security Agency
+The Suicide Prince	P577	BOOL::Yes
+Digital Fortress	P50_reverse	Digital Fortress
+Stephen King	P50	Stephen King
+Digital Fortress	P577	YEAR::1998
+Stephen King	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	Seville
+Stephen King	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	BOOL::Yes
+Stephen King	<UNK>	Best Novel
+Digital Fortress	<UNK>	National Security Agency
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Digital Fortress	<UNK>	Digital Fortress
+Fire and Fury	P1476	Inside the Trump White House (English)
+Digital Fortress	P577	YEAR::1998
+Fire and Fury	P50	Michael Wolff
+Digital Fortress	<UNK>	Seville
+Fire and Fury	<UNK>	YEAR::2018
+Digital Fortress	<UNK>	BOOL::Yes
+Fire and Fury	<UNK>	Donald Trump
+Digital Fortress	<UNK>	National Security Agency
+Fire and Fury	P50	27 August 1953
+Digital Fortress	P50_reverse	Digital Fortress
+Inferno	<UNK>	Dan Brown
+Digital Fortress	P50_reverse	YEAR::1998
+Inferno	P577	14 May 2013
+Digital Fortress	<UNK>	Seville
+Inferno	<UNK>	Origin
+Digital Fortress	<UNK>	BOOL::Yes
+Inferno	P50	22 June 1964
+Digital Fortress	<UNK>	National Security Agency
+Inferno	<UNK>	Exeter
+Digital Fortress	P50_reverse	Digital Fortress
+Twilight	P50	Stephenie Meyer
+Digital Fortress	P50_reverse	YEAR::1998
+Twilight	<UNK>	05 October 2005
+Digital Fortress	<UNK>	Seville
+Twilight	<UNK>	Isabella "Bella" Swan
+Digital Fortress	<UNK>	BOOL::Yes
+Twilight	<UNK>	Edward Cullen
+Digital Fortress	<UNK>	National Security Agency
+Twilight	<UNK>	vampire
+Digital Fortress	<UNK>	Digital Fortress
+Jaws	P50	Peter Benchley
+Digital Fortress	P577	YEAR::1998
+Jaws	P577	YEAR::1974
+Digital Fortress	<UNK>	Seville
+Jaws	<UNK>	Doubleday; Bantam Books
+Digital Fortress	<UNK>	BOOL::Yes
+Jaws	P136	Thriller
+Digital Fortress	<UNK>	National Security Agency
+Jaws	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	Digital Fortress
+The Hobbit	P577	21 September 1937
+Digital Fortress	P50_reverse	YEAR::1998
+The Hobbit	P50	BOOL::Yes
+Digital Fortress	<UNK>	Seville
+The Hobbit	<UNK>	Edith Tolkien
+Digital Fortress	<UNK>	BOOL::Yes
+The Hobbit	<UNK>	John Francis Reuel Tolkien
+Digital Fortress	<UNK>	National Security Agency
+The Hobbit	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	Digital Fortress
+The Shining	P50	Stephen King
+Digital Fortress	P577	YEAR::1998
+The Shining	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	Seville
+The Shining	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	BOOL::Yes
+The Shining	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	National Security Agency
+The Shining	<UNK>	BOOL::Yes
+Digital Fortress	<UNK>	Digital Fortress
+Great Expectations	<UNK>	Charles Dickens
+Digital Fortress	P577	YEAR::1998
+Great Expectations	<UNK>	BOOL::No
+Digital Fortress	<UNK>	Seville
+Great Expectations	P123	Chapman & Hall
+Digital Fortress	<UNK>	BOOL::Yes
+Great Expectations	P136	black comedy
+Digital Fortress	<UNK>	National Security Agency
+Great Expectations	<UNK>	London;Kent
+Digital Fortress	<UNK>	Digital Fortress
+Pride and Prejudice	P50	Jane Austen
+Digital Fortress	P50_reverse	YEAR::1998
+Pride and Prejudice	<UNK>	27 January 1813
+Digital Fortress	<UNK>	Seville
+Pride and Prejudice	<UNK>	Elizabeth Bennet
+Digital Fortress	<UNK>	BOOL::Yes
+Pride and Prejudice	<UNK>	Fitzwilliam Darcy
+Digital Fortress	<UNK>	National Security Agency
+Pride and Prejudice	<UNK>	Mansfield Park
+Digital Fortress	P50_reverse	Digital Fortress
+The Beach	P50	Alex Garland
+Digital Fortress	P577	YEAR::1998
+The Beach	P577	1 September 1935
+Digital Fortress	<UNK>	Seville
+The Beach	<UNK>	London
+Digital Fortress	<UNK>	BOOL::Yes
+The Beach	<UNK>	BOOL::No
+Digital Fortress	<UNK>	National Security Agency
+The Beach	<UNK>	cartoonist
+Digital Fortress	P50_reverse	Digital Fortress
+The Dwarves	P50_reverse	YEAR::2003
+Digital Fortress	P577	YEAR::1998
+The Dwarves	<UNK>	The War of the Dwarves
+Digital Fortress	<UNK>	Seville
+The Dwarves	P50	Markus Heitz
+Digital Fortress	<UNK>	BOOL::Yes
+The Dwarves	P50	Homburg
+Digital Fortress	<UNK>	National Security Agency
+The Dwarves	P577	10 October 1971
+Digital Fortress	<UNK>	Digital Fortress
+The Hitchhiker's Guide to the Galaxy	P50	Douglas Adams
+Digital Fortress	P50_reverse	YEAR::1998
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
+Digital Fortress	<UNK>	Seville
+The Hitchhiker's Guide to the Galaxy	<UNK>	Eoin Colfer
+Digital Fortress	<UNK>	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+Digital Fortress	<UNK>	National Security Agency
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+Stephen King	<UNK>	21 September 1947
+The Suicide Prince	<UNK>	BOOL::Yes
+Stephen King	<UNK>	IT
+The Suicide Prince	<UNK>	Mr. Mercedes
+Stephen King	P50_reverse	The Dark Tower: The Gunslinger
+The Suicide Prince	P577	YEAR::2015
+Stephen King	<UNK>	The Running Man
+The Suicide Prince	P50	Portland
+Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
+The Suicide Prince	P50	BOOL::Yes
+Fire and Fury	P1476	Inside the Trump White House (English)
+The Suicide Prince	<UNK>	BOOL::Yes
+Fire and Fury	P50	Michael Wolff
+The Suicide Prince	<UNK>	Mr. Mercedes
+Fire and Fury	P577	YEAR::2018
+The Suicide Prince	P577	YEAR::2015
+Fire and Fury	<UNK>	Donald Trump
+The Suicide Prince	P50	Portland
+Fire and Fury	P50	27 August 1953
+The Suicide Prince	P50	BOOL::Yes
+Inferno	P50	Dan Brown
+The Suicide Prince	<UNK>	BOOL::Yes
+Inferno	P577	14 May 2013
+The Suicide Prince	P50_reverse	Mr. Mercedes
+Inferno	<UNK>	Origin
+The Suicide Prince	P577	YEAR::2015
+Inferno	P577	22 June 1964
+The Suicide Prince	P50	Portland
+Inferno	<UNK>	Exeter
+The Suicide Prince	P50	BOOL::Yes
+The Suicide Prince	<UNK>	BOOL::Yes
+Twilight	P50	Stephenie Meyer
+The Suicide Prince	P50_reverse	Mr. Mercedes
+Twilight	P577	05 October 2005
+The Suicide Prince	P577	YEAR::2015
+Twilight	<UNK>	Isabella "Bella" Swan
+The Suicide Prince	P50	Portland
+Twilight	<UNK>	Edward Cullen
+The Suicide Prince	P577	BOOL::Yes
+Twilight	<UNK>	vampire
+Jaws	P50	Peter Benchley
+The Suicide Prince	<UNK>	BOOL::Yes
+Jaws	P577	YEAR::1974
+The Suicide Prince	<UNK>	Mr. Mercedes
+Jaws	<UNK>	Doubleday; Bantam Books
+The Suicide Prince	P577	YEAR::2015
+Jaws	P136	Thriller
+The Suicide Prince	P50	Portland
+Jaws	<UNK>	BOOL::Yes
+The Suicide Prince	P50	BOOL::Yes
+The Hobbit	P577	21 September 1937
+The Suicide Prince	<UNK>	BOOL::Yes
+The Hobbit	P50	BOOL::Yes
+The Suicide Prince	P50_reverse	Mr. Mercedes
+The Hobbit	<UNK>	Edith Tolkien
+The Suicide Prince	P577	YEAR::2015
+The Hobbit	<UNK>	John Francis Reuel Tolkien
+The Suicide Prince	P50	Portland
+The Hobbit	<UNK>	BOOL::Yes
+The Suicide Prince	P577	BOOL::Yes
+The Shining	P50	Stephen King
+The Suicide Prince	<UNK>	BOOL::Yes
+The Shining	<UNK>	BOOL::Yes
+The Suicide Prince	<UNK>	Mr. Mercedes
+The Shining	<UNK>	BOOL::Yes
+The Suicide Prince	P577	YEAR::2015
+The Shining	<UNK>	BOOL::Yes
+The Suicide Prince	P50	Portland
+The Shining	<UNK>	BOOL::Yes
+The Suicide Prince	P50	BOOL::Yes
+Great Expectations	P50	Charles Dickens
+The Suicide Prince	<UNK>	BOOL::Yes
+Great Expectations	<UNK>	BOOL::No
+The Suicide Prince	<UNK>	Mr. Mercedes
+Great Expectations	P123	Chapman & Hall
+The Suicide Prince	P577	YEAR::2015
+Great Expectations	P136	black comedy
+The Suicide Prince	P50	Portland
+Great Expectations	<UNK>	London;Kent
+The Suicide Prince	P577	BOOL::Yes
+Pride and Prejudice	P50	Jane Austen
+The Suicide Prince	<UNK>	BOOL::Yes
+Pride and Prejudice	<UNK>	27 January 1813
+The Suicide Prince	P50_reverse	Mr. Mercedes
+Pride and Prejudice	<UNK>	Elizabeth Bennet
+The Suicide Prince	P577	YEAR::2015
+Pride and Prejudice	<UNK>	Fitzwilliam Darcy
+The Suicide Prince	P50	Portland
+Pride and Prejudice	<UNK>	Mansfield Park
+The Suicide Prince	P577	BOOL::Yes
+The Beach	P50	Alex Garland
+The Suicide Prince	<UNK>	BOOL::Yes
+The Beach	<UNK>	1 September 1935
+The Suicide Prince	<UNK>	Mr. Mercedes
+The Beach	<UNK>	London
+The Suicide Prince	P577	YEAR::2015
+The Beach	<UNK>	BOOL::No
+The Suicide Prince	P50	Portland
+The Beach	<UNK>	cartoonist
+The Suicide Prince	P50	BOOL::Yes
+The Dwarves	P50_reverse	YEAR::2003
+The Suicide Prince	<UNK>	BOOL::Yes
+The Dwarves	P1476	The War of the Dwarves
+The Suicide Prince	<UNK>	Mr. Mercedes
+The Dwarves	P50	Markus Heitz
+The Suicide Prince	P577	YEAR::2015
+The Dwarves	<UNK>	Homburg
+The Suicide Prince	P50	Portland
+The Dwarves	P577	10 October 1971
+The Suicide Prince	P577	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	<UNK>	Douglas Adams
+The Suicide Prince	<UNK>	BOOL::Yes
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::No
+The Suicide Prince	<UNK>	Mr. Mercedes
+The Hitchhiker's Guide to the Galaxy	P50	Eoin Colfer
+The Suicide Prince	P577	YEAR::2015
+The Hitchhiker's Guide to the Galaxy	<UNK>	Artemis Fowl
+The Suicide Prince	P50	Portland
+The Hitchhiker's Guide to the Galaxy	<UNK>	BOOL::Yes
+The Suicide Prince	P577	BOOL::Yes
+Fire and Fury	P1476	Inside the Trump White House (English)
+Stephen King	P50	Stephen King
+Fire and Fury	<UNK>	Michael Wolff
+Stephen King	<UNK>	BOOL::Yes
+Fire and Fury	P577	YEAR::2018
+Stephen King	<UNK>	BOOL::Yes
+Fire and Fury	<UNK>	Donald Trump
+Stephen King	<UNK>	Best Novel
+Fire and Fury	P50	27 August 1953
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Inferno	<UNK>	Dan Brown
+Stephen King	P577	21 September 1947
+Inferno	<UNK>	14 May 2013
+Stephen King	<UNK>	IT
+Inferno	<UNK>	Origin
+Stephen King	P50_reverse	The Dark Tower: The Gunslinger
+Inferno	P577	22 June 1964
+Stephen King	<UNK>	The Running Man
+Inferno	<UNK>	Exeter
+Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
+Stephen King	<UNK>	Stephen King
+Twilight	P50	Stephenie Meyer
+Stephen King	<UNK>	BOOL::Yes
+Twilight	P577	05 October 2005
+Stephen King	<UNK>	BOOL::Yes
+Twilight	<UNK>	Isabella "Bella" Swan
+Stephen King	<UNK>	Best Novel
+Twilight	<UNK>	Edward Cullen
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Twilight	<UNK>	vampire
+Jaws	P50	Peter Benchley
+Stephen King	P50	Stephen King
+Jaws	P577	YEAR::1974
+Stephen King	<UNK>	BOOL::Yes
+Jaws	<UNK>	Doubleday; Bantam Books
+Stephen King	<UNK>	BOOL::Yes
+Jaws	P136	Thriller
+Stephen King	<UNK>	Best Novel
+Jaws	<UNK>	BOOL::Yes
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+Stephen King	<UNK>	21 September 1947
+The Hobbit	P577	21 September 1937
+Stephen King	<UNK>	IT
+The Hobbit	P50	BOOL::Yes
+Stephen King	P50_reverse	The Dark Tower: The Gunslinger
+The Hobbit	<UNK>	Edith Tolkien
+Stephen King	<UNK>	The Running Man
+The Hobbit	<UNK>	John Francis Reuel Tolkien
+Stephen King	<UNK>	Charlie the Choo-Choo: From the World of The Dark Tower
+The Hobbit	<UNK>	BOOL::Yes
+Stephen King	<UNK>	Stephen King
+The Shining	<UNK>	Stephen King
+Stephen King	<UNK>	BOOL::Yes
+The Shining	<UNK>	BOOL::Yes
+Stephen King	<UNK>	BOOL::Yes
+The Shining	<UNK>	BOOL::Yes
+Stephen King	<UNK>	Best Novel
+The Shining	<UNK>	BOOL::Yes
+Stephen King	<UNK>	He received the Edgar Award for Best Novel for his book Mr. Mercedes in 2015.
+The Shining	<UNK>	BOOL::Yes
+Great Expectations	<UNK>	Charles Dickens
+Stephen King	<UNK>	Stephen King
+Great Expectations	<UNK>	BOOL::No
+Stephen King	<UNK>	BOOL::Yes
+Great Expectations	<UNK>	Chapman & Hall
